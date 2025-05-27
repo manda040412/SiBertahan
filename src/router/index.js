@@ -1,9 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import AboutUs from '../views/about.vue'
 
 const routes = [
-  { path: '/', name: 'Home', component: Home },
-  // Tambahkan page lain sesuai PDF
+  { 
+    path: '/', 
+    name: 'Home', 
+    component: Home 
+  },
+  { 
+    path: '/about', 
+    name: 'About', 
+    component: AboutUs 
+  }
 ]
 
 const router = createRouter({
