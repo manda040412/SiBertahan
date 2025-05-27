@@ -62,8 +62,8 @@
         </router-link>
 
         
-      <!-- Vertical lines with dots -->
-      <div class="absolute right-10 top-12 flex gap-14 z-[999]">
+      <!-- Vertical lines with dots - only visible on home page -->
+      <div v-if="$route.path === '/' || $route.path === '/Home'" class="absolute right-10 top-12 flex gap-14 z-[999]">
         <!-- First vertical line with dots -->
         <div class="relative flex flex-col items-center h-[250px]">
           <!-- Vertical line -->

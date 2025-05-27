@@ -1,11 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/home.vue'
-import AboutUs from '../views/aboutUs.vue'
+import Blog from '../views/blog.vue'
+import Career from '../views/career.vue'
 
 const routes = [
   { path: '/', redirect: '/Home' },
-  { path: '/about', name: 'AboutUs', component: AboutUs },
+  { path: '/blog', name: 'Blog', component: Blog },
   { path: '/home', name: 'Home', component: Home },
+  { path: '/career', name: 'Career', component: Career },
   // Tambahkan page lain sesuai PDF
 ]
 
