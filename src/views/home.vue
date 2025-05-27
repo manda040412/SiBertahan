@@ -312,11 +312,14 @@
     <section class="experts bg-gradient-to-tr from-[#D7E6FF] from-0% to-[#F4F7FF] to-40% text-[#00101f] py-20 relative">
       <div class="container px-12 max-w-[1600px] mx-auto">
         <div class="flex justify-end">
-          <p class=""> Safeguard your valuable data and ensure your peace of mind</p>
+          <p>
+            <span class="opacity-50">Safeguard your valuable data</span>
+            <span class="opacity-100 font-bold"> and ensure your peace of mind</span>
+          </p>
         </div>
-        <div class="flex w-full my-8">
-          <div class="w-1/2 h-[2px] bg-blue-600 opacity-60"></div>
-          <div class="w-1/2 h-[1px] bg-blue-600 opacity-60"></div>
+        <div class="flex flex-col w-full my-8">
+          <div class="w-1/2 h-[3px] bg-gray-600 opacity-30"></div>
+          <div class="w-full h-[1px] bg-gray-600 opacity-60"></div>
         </div>
 
         <div class="py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -385,16 +388,18 @@
                 <h2 class="text-6xl py-12">
                   Deliver Cyber
                   Security Intelligence                </h2>
-                <p class="text-gray-600 pl-10 text-2xl mb-6">
+                <!-- Grey square background for the paragraph -->
+                <div class="absolute bg-gray-500 opacity-5 w-[1220px] h-[300px] top-[155px] left-10"></div>
+                <p class="text-gray-600 pl-10 text-2xl mb-6 relative z-10">
                   From proactive threat hunting to robust defense 
                   strategies, we fortify your digital landscape with expert 
                   precision
                 </p>
-                                 <div class="pt-10">
+                  <div class="pt-10">
                       <div class="flex justify-start items-center gap-16">
                           <!-- Card 1 Container -->
                           <div class="relative flex flex-col items-center">
-                              <div class="bg-gradient-to-br from-[#06305C] to-[#000203] p-3 rounded-xl shadow-[0_8px_16px_-4px_rgba(0,0,0,0.5)] transition-all flex items-center justify-center w-[160px] h-[100px]">
+                              <div class="bg-gradient-to-br from-[#06305C] from-30% to-[#000203] p-3 rounded-xl shadow-[0_8px_16px_-4px_rgba(0,0,0,0.5)] transition-all flex items-center justify-center w-[160px] h-[100px]">
                                   <div class="w-[60px] h-[60px]">
                                       <img src="../assets/cloud-who.png" alt="Cloud Security" class="w-full h-full object-contain" />
                                   </div>
@@ -417,7 +422,7 @@
 
                           <!-- Card 2 Container -->
                           <div class="relative flex flex-col items-center">
-                              <div class="bg-gradient-to-br from-[#06305C] to-[#000203] p-3 rounded-xl shadow-[0_8px_16px_-4px_rgba(0,0,0,0.5)] transition-all flex items-center justify-center w-[160px] h-[100px]">
+                              <div class="bg-gradient-to-br from-[#06305C] from-30% to-[#000203] p-3 rounded-xl shadow-[0_8px_16px_-4px_rgba(0,0,0,0.5)] transition-all flex items-center justify-center w-[160px] h-[100px]">
                                   <div class="w-[60px] h-[60px]">
                                       <img src="../assets/lock-who.png" alt="Data Protection" class="w-full h-full object-contain" />
                                   </div>
@@ -440,7 +445,7 @@
 
                           <!-- Card 3 Container -->
                           <div class="relative flex flex-col items-center">
-                              <div class="bg-gradient-to-br from-[#06305C] to-[#000203] p-3 rounded-xl shadow-[0_8px_16px_-4px_rgba(0,0,0,0.5)] transition-all flex items-center justify-center w-[160px] h-[100px]">
+                              <div class="bg-gradient-to-br from-[#06305C] from-30% to-[#000203] p-3 rounded-xl shadow-[0_8px_16px_-4px_rgba(0,0,0,0.5)] transition-all flex items-center justify-center w-[160px] h-[100px]">
                                   <div class="w-[60px] h-[60px]">
                                       <img src="../assets/fire-who.png" alt="Threat Prevention" class="w-full h-full object-contain" />
                                   </div>
@@ -460,58 +465,61 @@
                                   <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
                               </div>
                           </div>
+                      </div>
+                    </div>
                 </div>
               </div>
+              <div class="py-20">
+                <div class="container mx-auto max-w-7xl px-6">
+                            <div class="text-center mb-12 relative">
+          <p class="pl-10 pb-2 text-left">
+            See our services and contact
+          </p>
+                      <!-- Grey square background for the Contact us text -->
+        <div class="absolute bg-gray-500 opacity-5 w-[1420px] h-32 top-18 right-[-720px]"></div>
+        <h2 class="text-[240px] leading-none text-[#00101f] relative z-10">
+          Contact <span class="text-blue-500">us.</span>
+        </h2>
+                  <div class="flex justify-start pl-10">
+                    <a href="#" class="bg-[#1D1D1D] hover:bg-blue-700 text-white py-3 px-6 pr-4 rounded-full text-sm font-medium transition inline-flex items-center gap-3">
+                      WORK WITH US
+                      <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="BLACK">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
-        <div class="py-20">
-          <div class="container mx-auto max-w-7xl px-6">
-            <div class="text-center mb-12">
-            <p class="pl-10 pb-2 text-left">
-              See our services and contact
-            </p>
-            <h2 class="text-[240px] leading-none text-[#00101f]">
-              Contact <span class="text-blue-500">us.</span>
-            </h2>
-            <div class="flex justify-start pl-10">
-              <a href="#" class="bg-[#1D1D1D] hover:bg-blue-700 text-white py-3 px-6 pr-4 rounded-full text-sm font-medium transition inline-flex items-center gap-3">
-                WORK WITH US
-                <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="BLACK">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            <div class="container mx-auto max-w-6xl">
+              <div class="container mx-auto max-w-6xl">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                    <div class="text-left">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="black">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
+                  <p class="text-gray-600">+62 21 29492273</p>
                 </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      <div class="container mx-auto max-w-6xl">
-        <div class="container mx-auto max-w-6xl">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-              <div class="text-left">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="black">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-            </svg>
-            <p class="text-gray-600">+62 21 29429283</p>
-          </div>
-              <div class="text-left">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="black">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-            <p class="text-gray-600">info@sibertahan.com</p>
-          </div>
-              <div class="text-left">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="black">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-                <p class="text-gray-600"> District 8, Treasury Tower Lt. 6 Unit F, Jl. Jend. Sudirman Kav. 52-53,
-                      SCBD Lot 28 RT. 005 RW. 003, Senayan, Kebayoran Baru,
-                      Jakarta Selatan 12190
-                </p>
-            </div>
-          </div>
-        </div>
+                    <div class="text-left">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="black">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <p class="text-gray-600">info@sibertahan.com</p>
+                </div>
+                    <div class="text-left">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="black">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                      <p class="text-gray-600"> District 8, Treasury Tower Lt. 6 Unit F, Jl. Jend. Sudirman Kav. 52-53,
+                            SCBD Lot 28 RT. 005 RW. 003, Senayan, Kebayoran Baru,
+                            Jakarta Selatan 12190
+                      </p>
+                  </div>
+                </div>
+              </div>
+              
           </div>
         </div>
       </div>
