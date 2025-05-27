@@ -15,7 +15,6 @@
           </svg>
         </a>
       </div>
-      
       <!-- Main Hero Content -->
       <div class="container max-w-[1600px] mx-auto px-6 relative z-10">
         <div class="flex flex-col items-center text-center pt-8 pb-16">
@@ -36,33 +35,12 @@
           </a>
         </div>
       </div>
-            <!-- Decorative Blue Line with Dots (Right Side) - Vertical Layout -->
-      <div class="absolute right-12 top-1/4 h-96 select-none pointer-events-none">
-        <!-- First line with dot -->
-        <div class="relative h-full w-4 flex justify-center mr-1 inline-block">
-          <!-- Vertical line with blue color -->
-          <div class="absolute top-[1%] bottom-[60%] left-1/2 -translate-x-1/2 w-[5px] bg-blue-500"></div>
-          <!-- Circle dot with blue color -->
-          <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-[15px] h-[15px] bg-blue-500 rounded-full"></div>
-        </div>
-        
-        <!-- Second line with dot -->
-        <div class="relative h-full w-4 flex justify-center mr-1 inline-block">
-          <!-- Vertical line with blue color -->
-          <div class="absolute top-[38%] bottom-[1%] left-1/2 -translate-x-1/2 w-[5px] bg-blue-500"></div>
-          <!-- Circle dot with blue color -->
-          <div class="absolute top-[38%] left-1/2 -translate-x-1/2 w-[15px] h-[15px] bg-blue-500 rounded-full"></div>
-        </div>
-        
-        <!-- Third line with dot -->
-        <div class="relative h-full w-4 flex justify-center mr-1 inline-block">
-          <!-- Vertical line with blue color -->
-          <div class="absolute top-[1%] bottom-[60%] left-1/2 -translate-x-1/2 w-[5px] bg-blue-500"></div>
-          <!-- Circle dot with blue color -->
-          <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-[15px] h-[15px] bg-blue-500 rounded-full"></div>
-        </div>
+      <div class="absolute right-16 bottom-0 w-4 flex justify-center" style="height: 1450px;">
+        <!-- Vertical line from bottom to top -->
+        <div class="absolute bottom-0 top-0 left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
+        <!-- Circle dot at the top -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
       </div>
-      
       <!-- Small navigation dots at bottom right (visible in mobile) -->
       <div class="absolute bottom-10 right-10 flex flex-col gap-2">
         <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
@@ -86,7 +64,7 @@
         <div class="absolute inset-0 bg-gradient-to-t from-[#000000] to-transparent opacity-90"></div>
       </div>
 
-      <div class="absolute top-8 left-1/2 -translate-x-1/2 container mx-auto max-w-6xl px-6 z-40">
+      <div class="absolute top-8 left-1/2 -translate-x-1/2 container px-12 max-w-6xl z-40">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- BSSN Card -->
           <div class="flex justify-center">
@@ -168,7 +146,7 @@
             </div>
           </div>
           
-          <h2 class="text-7xl text-white leading-tight max-w-[880px]">
+          <h2 class="text-7xl text-white leading-tight max-w-[880px] mx-auto">
             Establish and Maintain<br>Complete Digital Security
           </h2>
         </div>
@@ -216,9 +194,43 @@
 
       <section class="solutions py-20">
         <div class="container mx-auto px-12">
-          <h2 class="text-4xl font-bold mb-16 text-white text-center flex justify-center items-center">
+          <div class="relative">
+          <!-- Lines container -->
+            <div>
+              <p class="pl-16 text-blue-400 text-2xl tracking-wider font-medium underline underline-offset-[15px] mx-64 mb-4 text-start">
+                OUR SERVICES</p>
+              <h2 class="text-7xl pb-24 text-white leading-tight max-w-[880px] text-center mx-auto">
             Cyber Security Solutions
           </h2>
+              <!-- Decorative lines on the right side -->
+              <div class="absolute right-[-600px] top-[40%] -translate-y-1/2 flex flex-col gap-[20px]">
+                <!-- First line with dot -->
+                <div class="relative flex items-center justify-end">
+                  <!-- Circle dot (at the edge of line) -->
+                  <div class="absolute right-[780px] w-[18px] h-[18px] bg-blue-500 rounded-full transform -translate-x-1/2"></div>
+                  <!-- Horizontal line -->
+                  <div class="h-[6px] w-[800px] bg-blue-500"></div>
+                </div>
+                
+                <!-- Second line with dot (longer) -->
+                <div class="relative flex items-center justify-end">
+                  <!-- Circle dot (at the edge of line) -->
+                  <div class="absolute right-[830px] w-[28px] h-[28px] bg-blue-500 rounded-full transform -translate-x-1/2"></div>
+                  <!-- Horizontal line -->
+                  <div class="h-[6px] w-[850px] bg-blue-500"></div>
+                </div>
+                
+                <!-- Third line with dot -->
+                <div class="relative flex items-center justify-end">
+                  <!-- Circle dot (at the edge of line) -->
+                  <div class="absolute right-[780px] w-[18px] h-[18px] bg-blue-500 rounded-full transform -translate-x-1/2"></div>
+                  <!-- Horizontal line -->
+                  <div class="h-[6px] w-[800px] bg-blue-500"></div>
+                </div>
+              </div>
+              
+            </div>
+        </div>
           
           <div class="flex flex-col gap-8">
             <!-- Siberserang -->
@@ -297,115 +309,214 @@
     </section>
 
     <!-- Certified Experts -->
-    <section class="experts bg-gray-50 text-[#00101f] py-20 relative">
-      <div class="container mx-auto max-w-6xl px-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 class="text-3xl font-bold mb-6">
+    <section class="experts bg-gradient-to-tr from-[#D7E6FF] from-0% to-[#F4F7FF] to-40% text-[#00101f] py-20 relative">
+      <div class="container px-12 max-w-[1600px] mx-auto">
+        <div class="flex justify-end">
+          <p class=""> Safeguard your valuable data and ensure your peace of mind</p>
+        </div>
+        <div class="flex w-full my-8">
+          <div class="w-1/2 h-[2px] bg-blue-600 opacity-60"></div>
+          <div class="w-1/2 h-[1px] bg-blue-600 opacity-60"></div>
+        </div>
+
+        <div class="py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                      <div class="relative">
+              <p class=" text-blue-400 text-2xl tracking-wider font-medium underline underline-offset-[15px] mb-4 text-start">
+                WHO WE ARE</p>
+            <h2 class="text-6xl py-12">
               Certified Cyber Security Experts
             </h2>
-            <p class="text-gray-600 mb-6">
-              Our team of specialists are equipped with industry-leading certifications and years of experience protecting critical infrastructure.
+            <p class="text-gray-600 pl-10 text-2xl mb-6">
+              Our skilled professionals are dedicated to safeguarding 
+              your digital assets with cutting-edge strategies and 
+              unwavering vigilance
             </p>
-            <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-lg text-sm">
-              Meet our team
-            </button>
+            <div class="pl-10">
+              <a href="#" class="text-blue-500 py-3 pr-4 rounded-full text-2xl font-medium transition inline-flex items-center gap-2">
+                Read more
+                <div class="w-8 h-8 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="blue">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+                <div class="absolute -left-[750px] top-[500px] flex flex-col gap-[20px]">
+                  <!-- First line with dot -->
+                  <div class="relative w-[1220px] flex items-center">
+                    <!-- Horizontal line -->
+                    <div class="h-[6px] w-full bg-blue-500"></div>
+                    <!-- Circle dot -->
+                    <div class="absolute right-0 w-[18px] h-[18px] bg-blue-500 rounded-full transform translate-x-1/2"></div>
+                  </div>
+
+                  <!-- Second line with dot -->
+                  <div class="relative w-[1260px] flex items-center">
+                    <!-- Horizontal line -->
+                    <div class="h-[6px] w-full bg-blue-500"></div>
+                    <!-- Circle dot -->
+                    <div class="absolute right-0 w-[18px] h-[18px] bg-blue-500 rounded-full transform translate-x-1/2"></div>
+                  </div>
+
+                  <!-- Third line with dot -->
+                  <div class="relative w-[1220px] flex items-center">
+                    <!-- Horizontal line -->
+                    <div class="h-[6px] w-full bg-blue-500"></div>
+                    <!-- Circle dot -->
+                    <div class="absolute right-0 w-[18px] h-[18px] bg-blue-500 rounded-full transform translate-x-1/2"></div>
+                  </div>
+                </div>
           </div>
           <div>
-            <img src="../assets/security-shield.png" alt="Security Shield" class="max-w-full" />
+            <img src="../assets/shield.png" alt="Security Shield" class="max-w-full" />
           </div>
         </div>
-      </div>
-      
-      <!-- Animated lines -->
-      <div class="absolute bottom-4 left-0 right-0">
-        <div class="relative h-1 mx-12">
-          <div class="absolute left-0 right-0 h-0.5 bg-blue-600 opacity-60"></div>
-          <div class="absolute left-[10%] top-1/2 -translate-y-1/2 w-2 h-2 bg-blue-600 rounded-full"></div>
-          <div class="absolute left-[30%] top-1/2 -translate-y-1/2 w-2 h-2 bg-blue-600 rounded-full"></div>
-          <div class="absolute right-[30%] top-1/2 -translate-y-1/2 w-2 h-2 bg-blue-600 rounded-full"></div>
-          <div class="absolute right-[10%] top-1/2 -translate-y-1/2 w-2 h-2 bg-blue-600 rounded-full"></div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Intelligence Section -->
-    <section class="intelligence bg-gray-100 py-20">
-      <div class="container mx-auto max-w-6xl px-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- Image section (now on the left) -->
           <div>
-            <img src="../assets/cyber-intelligence.png" alt="Cyber Intelligence" class="max-w-full" />
+                <img src="../assets/cloud.png" alt="Security Shield" class="max-w-full" />
           </div>
-          <div>
-            <h3 class="text-sm text-gray-500 uppercase mb-1">OUR APPROACH</h3>
-            <h2 class="text-3xl font-bold mb-6 text-[#00101f]">
-              Deliver Cyber Security Intelligence
-            </h2>
-            <p class="text-gray-600 mb-8">
-              Enterprise-grade threat intelligence that gives you actionable insights to strengthen your security posture.
-            </p>
             
-            <div class="grid grid-cols-3 gap-4">
-              <div class="flex flex-col items-center">
-                <div class="w-14 h-14 bg-[#001428] rounded-lg flex items-center justify-center mb-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            <!-- Text content section (now on the right) -->
+            <div class="relative">
+                <p class="text-blue-400 text-2xl tracking-wider font-medium underline underline-offset-[15px] mb-4 text-start">
+                    WHAT WE PROVIDE
+                </p>
+                <h2 class="text-6xl py-12">
+                  Deliver Cyber
+                  Security Intelligence                </h2>
+                <p class="text-gray-600 pl-10 text-2xl mb-6">
+                  From proactive threat hunting to robust defense 
+                  strategies, we fortify your digital landscape with expert 
+                  precision
+                </p>
+                                 <div class="pt-10">
+                      <div class="flex justify-start items-center gap-16">
+                          <!-- Card 1 Container -->
+                          <div class="relative flex flex-col items-center">
+                              <div class="bg-gradient-to-br from-[#06305C] to-[#000203] p-3 rounded-xl shadow-[0_8px_16px_-4px_rgba(0,0,0,0.5)] transition-all flex items-center justify-center w-[160px] h-[100px]">
+                                  <div class="w-[60px] h-[60px]">
+                                      <img src="../assets/cloud-who.png" alt="Cloud Security" class="w-full h-full object-contain" />
+                                  </div>
+                              </div>
+                              
+                              <!-- Lines for Card 1 -->
+                              <div class="absolute top-[100px] left-[90px] h-[100px] w-4 flex justify-center">
+                                  <div class="absolute top-0 bottom-[60%] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
+                                  <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
+                              </div>
+                              <div class="absolute top-[100px] left-1/2 -translate-x-1/2 h-[200px] w-4 flex justify-center">
+                                  <div class="absolute top-0 bottom-[60%] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
+                                  <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
+                              </div>
+                              <div class="absolute top-[100px] right-[90px] h-[100px] w-4 flex justify-center">
+                                  <div class="absolute top-0 bottom-[60%] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
+                                  <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
+                              </div>
+                          </div>
+
+                          <!-- Card 2 Container -->
+                          <div class="relative flex flex-col items-center">
+                              <div class="bg-gradient-to-br from-[#06305C] to-[#000203] p-3 rounded-xl shadow-[0_8px_16px_-4px_rgba(0,0,0,0.5)] transition-all flex items-center justify-center w-[160px] h-[100px]">
+                                  <div class="w-[60px] h-[60px]">
+                                      <img src="../assets/lock-who.png" alt="Data Protection" class="w-full h-full object-contain" />
+                                  </div>
+                              </div>
+                              
+                              <!-- Lines for Card 2 -->
+                              <div class="absolute top-[100px] left-1/2 -translate-x-1/2 ml-[-20px] h-[100px] w-4 flex justify-center">
+                                  <div class="absolute top-0 bottom-[60%] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
+                                  <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
+                              </div>
+                              <div class="absolute top-[100px] left-1/2 -translate-x-1/2 h-[200px] w-4 flex justify-center">
+                                  <div class="absolute top-0 bottom-[40%] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
+                                  <div class="absolute top-[60%] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
+                              </div>
+                              <div class="absolute top-[100px] left-1/2 -translate-x-1/2 ml-[20px] h-[100px] w-4 flex justify-center">
+                                  <div class="absolute top-0 bottom-[60%] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
+                                  <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
+                              </div>
+                          </div>
+
+                          <!-- Card 3 Container -->
+                          <div class="relative flex flex-col items-center">
+                              <div class="bg-gradient-to-br from-[#06305C] to-[#000203] p-3 rounded-xl shadow-[0_8px_16px_-4px_rgba(0,0,0,0.5)] transition-all flex items-center justify-center w-[160px] h-[100px]">
+                                  <div class="w-[60px] h-[60px]">
+                                      <img src="../assets/fire-who.png" alt="Threat Prevention" class="w-full h-full object-contain" />
+                                  </div>
+                              </div>
+                              
+                              <!-- Lines for Card 3 -->
+                              <div class="absolute top-[100px] left-[90px] h-[100px] w-4 flex justify-center">
+                                  <div class="absolute top-0 bottom-[60%] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
+                                  <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
+                              </div>
+                              <div class="absolute top-[100px] left-1/2 -translate-x-1/2 h-[200px] w-4 flex justify-center">
+                                  <div class="absolute top-0 bottom-[60%] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
+                                  <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
+                              </div>
+                              <div class="absolute top-[100px] right-[90px] h-[100px] w-4 flex justify-center">
+                                  <div class="absolute top-0 bottom-[60%] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
+                                  <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
+                              </div>
+                          </div>
+                </div>
+              </div>
+                </div>
+              </div>
+        <div class="py-20">
+          <div class="container mx-auto max-w-7xl px-6">
+            <div class="text-center mb-12">
+            <p class="pl-10 pb-2 text-left">
+              See our services and contact
+            </p>
+            <h2 class="text-[240px] leading-none text-[#00101f]">
+              Contact <span class="text-blue-500">us.</span>
+            </h2>
+            <div class="flex justify-start pl-10">
+              <a href="#" class="bg-[#1D1D1D] hover:bg-blue-700 text-white py-3 px-6 pr-4 rounded-full text-sm font-medium transition inline-flex items-center gap-3">
+                WORK WITH US
+                <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="BLACK">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </div>
-                <span class="text-xs text-gray-600">Prevent</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div class="w-14 h-14 bg-[#001428] rounded-lg flex items-center justify-center mb-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                  </svg>
-                </div>
-                <span class="text-xs text-gray-600">Detect</span>
-              </div>
-              <div class="flex flex-col items-center">
-                <div class="w-14 h-14 bg-[#001428] rounded-lg flex items-center justify-center mb-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                  </svg>
-                </div>
-                <span class="text-xs text-gray-600">Respond</span>
-              </div>
+              </a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact bg-white py-20">
-      <div class="container mx-auto max-w-6xl px-6">
-        <h2 class="text-4xl font-bold mb-12 text-center text-[#00101f]">
-          Contact <span class="text-blue-500">us.</span>
-        </h2>
-        
+      <div class="container mx-auto max-w-6xl">
+        <div class="container mx-auto max-w-6xl">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <div class="text-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div class="text-left">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="black">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
             <p class="text-gray-600">+62 21 29429283</p>
           </div>
-          <div class="text-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div class="text-left">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="black">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
             <p class="text-gray-600">info@sibertahan.com</p>
           </div>
-          <div class="text-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div class="text-left">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="black">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
-            <p class="text-gray-600">Jakarta Selatan, DKI Jakarta 12950</p>
+                <p class="text-gray-600"> District 8, Treasury Tower Lt. 6 Unit F, Jl. Jend. Sudirman Kav. 52-53,
+                      SCBD Lot 28 RT. 005 RW. 003, Senayan, Kebayoran Baru,
+                      Jakarta Selatan 12190
+                </p>
+            </div>
+          </div>
+        </div>
           </div>
         </div>
       </div>
     </section>
+    
   </div>
 </template> 
 
