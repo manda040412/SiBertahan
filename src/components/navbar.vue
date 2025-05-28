@@ -23,14 +23,35 @@
         </router-link>
 
         <div class="relative group">
-          <router-link to="/service" class="hover:text-blue-500 flex items-center gap-1"
-            :class="{ 'text-blue-600': $route.path.startsWith('/service') }">
+          <button @click="isServiceDropdownOpen = !isServiceDropdownOpen" 
+                  class="service-trigger hover:text-blue-500 flex items-center gap-1"
+                  :class="{ 'text-blue-600': $route.path.startsWith('/service') }">
             SERVICE
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-1">
               <path d="m6 9 6 6 6-6" />
             </svg>
-          </router-link>
+          </button>
+          <!-- Dropdown menu -->
+          <div class="service-dropdown absolute bg-white shadow-lg rounded-md mt-2 py-2 w-48"
+               :class="{ 'hidden': !isServiceDropdownOpen }"
+               @click.stop>
+            <router-link to="/services-siberjaga" 
+                        @click="isServiceDropdownOpen = false"
+                        class="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-500">
+              SiberJaga
+            </router-link>
+            <router-link to="/services-siberpatuh"
+                        @click="isServiceDropdownOpen = false"
+                        class="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-500">
+              SiberPatuh
+            </router-link>
+            <router-link to="/services-siberserang"
+                        @click="isServiceDropdownOpen = false"
+                        class="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-500">
+              SiberSerang
+            </router-link>
+          </div>
         </div>
 
         <router-link to="/about" class="hover:text-blue-500"
@@ -97,6 +118,22 @@
         SERVICE
       </router-link>
 
+      <!-- Service dropdown items for mobile -->
+      <div class="pl-4 space-y-2">
+        <router-link @click="isOpen = false" to="/services-siberjaga" class="block hover:text-blue-500"
+          :class="{ 'text-blue-600': $route.path === '/services-siberjaga' }">
+          - SiberJaga
+        </router-link>
+        <router-link @click="isOpen = false" to="/services-siberpatuh" class="block hover:text-blue-500"
+          :class="{ 'text-blue-600': $route.path === '/services-siberpatuh' }">
+          - SiberPatuh
+        </router-link>
+        <router-link @click="isOpen = false" to="/services-siberserang" class="block hover:text-blue-500"
+          :class="{ 'text-blue-600': $route.path === '/services-siberserang' }">
+          - SiberSerang
+        </router-link>
+      </div>
+
       <router-link @click="isOpen = false" to="/about" class="hover:text-blue-500"
         :class="{ 'text-blue-600': $route.path === '/about' }">
         ABOUT US
@@ -127,6 +164,26 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 const isOpen = ref(false)
+const isServiceDropdownOpen = ref(false)
+
+// Close dropdown when clicking outside
+const closeDropdown = (event) => {
+  const dropdown = document.querySelector('.service-dropdown')
+  const trigger = document.querySelector('.service-trigger')
+  if (dropdown && !dropdown.contains(event.target) && !trigger.contains(event.target)) {
+    isServiceDropdownOpen.value = false
+  }
+}
+
+// Add event listener when component is mounted
+onMounted(() => {
+  document.addEventListener('click', closeDropdown)
+})
+
+// Remove event listener when component is unmounted
+onUnmounted(() => {
+  document.removeEventListener('click', closeDropdown)
+})
 </script>
