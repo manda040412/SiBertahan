@@ -60,6 +60,28 @@
           class="bg-blue-500 text-white px-4 py-1.5 rounded-md text-xs hover:bg-blue-600">
           CONTACT US
         </router-link>
+
+        
+      <!-- Vertical lines with dots - only visible on home page -->
+      <div v-if="$route.path === '/' || $route.path === '/Home'" class="absolute right-10 top-12 flex gap-14 z-[999]">
+        <!-- First vertical line with dots -->
+        <div class="relative flex flex-col items-center h-[250px]">
+          <!-- Vertical line -->
+          <div class="w-[6px] h-full bg-blue-500"></div>
+         
+          <!-- Bottom dot -->
+          <div class="absolute bottom-0 w-[18px] h-[18px] bg-blue-500 rounded-full transform translate-y-1/2"></div>
+        </div>
+
+        <!-- Third vertical line with dots -->
+        <div class="relative flex flex-col items-center h-[250px]">
+          <!-- Vertical line -->
+          <div class="w-[6px] h-full bg-blue-500"></div>
+          
+          <!-- Bottom dot -->
+          <div class="absolute bottom-0 w-[18px] h-[18px] bg-blue-500 rounded-full transform translate-y-1/2"></div>
+        </div>
+      </div>
       </nav>
     </div>
 
