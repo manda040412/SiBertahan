@@ -1,7 +1,7 @@
 <template>
     <div class="blog font-bahnschrift bg-gradient-to-b from-[#ffffff] via-[#ffffff] via-10% to-[#D7E6FF] hide-scrollbar">
       <div class="cover-image-container">
-        <img src="../assets/imgix-klWUhr-wPJ8-unsplash.jpg" alt="Career Cover" class="cover-image" />
+        <img src="../assets/IMG-2.jpg" alt="Career Cover" class="cover-image" />
         <div class="content-overlay">
             <div class="mb-4">
             <h1 class="text-6xl font-bold text-white drop-shadow-lg">
