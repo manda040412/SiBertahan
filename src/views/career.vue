@@ -1,275 +1,126 @@
 <template>
-    <div class="blog font-bahnschrift bg-gradient-to-b from-[#ffffff] via-[#ffffff] via-10% to-[#D7E6FF] hide-scrollbar">
-      <div class="cover-image-container">
-        <img src="../assets/IMG-2.jpg" alt="Career Cover" class="cover-image" />
-        <div class="content-overlay">
-            <div class="mb-4">
-            <h1 class="text-6xl font-bold text-white drop-shadow-lg">
-                Succees in <br>
-                the Career
-            </h1>
+  <div class="blog font-bahnschrift bg-gradient-to-b from-[#ffffff] via-[#D7E6FF] via-100% to-[#D7E6FF] hide-scrollbar min-h-screen">
+    <div class="container px-4 sm:px-6 lg:px-12 mx-auto">
+      <div class="relative">
+        <div class="col-md-12">
+          <h1 class="text-center py-8 md:py-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Blog</h1>
         </div>
-        <div class="mb-6">
-            <p class="text-white text-lg drop-shadow-md max-w-lg">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore 
-                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam
-            </p>
-        </div>
-        <div>
-            <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 pr-4 rounded-full text-sm font-medium transition inline-flex items-center gap-3">
-            JOIN US
-            <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="blue">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </div>
-          </a>
-        </div>
-        </div>
-      </div>
-
-      <!-- Vertical Line Decorations -->
-      <div class="h-32 relative z-50 -mt-16">
-        <div class="container mx-auto px-12">
-          <div class="flex gap-6">
-            <!-- First vertical line -->
-            <div class="relative h-32 w-4">
-              <div class="absolute top-16 h-3/4 left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
-              <div class="absolute bottom-[-40px] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
-            </div>
-            <!-- Second vertical line -->
-            <div class="relative h-60 w-[-20px] hidden sm:block">
-              <div class="absolute top-16 h-[120px] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
-              <div class="absolute bottom-[40px] left-1/2 -translate-x-1/2 w-[28px] h-[28px] bg-blue-500 rounded-full"></div>
-            </div>
-            <!-- Third vertical line -->
-            <div class="relative h-32 w-4 hidden sm:block">
-              <div class="absolute top-16 h-3/4 left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
-              <div class="absolute bottom-[-40px] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Join Our Team Section -->
-      <div class="container px-12 py-12 mx-auto">
         
-          <h1 class="text-center py-4 text-6xl">Join Our Team!</h1>
-          <p class="text-center text-gray-600 text-xl mx-auto">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-              sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
-              magna aliquam erat volutpat</p>
-              
-          <div class="job-cards-container grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-              <!-- Marketing Advisor Card -->
-              <div class="job-card bg-white rounded-2xl shadow-md p-6 flex flex-col">
-                  <div class="job-type text-black-600 text-sm mb-2">Full-Time / Part-Time</div>
-                  <h3 class="job-title text-blue-600 text-2xl font-medium mb-4">Marketing Advisor</h3>
-                  <p class="job-description text-gray-600 flex-grow mb-4">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
-                  </p>
-                  <button class="cek-btn bg-blue-600 text-white py-2 px-4 rounded-full text-sm font-medium w-32">CEK NOW</button>
-              </div>
-
-              <!-- Supervisor Card -->
-              <div class="job-card bg-white rounded-2xl shadow-md p-6 flex flex-col">
-                  <div class="job-type text-black-600 text-sm mb-2">Full-Time</div>
-                  <h3 class="job-title text-blue-600 text-2xl font-medium mb-4">Supervisor</h3>
-                  <p class="job-description text-gray-600 flex-grow mb-4">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
-                  </p>
-                  <button class="cek-btn bg-blue-600 text-white py-2 px-4 rounded-full text-sm font-medium w-32">CEK NOW</button>
-              </div>
-
-              <!-- IT Card -->
-              <div class="job-card bg-white rounded-2xl shadow-md p-6 flex flex-col">
-                  <div class="job-type text-black-600 text-sm mb-2">Part-Time</div>
-                  <h3 class="job-title text-blue-600 text-2xl font-medium mb-4">IT</h3>
-                  <p class="job-description text-gray-600 flex-grow mb-4">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
-                  </p>
-                  <button class="cek-btn bg-blue-600 text-white py-2 px-4 rounded-full text-sm font-medium w-32">CEK NOW</button>
-              </div>
-              <div class="job-card bg-white rounded-2xl shadow-md p-6 flex flex-col">
-                  <div class="job-type text-black-600 text-sm mb-2">Full-Time / Part-Time</div>
-                  <h3 class="job-title text-blue-600 text-2xl font-medium mb-4">Marketing Advisor</h3>
-                  <p class="job-description text-gray-600 flex-grow mb-4">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
-                  </p>
-                  <button class="cek-btn bg-blue-600 text-white py-2 px-4 rounded-full text-sm font-medium w-32">CEK NOW</button>
-              </div>
-
-              <!-- Supervisor Card -->
-              <div class="job-card bg-white rounded-2xl shadow-md p-6 flex flex-col">
-                  <div class="job-type text-black-600 text-sm mb-2">Full-Time</div>
-                  <h3 class="job-title text-blue-600 text-2xl font-medium mb-4">Supervisor</h3>
-                  <p class="job-description text-gray-600 flex-grow mb-4">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
-                  </p>
-                  <button class="cek-btn bg-blue-600 text-white py-2 px-4 rounded-full text-sm font-medium w-32">CEK NOW</button>
-              </div>
-
-              <!-- IT Card -->
-              <div class="job-card bg-white rounded-2xl shadow-md p-6 flex flex-col">
-                  <div class="job-type text-black-600 text-sm mb-2">Part-Time</div>
-                  <h3 class="job-title text-blue-600 text-2xl font-medium mb-4">IT</h3>
-                  <p class="job-description text-gray-600 flex-grow mb-4">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
-                  </p>
-                  <button class="cek-btn bg-blue-600 text-white py-2 px-4 rounded-full text-sm font-medium w-32">CEK NOW</button>
-              </div>
+        <!-- Lines container - Hidden on mobile -->
+        <div class="hidden md:flex absolute -left-[900px] top-[50%] -translate-y-1/2 flex-col gap-[20px] z-0 w-0 md:w-auto">
+          <!-- First line with dot -->
+          <div class="relative w-[90vw] max-w-[1220px] flex items-center">
+            <div class="h-[6px] w-full bg-blue-500"></div>
+            <div class="absolute right-0 w-[26px] h-[26px] bg-blue-500 rounded-full translate-x-1/2"></div>
           </div>
-      </div>
-
-      <!-- Contact Email Section -->
-      <div class="py-28 relative overflow-hidden">
-          <div class="container px-12 mx-auto">
-              <div class="flex flex-col 2xl:flex-row 2xl:justify-between 2xl:items-center">
-                  <!-- Left side - Email content -->
-                  <div class="flex flex-col md:flex-row items-center md:items-end justify-center md:justify-start gap-4 z-10 relative mb-10 2xl:mb-0 mx-auto md:mx-0">
-                      <div>
-                        <img src="../assets/email-logo-02-02.png" alt="Email" class="w-32 h-auto object-contain">
-                      </div>
-                      <div class="flex justify-end">
-                          <h2 class="text-xl px-4 uppercase font-medium text-blue-600 underline underline-offset-8">SEND EMAIL :</h2>
-                          <p class="text-xl text-gray-700">Recruitment@sibertahan.com</p>
-                      </div>
-                  </div>
-                  
-                  <!-- Decorative lines - hidden on very small devices, shown on small devices and up -->
-                  <div class="absolute right-[-100px] top-[130px] -translate-y-1/2 hidden lg:flex flex-col gap-[20px] z-50">
-                        <!-- First line with dot -->
-                        <div class="relative flex items-center justify-end">
-                            <!-- Circle dot (at the edge of line) -->
-                            <div class="absolute right-[930px] w-[18px] h-[18px] bg-blue-500 rounded-full transform -translate-x-1/2"></div>
-                            <!-- Horizontal line -->
-                            <div class="h-[6px] w-[950px] bg-blue-500"></div>
-                        </div>
-                        
-                        <!-- Second line with dot (longer) -->
-                        <div class="relative flex items-center justify-end">
-                            <!-- Circle dot (at the edge of line) -->
-                            <div class="absolute right-[1070px] w-[28px] h-[28px] bg-blue-500 rounded-full transform -translate-x-1/2"></div>
-                            <!-- Horizontal line -->
-                            <div class="h-[6px] w-[1100px] bg-blue-500"></div>
-                        </div>
-                        
-                        <!-- Third line with dot -->
-                        <div class="relative flex items-center justify-end">
-                            <!-- Circle dot (at the edge of line) -->
-                            <div class="absolute right-[930px] w-[18px] h-[18px] bg-blue-500 rounded-full transform -translate-x-1/2"></div>
-                            <!-- Horizontal line -->
-                            <div class="h-[6px] w-[950px] bg-blue-500"></div>
-                        </div>
-                    </div>
-                    
-                    <!-- Alternative decorative lines for medium screens -->
-                    <div class="absolute right-0 top-1/2 -translate-y-1/2 hidden md:flex lg:hidden flex-col gap-[20px] z-0 overflow-hidden">
-                        <!-- First line with dot -->
-                        <div class="relative flex items-center justify-end">
-                            <!-- Circle dot (at the edge of line) -->
-                            <div class="absolute right-[95%] w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
-                            <!-- Horizontal line -->
-                            <div class="h-[6px] w-[95%] bg-blue-500"></div>
-                        </div>
-                        
-                        <!-- Second line with dot (longer) -->
-                        <div class="relative flex items-center justify-end">
-                            <!-- Circle dot (at the edge of line) -->
-                            <div class="absolute right-[98%] w-[28px] h-[28px] bg-blue-500 rounded-full"></div>
-                            <!-- Horizontal line -->
-                            <div class="h-[6px] w-[98%] bg-blue-500"></div>
-                        </div>
-                        
-                        <!-- Third line with dot -->
-                        <div class="relative flex items-center justify-end">
-                            <!-- Circle dot (at the edge of line) -->
-                            <div class="absolute right-[95%] w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
-                            <!-- Horizontal line -->
-                            <div class="h-[6px] w-[95%] bg-blue-500"></div>
-                        </div>
-                    </div>
-                </div>
+          <!-- Second line with dot -->
+          <div class="relative w-[95vw] max-w-[1320px] flex items-center">
+            <div class="h-[6px] w-full bg-blue-500"></div>
+            <div class="absolute right-0 w-[26px] h-[26px] bg-blue-500 rounded-full translate-x-1/2"></div>
           </div>
-      </div>
-      <div class="absolute bg-gray-500 opacity-5 w-[640px] h-[280px] bottom-[-1000px] right-0 z-0 rounded-2xl"></div>
-      <!-- Core Values Section -->
-      <div class=" px-12 py-12 mx-auto">
-          <h1 class="text-center py-4 text-6xl">Core</h1>
-          <p class="text-center text-gray-600 text-lg px-24 py-12 md:mx-10">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh ut laoreet dolore magna aliquam erat 
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo 
-            consequat. Duis autem vel eumolestie. vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim 
-            qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+          <!-- Third line with dot -->
+          <div class="relative w-[90vw] max-w-[1220px] flex items-center">
+            <div class="h-[6px] w-full bg-blue-500"></div>
+            <div class="absolute right-0 w-[26px] h-[26px] bg-blue-500 rounded-full translate-x-1/2"></div>
+          </div>
+        </div>
       </div>
     </div>
-  </template>
-  
-  <style scoped>
-  /* Any additional custom styles can go here */
-  .hide-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    overflow-y: auto;
-  }
-  .hide-scrollbar::-webkit-scrollbar {
-    display: none;  /* Chrome, Safari and Opera */
-  }
-   
-  .cover-image-container {
-    width: 100vw;
-    height: 70vh;
-    overflow: hidden;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    max-width: 100vw;
-  }
-   
-  .cover-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    filter: brightness(0.8);
-  }
-  
-  .content-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 10%;
-    z-index: 10;
-  }
-  
-  /* Global styles to hide scrollbars - needs to be moved to main CSS */
-  :global(html),
-  :global(body) {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    overflow-x: hidden;
-  }
-  :global(html::-webkit-scrollbar),
-  :global(body::-webkit-scrollbar) {
-    width: 0;
-    display: none;  /* Chrome, Safari and Opera */
-  }
+    
+    <div class="container px-4 sm:px-6 lg:px-12 mx-auto py-8 md:py-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
+        <!-- Blog Cards -->
+        <div
+          v-for="i in 9"
+          :key="i"
+          class="rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 ease-in-out bg-gradient-to-b from-[#000204] via-[#031931] to-[#06305C] hover:from-white hover:via-white hover:to-white shadow-blue-900/50 hover:scale-[1.02] lg:hover:scale-105 transform group flex flex-col"
+        >
+          <div class="relative">
+            <img src="../assets/vishnu-mohanan-pfR18JNEMv8-unsplash.jpg" alt="Blog post image" class="w-full h-40 sm:h-48 object-cover" />
+          </div>
+          <div class="p-4 sm:p-6 relative pb-14 sm:pb-16 flex-1 flex flex-col">
+            <div>
+              <h2 class="text-blue-500 text-lg sm:text-xl font-semibold mb-2">
+                <a href="#" class="hover:underline">Cloud Storage Security Assessment: Cara Efektif Cegah Insiden Keamanan di Cloud</a>
+              </h2>
+            </div>
+            <div>
+              <p class="text-gray-300 group-hover:text-gray-600 text-xs sm:text-sm mb-3">March 15, 2024</p>
+              <p class="text-gray-200 group-hover:text-black text-xs sm:text-sm mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="absolute bottom-4 right-4">
+              <a href="#" class="inline-flex items-center justify-center text-blue-500 w-8 h-8 sm:w-10 sm:h-10 border-2 border-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" sm:width="20" sm:height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M13 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+    
+    <!-- Bottom decorative lines - Hidden on mobile -->
+    <div class="hidden md:block relative w-full py-12 lg:py-16 overflow-hidden">
+      <div class="flex flex-col items-end gap-1 pl-6">
+        <!-- First line with dot -->
+        <div class="relative w-[50%] h-[30px]">
+          <div class="absolute right-0 h-[6px] bg-blue-500 w-[40vw] max-w-[800px]">
+            <div class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-5 h-5 lg:w-6 lg:h-6 bg-blue-500 rounded-full"></div>
+          </div>
+        </div>
+        <!-- Second line with dot -->
+        <div class="relative w-[90%] h-[30px]">
+          <div class="absolute right-0 h-[6px] bg-blue-500 w-[50vw] max-w-[950px]">
+            <div class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-5 h-5 lg:w-7 lg:h-7 bg-blue-500 rounded-full"></div>
+          </div>
+        </div>
+        <!-- Third line with dot -->
+        <div class="relative w-[70%] h-[30px]">
+          <div class="absolute right-0 h-[6px] bg-blue-500 w-[40vw] max-w-[800px]">
+            <div class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-5 h-5 lg:w-6 lg:h-6 bg-blue-500 rounded-full"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
 
-  @media (max-width: 1765px) {
-    .absolute.right-\[-100px\] {
-      top: 240px !important;
-    }
-  }
+<script setup>
+// No logic needed for static blog cards, but you can replace v-for with real data if needed
+</script>
 
-  @media (min-width: 1766px) {
-    .absolute.right-\[-100px\] {
-      top: 150px !important;
-    }
+<style scoped>
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: auto;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .blog-card-height {
+    height: auto;
   }
-  </style>
+}
+
+/* Responsive: Hide top and bottom lines on mobile */
+@media (max-width: 1024px) {
+  .md\:flex, .md\:block {
+    display: none !important;
+  }
+}
+
+/* Responsive: Card hover effect off on mobile */
+@media (max-width: 768px) {
+  .group:hover {
+    transform: none !important;
+  }
+}
+</style>

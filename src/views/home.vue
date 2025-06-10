@@ -323,19 +323,20 @@
         </div>
 
         <div class="py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                      <div class="relative">
-                        <p class=" text-blue-400 text-2xl tracking-wider font-medium underline underline-offset-[15px] mb-4 text-start">
-                          WHO WE ARE</p>
-            <h2 class="text-6xl py-12">
+          <div class="relative">
+            <p class="text-blue-400 text-2xl tracking-wider font-medium underline underline-offset-[15px] mb-4 text-start">
+              WHO WE ARE
+            </p>
+            <h2 class="text-4xl sm:text-5xl md:text-6xl py-6 sm:py-10">
               Certified Cyber Security Experts
             </h2>
-            <p class="text-gray-600 pl-10 text-2xl mb-6">
+            <p class="text-gray-600 pl-0 sm:pl-10 text-lg sm:text-2xl mb-6">
               Our skilled professionals are dedicated to safeguarding 
               your digital assets with cutting-edge strategies and 
               unwavering vigilance
             </p>
-            <div class="pl-10">
-              <a href="#" class="text-blue-500 py-3 pr-4 rounded-full text-2xl font-medium transition inline-flex items-center gap-2">
+            <div class="pl-0 sm:pl-10">
+              <a href="#" class="text-blue-500 py-3 pr-4 rounded-full text-lg sm:text-2xl font-medium transition inline-flex items-center gap-2">
                 Read more
                 <div class="w-8 h-8 flex items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="blue">
@@ -345,8 +346,8 @@
               </a>
             </div>
           </div>
-          <div>
-            <img src="../assets/shield.png" alt="Security Shield" class="max-w-full" />
+          <div class="flex justify-center">
+            <img src="../assets/shield.png" alt="Security Shield" class="max-w-full w-60 sm:w-80 md:w-[400px]" />
           </div>
         </div>
         <div class="container px-12 mx-auto">
@@ -580,4 +581,43 @@
       position: relative;
       z-index: 2;
     }
+
+    /* Responsive tweaks for Certified Experts section */
+@media (max-width: 1024px) {
+  .py-20.grid {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    gap: 2rem !important;
+  }
+  .text-6xl {
+    font-size: 2rem !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  .text-2xl {
+    font-size: 1.25rem !important;
+  }
+  .pl-10 {
+    padding-left: 0 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .text-4xl, .sm\:text-5xl, .md\:text-6xl {
+    font-size: 1.5rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .text-lg, .sm\:text-2xl {
+    font-size: 1rem !important;
+  }
+  .w-60, .sm\:w-80, .md\:w-\[400px\] {
+    width: 100% !important;
+    max-width: 220px !important;
+  }
+  .gap-12 {
+    gap: 1.5rem !important;
+  }
+}
+
     </style>

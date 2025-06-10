@@ -1,5 +1,5 @@
 <template>
-  <div class="services font-bahnschrift hide-scrollbar">
+  <div class="services font-bahnschrift hide-scrollbar bg-gradient-to-t from-[#D9E5F5] to-white min-h-screen">
     <!-- Hero Section -->
     <div class="container px-12 mx-auto">
       <div class="relative">
@@ -50,7 +50,7 @@
     </div>
     <div class="container py-32 px-12 pr-24 flex flex-col gap-12 justify-center items-center mx-auto">
             <div>
-                <h1 class="text-4xl font-bold mb-8">
+                <h1 class="text-4xl font-bold text-blue-500 mb-8">
                 1. REGULATORY COMPLIANCE
             </h1>
             <p class="mr-64">
@@ -62,7 +62,7 @@
             <img src="../assets/line-siku-pendek.png" alt="" class="w-[140px] h-auto absolute -bottom-[900px] -right-[10px]">
             </div>
             <div class="py-12">
-                <h1 class="text-4xl font-bold mb-8">
+                <h1 class="text-4xl font-bold text-blue-500 mb-8">
                     2. AUDIT ASSISTANCE
             </h1>
             <p class="mr-64">
@@ -73,7 +73,7 @@
             </p>
             </div>
             <div class="py-12 pl-24">
-                <h1 class="text-4xl font-bold mb-8">
+                <h1 class="text-4xl font-bold text-blue-500 mb-8">
                     3. SECURITY GAP ANALYSIS
             </h1>
             <p class="mr-64">
