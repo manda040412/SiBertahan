@@ -35,12 +35,7 @@
           </a>
         </div>
       </div>
-      <div class="absolute right-16 bottom-0 w-4 hidden md:flex justify-center" style="height: 800px;">
-        <!-- Vertical line from bottom to top -->
-        <div class="absolute bottom-1 top-[-242px] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
-        <!-- Circle dot at the top -->
-        <div class="absolute top-[-252px] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
-      </div>
+
       <!-- Small navigation dots at bottom right (visible in mobile) -->
       <div class="absolute bottom-10 right-10 flex flex-col gap-2">
         <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
@@ -50,7 +45,7 @@
     </section>
 
     <!-- Recognition Section -->
-    <section class="recognition bg-[#001428] py-20 relative overflow-hidden h-[70vh]">
+    <section class="recognition bg-[#001428] py-20 relative overflow-hidden h-[70vh] z-50">
       <!-- Background with gradient overlay -->
       <div class="absolute inset-0 z-0">
         <div class="absolute inset-0 bg-gradient-to-tl from-black to-blue-900/70 z-30 pointer-events-none"></div>

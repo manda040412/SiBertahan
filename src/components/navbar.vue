@@ -16,7 +16,7 @@
       </button>
 
       <!-- Desktop Navigation -->
-      <nav class="hidden md:flex items-center text-sm font-medium tracking-wide">
+      <nav class=" mb-0 hidden md:flex items-center text-sm font-medium tracking-wide">
         <router-link to="/" class="hover:text-blue-500 px-4 py-2"
           :class="{ 'border-b-2 border-blue-500 text-blue-600': $route.path === '/' }">
           HOME
@@ -78,33 +78,42 @@
           BLOG
         </router-link>
 
-        <router-link to="/contact"
-          class="bg-blue-500 text-white px-5 py-2 rounded-md text-xs hover:bg-blue-600 transition ml-4"
-          style="font-weight: 500;">
-          CONTACT US
-        </router-link>
-      </nav>
-
-      <!-- Vertical lines with dots - only visible on home page -->
-      <div v-if="$route.path === '/' || $route.path === '/Home'" class="absolute right-10 top-16 flex gap-14 z-[999]">
-        <!-- First vertical line with dots -->
-        <div class="relative flex flex-col items-center h-[250px]">
-          <!-- Vertical line -->
-          <div class="w-[6px] h-full bg-blue-500"></div>
-         
-          <!-- Bottom dot -->
-          <div class="absolute bottom-0 w-[18px] h-[18px] bg-blue-500 rounded-full transform translate-y-1/2"></div>
-        </div>
-
-        <!-- Third vertical line with dots -->
-        <div class="relative flex flex-col items-center h-[250px]">
-          <!-- Vertical line -->
-          <div class="w-[6px] h-full bg-blue-500"></div>
+        <!-- Contact Us button with vertical lines container -->
+        <div class="relative ml-4">
+          <router-link to="/contact"
+            class="bg-blue-500 text-white px-5 py-2 rounded-md text-xs hover:bg-blue-600 transition"
+            style="font-weight: 500;">
+            CONTACT US
+          </router-link>
           
-          <!-- Bottom dot -->
-          <div class="absolute bottom-0 w-[18px] h-[18px] bg-blue-500 rounded-full transform translate-y-1/2"></div>
+          <!-- Vertical lines with dots - only visible on home page -->
+          <div v-if="$route.path === '/' || $route.path === '/home'" class="absolute left-1/2 top-full m transform -translate-x-1/2 hidden md:flex gap-14 z-[9999]">
+            <!-- First vertical line with dots -->
+            <div class="relative flex flex-col items-center h-[250px]">
+              <!-- Vertical line -->
+              <div class="w-[6px] h-full bg-blue-500"></div>
+            
+              <!-- Bottom dot -->
+              <div class="absolute bottom-0 w-[18px] h-[18px] bg-blue-500 rounded-full transform translate-y-1/2"></div>
+            </div>
+
+            <!-- Second vertical line with dots -->
+            <div class="relative flex flex-col items-center h-[250px]">
+              <!-- Vertical line -->
+              <div class="w-[6px] h-full bg-blue-500"></div>
+              
+              <!-- Bottom dot -->
+              <div class="absolute bottom-0 w-[18px] h-[18px] bg-blue-500 rounded-full transform translate-y-1/2"></div>
+            </div>
+          </div>
+                <div v-if="$route.path === '/' || $route.path === '/home'" class="absolute right-[48px] w-4 hidden md:flex justify-center responsive-bottom" style="height: 1200px;">
+                  <!-- Vertical line from bottom to top -->
+                  <div class="absolute bottom-1 top-[100px] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
+                  <!-- Circle dot at the top -->
+                  <div class="absolute top-[100px] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
+                </div>
         </div>
-      </div>
+      </nav>
     </div>
 
     <!-- Mobile Menu -->
@@ -201,5 +210,24 @@ body {
 /* Kompensasi untuk fixed navbar - tambahkan padding-top ke body atau container utama */
 .main-content {
   padding-top: 80px; /* Adjust sesuai tinggi navbar */
+}
+
+/* Responsive bottom positioning based on screen height */
+.responsive-bottom {
+  bottom: -1256px !important; /* Default value */
+}
+
+/* For screens with height below 1013px */
+@media screen and (max-height: 1013px) {
+  .responsive-bottom {
+    bottom: -1256px !important;
+  }
+}
+
+/* For screens with height above 1014px */
+@media screen and (min-height: 1015px) {
+  .responsive-bottom {
+    bottom: -1608px !important;
+  }
 }
 </style>
