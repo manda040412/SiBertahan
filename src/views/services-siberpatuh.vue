@@ -7,43 +7,39 @@
             <div>
                 <h1 class="text-center font-bold py-28 text-8xl">SIBER<span class="text-green-500">PATUH</span></h1>
             </div>
-            <div class="absolute -left-[300px] top-[13%] -translate-y-1/2 flex flex-col">
+            <div class="hidden lg:flex absolute -left-[300px] top-[13.8%] -translate-y-1/2 flex-col">
                 <img src="../assets/line dot.png" alt="" class="w-[600px] h-auto">
             </div>
         </div>
-        <div class="flex grid grid-cols-2">
-            <div class="">
-                <p class="text-blue-400 text-2xl tracking-wider font-medium underline underline-offset-[15px] mb-4 text-start">
+        <div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12">
+            <div class="order-1 lg:order-1">
+                <p class="text-blue-400 text-xl md:text-2xl tracking-wider font-medium underline underline-offset-[15px] mb-4 text-start">
                     WHAT WE DO
                 </p>
-                <h1 class="text-start py-20 text-8xl">SIBER<span class="text-green-500">PATUH</span></h1>
-                <P class="text-2xl"> Siberpatuh consulting servicess will help your 
-                        organization in adhering to industry regulations, legal 
-                        requirements, and internal policies that ensure the 
-                        protection of your critical assets as well as the protection 
-                        of data. This service emphasize on proper governance by 
-                        Top Managemant with a top-down approach to reach the 
-                        sought cybersecurity governance posture across the 
-                        brand</P>
+                <h1 class="text-start py-10 lg:py-20 text-4xl md:text-6xl lg:text-8xl">SIBER<span class="text-green-500">PATUH</span></h1>
+                <P class="text-lg md:text-xl lg:text-2xl leading-relaxed"> Siberjaga focuses on defensive cybersecurity consulting 
+                    services which involve comprehensive strategies and the 
+                    adoption of frameworks to better protect your 
+                    organization from unauthorized access, cyberattacks, 
+                    and breaches. The ultimate goal is to provide your 
+                    organization the capabilities to be cyber resilient in 
+                    responding to potential security incident, ensuring the 
+                    utmost protection of sensitive information.</P>
 
-                <p class="text-blue-400 text-2xl py-12 tracking-wider font-medium underline underline-offset-[15px] mb-4 text-start">
+                <p class="text-blue-400 text-xl md:text-2xl py-8 lg:py-12 tracking-wider font-medium underline underline-offset-[15px] mb-4 text-start">
                     SERVICE
                 </p>
                 <div class="flex flex-col gap-4 justify-start items-start">
-                    <div class="p-4 bg-blue-500 text-white rounded-xl" >
-                        1. REGULATORY COMPLIANCE
+                    <div class="p-4 bg-blue-500 text-white rounded-xl text-sm md:text-base lg:text-lg" >
+                        1. SECURITY HARDENING ASSESSMENT
                     </div>
-                    <div class="p-4 bg-blue-500 text-white rounded-xl">
-                        2. AUDIT ASSISTANCE
+                    <div class="p-4 bg-blue-500 text-white rounded-xl text-sm md:text-base lg:text-lg">
+                        2. CYBERSECURITY RESILIENCE IMPROVEMENT
                     </div>
-                    <div class="p-4 bg-blue-500 text-white rounded-xl">
-                        3. SECURITY GAP ANALYSIS
-                    </div>
-                    
                 </div>
             </div>
-            <div class=" ml-0 relative overflow-visible w-full">
-                <img src="../assets/SIBERPATUH (1).png" alt="" style="width: 1000px; max-width: none;" class="h-auto absolute -top-[100px] -left-[-100px] z-10">
+            <div class="order-2 lg:order-2 flex justify-center items-center">
+                <img src="../assets/SIBERPATUH (1).png" alt="Siberjaga Services" class="w-full max-w-md md:max-w-lg lg:max-w-none lg:w-full h-auto">
             </div>
         </div>
       </div>
@@ -53,7 +49,7 @@
                 <h1 class="text-4xl font-bold text-blue-500 mb-8">
                 1. REGULATORY COMPLIANCE
             </h1>
-            <p class="mr-64">
+            <p class="mr-4 md:mr-16 lg:mr-32 xl:mr-64">
                 We provide help to keep you get ready and stay compliance to existing and potentially published 
                 regulations in your industry.
                 Example: Peraturan Bank Indonesia (PBI) and Surat Edaran Otoritas Jasa Keuangan (SEOJK), UU 
@@ -65,7 +61,7 @@
                 <h1 class="text-4xl font-bold text-blue-500 mb-8">
                     2. AUDIT ASSISTANCE
             </h1>
-            <p class="mr-64">
+            <p class="mr-4 md:mr-16 lg:mr-32 xl:mr-64">
                 We provide help to keep you get ready and stay compliance to existing and potentially published 
                 regulations in your industry.
                 Example: Peraturan Bank Indonesia (PBI) and Surat Edaran Otoritas Jasa Keuangan (SEOJK), UU 
@@ -76,7 +72,7 @@
                 <h1 class="text-4xl font-bold text-blue-500 mb-8">
                     3. SECURITY GAP ANALYSIS
             </h1>
-            <p class="mr-64">
+            <p class="mr-4 md:mr-16 lg:mr-32 xl:mr-64">
                 Delivering the complete picture between the NOW and the TO BE. We will help you reach that 
                 desired place by accompanying you every step of the way.
                 Example: Gap Assessment based on ISO/IEC 27001:2022 and CIS Controls.

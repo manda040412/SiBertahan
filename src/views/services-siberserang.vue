@@ -7,24 +7,24 @@
             <div>
                 <h1 class="text-center font-bold py-28 text-8xl">SIBER<span class="text-red-500">SERANG</span></h1>
             </div>
-            <div class="absolute -left-[300px] top-[13%] -translate-y-1/2 flex flex-col">
+            <div class="hidden lg:flex absolute -left-[300px] top-[13.8%] -translate-y-1/2 flex-col">
                 <img src="../assets/line dot.png" alt="" class="w-[600px] h-auto">
             </div>
         </div>
-        <div class="flex grid grid-cols-2">
-            <div class="">
-                <p class="text-blue-400 text-2xl tracking-wider font-medium underline underline-offset-[15px] mb-4 text-start">
+        <div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12">
+            <div class="order-1 lg:order-1">
+                <p class="text-blue-400 text-xl md:text-2xl tracking-wider font-medium underline underline-offset-[15px] mb-4 text-start">
                     WHAT WE DO
                 </p>
                 <h1 class="text-start py-20 text-8xl">SIBER<span class="text-red-500">SERANG</span></h1>
                 <P class="text-2xl"> Siberserang is our suite of offensive cybersecurity 
-services. It encompass proactive and controlled 
-simulated attack on computer systems, networks, and 
-applications. Our ethical penetration testers conduct 
-these assessments to identify vulnerabilities and 
-weaknesses, providing valueable insights for your 
-organization to fortify defenses, safeguard data, and 
-mitigate potential real-world cyber threats.</P>
+                            services. It encompass proactive and controlled 
+                            simulated attack on computer systems, networks, and 
+                            applications. Our ethical penetration testers conduct 
+                            these assessments to identify vulnerabilities and 
+                            weaknesses, providing valueable insights for your 
+                            organization to fortify defenses, safeguard data, and 
+                            mitigate potential real-world cyber threats.</P>
 
                 <p class="text-blue-400 text-2xl py-12 tracking-wider font-medium underline underline-offset-[15px] mb-1 text-start">
                     SERVICE
@@ -42,19 +42,19 @@ mitigate potential real-world cyber threats.</P>
                     
                 </div>
             </div>
-            <div class=" ml-0 relative overflow-visible w-full">
-                <img src="../assets/SIBERSERANG-03.png" alt="" style="width: 1000px; max-width: none;" class="h-auto absolute -top-[100px] -left-[-100px] z-10">
+            <div class="order-2 lg:order-2 flex justify-center items-center">
+                <img src="../assets/SIBERSERANG-03.png" alt="Siberjaga Services" class="w-full max-w-md md:max-w-lg lg:max-w-none lg:w-full h-auto">
             </div>
         </div>
       </div>
     </div>
     <div class="container py-2 px-12 pr-24 flex flex-col gap-12 justify-center items-center mx-auto">
-      <div>
+      <div class="hidden lg:block">
         <img src="../assets/Asset 1.png" alt="" class="w-[110px] h-auto absolute -bottom-[2100px] -right-[0px]">
       </div>
       <div class="py-2 pl-24">
         <!-- Keeping this image exactly as requested -->
-        <img src="../assets/SIBERSERANG-02.png" alt="" class="w-[640px] h-auto absolute -bottom-[1500px] -left-[300px] opacity-80">
+        <img src="../assets/SIBERSERANG-02.png" alt="" class="w-[540px] h-auto absolute -bottom-[1700px] -left-[300px] opacity-80">
       </div>
       <div class="py-2 pl-24">
         <!-- Keeping this image exactly as requested -->
