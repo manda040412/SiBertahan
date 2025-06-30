@@ -1,3 +1,27 @@
+<script setup>
+  import { ref } from 'vue'
+
+  import { formatReadableDate } from '../utils/DateFormatter'
+  import GhostContentAPI from '@tryghost/content-api'
+
+  const api = new GhostContentAPI({
+    url: 'http://localhost:2368', // or your blog subdomain later
+    key: '768024aa0a6dc1c5c34819f0cd',
+    version: 'v5.0'
+  });
+
+  const posts = ref([])
+
+  api.posts.browse({ limit: 5, include: 'tags,authors' })
+  .then(p => {
+    posts.value = p // Show on your Vue page
+    console.log(p)
+  })
+  .catch(err => {
+    console.error(err);
+  });
+</script>
+
 <template>
   <div class="blog font-bahnschrift bg-gradient-to-b from-[#ffffff] via-[#D7E6FF] via-100% to-[#D7E6FF] hide-scrollbar min-h-screen">
     <div class="container px-4 sm:px-6 lg:px-12 mx-auto">
@@ -31,23 +55,23 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
         <!-- Blog Cards -->
         <div
-          v-for="i in 9"
-          :key="i"
+          v-for="(x, index) in posts"
+          :key="index"
           class="rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 ease-in-out bg-gradient-to-b from-[#000204] via-[#031931] to-[#06305C] hover:from-white hover:via-white hover:to-white shadow-blue-900/50 hover:scale-[1.02] lg:hover:scale-105 transform group flex flex-col"
         >
           <div class="relative">
-            <img src="../assets/vishnu-mohanan-pfR18JNEMv8-unsplash.jpg" alt="Blog post image" class="w-full h-40 sm:h-48 object-cover" />
+            <img :src="x.feature_image" alt="Blog post image" class="w-full h-40 sm:h-48 object-cover" />
           </div>
           <div class="p-4 sm:p-6 relative pb-14 sm:pb-16 flex-1 flex flex-col">
             <div>
               <h2 class="text-blue-500 text-lg sm:text-xl font-semibold mb-2">
-                <a href="#" class="hover:underline">Cloud Storage Security Assessment: Cara Efektif Cegah Insiden Keamanan di Cloud</a>
+                <a href="#" class="hover:underline">{{ x.title }}</a>
               </h2>
             </div>
             <div>
-              <p class="text-gray-300 group-hover:text-gray-600 text-xs sm:text-sm mb-3">March 15, 2024</p>
-              <p class="text-gray-200 group-hover:text-black text-xs sm:text-sm mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <p class="text-gray-300 group-hover:text-gray-600 text-xs sm:text-sm mb-3">{{ formatReadableDate(x.published_at) }}</p>
+              <p class="text-gray-200 group-hover:text-black text-xs sm:text-sm mb-4 truncate text-ellipsis">
+                {{ x.excerpt }}
               </p>
             </div>
             <div class="absolute bottom-4 right-4">
@@ -88,10 +112,6 @@
     </div>
   </div>
 </template>
-
-<script setup>
-// No logic needed for static blog cards, but you can replace v-for with real data if needed
-</script>
 
 <style scoped>
 .hide-scrollbar {
