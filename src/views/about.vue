@@ -174,15 +174,6 @@
 <script>
 export default {
   name: 'AboutUs',
-  data() {
-    return {
-      // Data can be added here if needed
-    }
-  },
-  mounted() {
-    // Set page title
-    document.title = 'About Us - PT Kompas Siber Indonesia | Sibertahan';
-  }
 }
 </script>
 

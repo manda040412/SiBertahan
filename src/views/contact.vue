@@ -155,9 +155,6 @@ export default {
       const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
       window.open(url, '_blank');
     }
-  },
-  mounted() {
-    document.title = 'Contact - PT Kompas Siber Indonesia | Sibertahan';
   }
 };
 </script>
