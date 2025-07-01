@@ -13,10 +13,9 @@
 
   const posts = ref([])
 
-  api.posts.browse({ limit: 5, include: 'tags,authors' })
+  api.posts.browse({ limit: 5, include: 'tags,authors', filter: 'tag:-career', })
   .then(p => {
     posts.value = p // Show on your Vue page
-    console.log(p)
   })
   .catch(err => {
     console.error(err);
@@ -54,7 +53,7 @@
         <RouterLink
           v-for="(x, index) in posts"
           :key="index"
-          :to="{ name: 'single-blog', params: { id: blogPost.id } }"
+          :to="{ name: 'single-blog', params: { id: x.id } }"
           class="rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 ease-in-out bg-gradient-to-b from-[#000204] via-[#031931] to-[#06305C] hover:from-white hover:via-white hover:to-white shadow-blue-900/50 hover:scale-[1.02] lg:hover:scale-105 transform group flex flex-col"
         >
           <div class="relative">
