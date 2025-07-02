@@ -1,155 +1,299 @@
 <script setup>
-  import { ref } from 'vue';
+import { ref } from 'vue'
+import { formatReadableDate } from '../utils/DateFormatter'
+import GhostContentAPI from '@tryghost/content-api'
 
-  import { formatReadableDate } from '../utils/DateFormatter'
-  import GhostContentAPI from '@tryghost/content-api'
+// Konfigurasi Ghost Content API
+const api = new GhostContentAPI({
+  url: 'http://localhost:2368', // PASTIKAN INI SESUAI DENGAN URL GHOST ANDA
+  key: '794cf32c3261801f8e9227ef56', // GANTI DENGAN CONTENT API KEY ASLI ANDA
+  version: 'v5.0'
+})
 
-  const api = new GhostContentAPI({
-    url: 'http://localhost:2368', // or your blog subdomain later
-    key: '768024aa0a6dc1c5c34819f0cd',
-    version: 'v5.0'
-  });
+const jobListings = ref([])
 
-  const jobListings = ref([])
-
-  api.posts.browse(
-    { 
-      limit: 5, 
-      include: 'tags,authors',
-      filter: 'tag:career',
-    }
-  )
-  .then(p => {
-    jobListings.value = p // Show on your Vue page
-    console.log(p)
+// Mengambil postingan dari Ghost CMS dengan tag 'career'
+api.posts
+  .browse({
+    limit: 6, // Sesuaikan jumlah postingan yang ingin ditampilkan
+    include: 'tags,authors',
+    filter: 'tag:career' // Hanya ambil postingan dengan tag 'career'
   })
-  .catch(err => {
-    console.error(err);
-  });
+  .then((p) => {
+    jobListings.value = p
+  })
+  .catch((err) => {
+    console.error('Error fetching job listings from Ghost:', err)
+  })
 </script>
 
 <template>
-  <div class="career font-bahnschrift bg-gradient-to-b from-[#ffffff] via-[#D7E6FF] via-100% to-[#D7E6FF] hide-scrollbar min-h-screen">
-    <div class="container px-4 sm:px-6 lg:px-12 mx-auto">
-      <div class="relative">
-        <div class="col-md-12">
-          <h1 class="text-center py-8 md:py-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Careers</h1>
-          <p class="text-center text-lg sm:text-xl mb-8">
-            Interested in joining our team? Send your CV and portfolio to <a href="mailto:careers@yourcompany.com" class="text-blue-600 hover:underline">careers@yourcompany.com</a>
+  <div class="blog font-bahnschrift bg-gradient-to-b from-[#ffffff] via-[#ffffff] via-10% to-[#D7E6FF] hide-scrollbar">
+    <div class="cover-image-container">
+      <img src="../assets/IMG-2.jpg" alt="Career Cover" class="cover-image" />
+      <div class="content-overlay">
+        <div class="mb-4 sm:mb-6 md:mb-8">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white drop-shadow-lg leading-tight sm:leading-tight">
+            Success in <br>
+            the Career
+          </h1>
+        </div>
+        <div class="mb-6 sm:mb-8 md:mb-10">
+          <p class="text-sm sm:text-base md:text-lg text-white drop-shadow-md max-w-sm sm:max-w-md md:max-w-lg">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
+            diam nonummy nibh euismod tincidunt ut laoreet dolore 
+            magna aliquam erat volutpat. Ut wisi enim ad minim veniam
           </p>
         </div>
-        
-        <div class="hidden md:flex absolute -left-[900px] top-[50%] -translate-y-1/2 flex-col gap-[20px] z-0 w-0 md:w-auto">
-          <div class="relative w-[90vw] max-w-[1220px] flex items-center">
-            <div class="h-[6px] w-full bg-blue-500"></div>
-            <div class="absolute right-0 w-[26px] h-[26px] bg-blue-500 rounded-full translate-x-1/2"></div>
+        <div>
+          <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 sm:py-3 sm:px-6 pr-3 sm:pr-4 rounded-full text-xs sm:text-sm font-medium transition inline-flex items-center gap-2 sm:gap-3">
+            JOIN US
+            <div class="w-6 h-6 sm:w-8 sm:h-8 bg-white rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="blue">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-24 sm:h-32 relative z-50 -mt-12 sm:-mt-16">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-12">
+        <div class="flex gap-4 sm:gap-6 justify-center sm:justify-start">
+          <div class="relative h-24 sm:h-32 w-3 sm:w-4">
+            <div class="absolute top-12 sm:top-16 h-2/3 sm:h-3/4 left-1/2 -translate-x-1/2 w-[4px] sm:w-[6px] bg-blue-500"></div>
+            <div class="absolute bottom-[-20px] sm:bottom-[-40px] left-1/2 -translate-x-1/2 w-[12px] h-[12px] sm:w-[18px] sm:h-[18px] bg-blue-500 rounded-full"></div>
           </div>
-          <div class="relative w-[95vw] max-w-[1320px] flex items-center">
-            <div class="h-[6px] w-full bg-blue-500"></div>
-            <div class="absolute right-0 w-[26px] h-[26px] bg-blue-500 rounded-full translate-x-1/2"></div>
+          <div class="relative h-40 sm:h-60 w-3 sm:w-4 hidden sm:block">
+            <div class="absolute top-12 sm:top-16 h-[80px] sm:h-[120px] left-1/2 -translate-x-1/2 w-[4px] sm:w-[6px] bg-blue-500"></div>
+            <div class="absolute bottom-[20px] sm:bottom-[40px] left-1/2 -translate-x-1/2 w-[20px] h-[20px] sm:w-[28px] sm:h-[28px] bg-blue-500 rounded-full"></div>
           </div>
-          <div class="relative w-[90vw] max-w-[1220px] flex items-center">
-            <div class="h-[6px] w-full bg-blue-500"></div>
-            <div class="absolute right-0 w-[26px] h-[26px] bg-blue-500 rounded-full translate-x-1/2"></div>
+          <div class="relative h-24 sm:h-32 w-3 sm:w-4 hidden md:block">
+            <div class="absolute top-12 sm:top-16 h-2/3 sm:h-3/4 left-1/2 -translate-x-1/2 w-[4px] sm:w-[6px] bg-blue-500"></div>
+            <div class="absolute bottom-[-20px] sm:bottom-[-40px] left-1/2 -translate-x-1/2 w-[12px] h-[12px] sm:w-[18px] sm:h-[18px] bg-blue-500 rounded-full"></div>
           </div>
         </div>
       </div>
     </div>
-    
-    <div class="container px-4 sm:px-6 lg:px-12 mx-auto py-8 md:py-12">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
+
+    <div class="container px-4 sm:px-6 lg:px-12 py-8 sm:py-12 mx-auto">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl text-center py-4">Join Our Team!</h1>
+      <p class="text-center text-gray-600 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+        sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
+        magna aliquam erat volutpat
+      </p>
+          
+      <div class="job-cards-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-8 sm:mt-12">
         <div
           v-for="job in jobListings"
           :key="job.id"
-          class="rounded-3xl shadow-lg overflow-hidden bg-gradient-to-b from-[#000204] via-[#031931] to-[#06305C] shadow-blue-900/50 flex flex-col cursor-default"
+          class="job-card bg-white rounded-2xl shadow-md p-6 flex flex-col"
         >
-          <div class="relative">
-            <img :src="job.feature_image" :alt="job.feature_alt" class="w-full h-40 sm:h-48 object-cover" />
+          <div class="job-type text-black-600 text-sm mb-2">
+            {{ job.primary_tag ? job.primary_tag.name : 'Full-Time / Part-Time' }}
           </div>
-          <div class="p-4 sm:p-6 relative flex-1 flex flex-col">
-            <div>
-              <h2 class="text-blue-500 text-lg sm:text-xl font-semibold mb-2">
-                {{ job.title }}
-              </h2>
-            </div>
-            <div class="prose max-w-none text-gray-800 leading-relaxed" v-html="job.html">
-            </div>
-            <!-- <div>
-              <p class="text-gray-300 text-xs sm:text-sm mb-3">Location: {{ job.location }}</p>
-              <p class="text-gray-300 text-xs sm:text-sm mb-3">Job Type: {{ job.type }}</p>
-              <p class="text-gray-200 text-xs sm:text-sm mb-4">
-                {{ job.description }}
-              </p>
-              <h3 class="text-blue-400 text-base sm:text-lg font-medium mb-2">Qualifications:</h3>
-              <ul class="list-disc list-inside text-gray-200 text-xs sm:text-sm mb-4">
-                <li v-for="(qualification, index) in job.qualifications" :key="index">{{ qualification }}</li>
-              </ul>
-              <h3 class="text-blue-400 text-base sm:text-lg font-medium mb-2">Responsibilities:</h3>
-              <ul class="list-disc list-inside text-gray-200 text-xs sm:text-sm mb-4">
-                <li v-for="(responsibility, index) in job.responsibilities" :key="index">{{ responsibility }}</li>
-              </ul>
-            </div> -->
-          </div>
+          <h3 class="job-title text-blue-600 text-xl sm:text-2xl font-medium mb-4">{{ job.title }}</h3>
+          <p class="job-description text-gray-600 flex-grow mb-4 text-sm sm:text-base">
+            {{ job.excerpt }}
+          </p>
+          <button class="cek-btn bg-blue-600 text-white py-2 px-4 rounded-full text-sm font-medium w-32 mx-auto sm:mx-0">CEK NOW</button>
         </div>
-      </div>      
+        </div>
     </div>
-    
-    <div class="hidden md:block relative w-full py-12 lg:py-16 overflow-hidden">
-      <div class="flex flex-col items-end gap-1 pl-6">
-        <div class="relative w-[50%] h-[30px]">
-          <div class="absolute right-0 h-[6px] bg-blue-500 w-[40vw] max-w-[800px]">
-            <div class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-5 h-5 lg:w-6 lg:h-6 bg-blue-500 rounded-full"></div>
+
+    <div class="py-28 relative overflow-hidden">
+      <div class="container px-12 mx-auto">
+        <div class="flex flex-col 2xl:flex-row 2xl:justify-between 2xl:items-center">
+          <div class="flex flex-col md:flex-row items-center md:items-end justify-center md:justify-start gap-2 z-10 relative mb-10 xl:mb-0 mx-auto md:mx-0">
+            <div>
+              <img src="../assets/email-logo-02-02.png" alt="Email" class="w-32 h-auto object-contain">
+            </div>
+            <div class="flex justify-end">
+              <h2 class="text-xl px-4 uppercase font-medium text-blue-600 underline underline-offset-8">SEND EMAIL :</h2>
+              <p class="text-xl text-gray-700">Recruitment@sibertahan.com</p>
+            </div>
           </div>
-        </div>
-        <div class="relative w-[90%] h-[30px]">
-          <div class="absolute right-0 h-[6px] bg-blue-500 w-[50vw] max-w-[950px]">
-            <div class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-5 h-5 lg:w-7 lg:h-7 bg-blue-500 rounded-full"></div>
+          
+          <div class="absolute right-[-450px] top-[160px] -translate-y-1/2 hidden lg:flex flex-col gap-[20px] z-50">
+            <div class="relative flex items-center justify-end">
+              <div class="absolute right-[930px] w-[18px] h-[18px] bg-blue-500 rounded-full transform -translate-x-1/2"></div>
+              <div class="h-[6px] w-[950px] bg-blue-500"></div>
+            </div>
+            
+            <div class="relative flex items-center justify-end">
+              <div class="absolute right-[1070px] w-[28px] h-[28px] bg-blue-500 rounded-full transform -translate-x-1/2"></div>
+              <div class="h-[6px] w-[1100px] bg-blue-500"></div>
+            </div>
+            
+            <div class="relative flex items-center justify-end">
+              <div class="absolute right-[930px] w-[18px] h-[18px] bg-blue-500 rounded-full transform -translate-x-1/2"></div>
+              <div class="h-[6px] w-[950px] bg-blue-500"></div>
+            </div>
           </div>
-        </div>
-        <div class="relative w-[70%] h-[30px]">
-          <div class="absolute right-0 h-[6px] bg-blue-500 w-[40vw] max-w-[800px]">
-            <div class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-5 h-5 lg:w-6 lg:h-6 bg-blue-500 rounded-full"></div>
+          
+          <div class="absolute top-1/2 -translate-y-1/2 hidden md:flex lg:hidden flex-col gap-[12px] z-0 overflow-hidden w-auto md:w-[60%] xl:w-[45%] right-0">
+            <div class="relative flex items-center justify-end">
+              <div class="absolute right-[calc(100% - 25px)] w-[14px] h-[14px] bg-blue-500 rounded-full"></div>
+              <div class="h-[4px] bg-blue-500 w-[calc(100% - 15px)]"></div>
+            </div>
+            <div class="relative flex items-center justify-end">
+              <div class="absolute right-[calc(100% - 35px)] w-[20px] h-[20px] bg-blue-500 rounded-full"></div>
+              <div class="h-[4px] bg-blue-500 w-[calc(100% - 20px)]"></div>
+            </div>
+            <div class="relative flex items-center justify-end">
+              <div class="absolute right-[calc(100% - 25px)] w-[14px] h-[14px] bg-blue-500 rounded-full"></div>
+              <div class="h-[4px] bg-blue-500 w-[calc(100% - 15px)]"></div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="absolute bg-gray-500 opacity-5 w-[400px] h-[180px] sm:w-[640px] sm:h-[280px] bottom-[-1000px] right-0 z-0 rounded-2xl"></div>
+    
+    <div class="px-4 sm:px-6 lg:px-12 py-8 sm:py-12 mx-auto">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl text-center py-4">Core</h1>
+      <p class="text-center text-gray-600 text-sm sm:text-base md:text-lg max-w-4xl mx-auto px-4 sm:px-8 md:px-12 py-6 sm:py-8 md:py-12">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh ut laoreet dolore magna aliquam erat 
+        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo 
+        consequat. Duis autem vel eumolestie. vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim 
+        qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+      </p>
     </div>
   </div>
 </template>
 
 <style scoped>
+/* Styles untuk menyembunyikan scrollbar pada elemen spesifik */
 .hide-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
   overflow-y: auto;
 }
 .hide-scrollbar::-webkit-scrollbar {
-  display: none;
+  display: none;  /* Chrome, Safari and Opera */
+}
+  
+/* Styles untuk Container Gambar Sampul */
+.cover-image-container {
+  width: 100vw;
+  height: 50vh; /* Tinggi responsif untuk layar kecil */
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
 }
 
-/* Responsive adjustments */
-@media (max-width: 767px) {
-  .blog-card-height {
-    height: auto;
+@media (min-width: 768px) { /* md breakpoint */
+  .cover-image-container {
+    height: 60vh;
   }
 }
 
-/* Responsive: Hide top and bottom lines on mobile */
-@media (max-width: 1024px) {
-  .md\:flex, .md\:block {
-    display: none !important;
+@media (min-width: 1024px) { /* lg breakpoint */
+  .cover-image-container {
+    height: 70vh;
+  }
+}
+  
+/* Styles untuk Gambar Sampul */
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.8);
+}
+
+/* Styles untuk Overlay Konten di Atas Gambar Sampul */
+.content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%; /* Padding responsif untuk layar kecil */
+  z-index: 10;
+}
+
+@media (min-width: 640px) { /* sm breakpoint */
+  .content-overlay {
+    padding-left: 8%;
   }
 }
 
-/* Remove hover effects for career page */
-.rounded-3xl.shadow-lg.overflow-hidden {
-    transition: none !important; /* Prevents transition on hover */
-    transform: none !important; /* Prevents scaling on hover */
-    box-shadow: none !important; /* Prevents shadow change on hover */
+@media (min-width: 1024px) { /* lg breakpoint */
+  .content-overlay {
+    padding-left: 10%;
+  }
+}
+  
+/* GLOBAL STYLES (penting untuk diletakkan di main CSS/global styles jika ini komponen) */
+/* Untuk menyembunyikan scrollbar di seluruh halaman HTML dan Body */
+:global(html),
+:global(body) {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  overflow-x: hidden; /* Penting untuk mencegah scrollbar horizontal */
+}
+:global(html::-webkit-scrollbar),
+:global(body::-webkit-scrollbar) {
+  width: 0;
+  display: none;  /* Chrome, Safari and Opera */
 }
 
-/* Ensure text color remains dark on hover for aesthetic purposes on this specific page */
-.rounded-3xl.shadow-lg.overflow-hidden .text-gray-300,
-.rounded-3xl.shadow-lg.overflow-hidden .text-gray-200 {
-    color: #cbd5e0 !important; /* Reverts text color to light gray */
+/* MEDIA QUERIES untuk Posisi Garis Dekoratif Horizontal di Bagian Email */
+
+/* For screens from md (768px) up to (but not including) lg (1024px) */
+/* This targets the 'md:flex lg:hidden' lines */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .absolute.top-1\/2.hidden.md\:flex.lg\:hidden {
+    top: 50% !important;
+    transform: translateY(-50%);
+  }
+
+  /* Specific adjustments for the dots and lines on MD screens */
+  /* These values are highly dependent on the text width and container spacing.
+     You might need to fine-tune these 'calc()' values based on your exact layout. */
+  .absolute.top-1\/2.hidden.md\:flex.lg\:hidden > div > div:nth-child(1) .absolute {
+    right: calc(100% + 20px); /* Adjust based on the gap between text and line start */
+    transform: none; /* Reset transform for this breakpoint */
+  }
+  .absolute.top-1\/2.hidden.md\:flex.lg\:hidden > div > div:nth-child(1) .h-\[4px\] {
+    width: calc(100% - 60px); /* Adjust line length */
+  }
+
+  .absolute.top-1\/2.hidden.md\:flex.lg\:hidden > div > div:nth-child(2) .absolute {
+    right: calc(100% + 30px); /* Adjust for longer line */
+    transform: none;
+  }
+  .absolute.top-1\/2.hidden.md\:flex.lg\:hidden > div > div:nth-child(2) .h-\[4px\] {
+    width: calc(100% - 70px); /* Adjust line length */
+  }
+
+  .absolute.top-1\/2.hidden.md\:flex.lg\:hidden > div > div:nth-child(3) .absolute {
+    right: calc(100% + 20px); /* Adjust based on the gap between text and line start */
+    transform: none;
+  }
+  .absolute.top-1\/2.hidden.md\:flex.lg\:hidden > div > div:nth-child(3) .h-\[4px\] {
+    width: calc(100% - 60px); /* Adjust line length */
+  }
+}
+
+/* For screens from lg (1024px) and above (including 2xl) */
+/* This targets the 'hidden lg:flex' lines */
+@media (min-width: 1024px) {
+  .absolute.right-\[-450px\].top-\[\160px\] { 
+    top: 160px !important; /* Original 'top' position from your initial design */
+    transform: translateY(-50%); /* Keeps it vertically centered relative to that top */
+    right: -450px !important; /* Original 'right' position from your initial design */
+  }
 }
 </style>

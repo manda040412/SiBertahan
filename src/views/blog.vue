@@ -7,7 +7,7 @@
 
   const api = new GhostContentAPI({
     url: 'http://localhost:2368', // or your blog subdomain later
-    key: '768024aa0a6dc1c5c34819f0cd',
+    key: '794cf32c3261801f8e9227ef56',
     version: 'v5.0'
   });
 
