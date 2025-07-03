@@ -61,10 +61,10 @@ api.posts
     <div class="h-24 sm:h-32 relative z-50 -mt-12 sm:-mt-16">
       <div class="container mx-auto px-4 sm:px-6 lg:px-12">
         <div class="flex gap-4 sm:gap-6 justify-center sm:justify-start">
-          <div class="relative h-24 sm:h-32 w-3 sm:w-4">
+          <div class="hidden sm:block relative h-24 sm:h-32 w-3 sm:w-4">
             <div class="absolute top-12 sm:top-16 h-2/3 sm:h-3/4 left-1/2 -translate-x-1/2 w-[4px] sm:w-[6px] bg-blue-500"></div>
             <div class="absolute bottom-[-20px] sm:bottom-[-40px] left-1/2 -translate-x-1/2 w-[12px] h-[12px] sm:w-[18px] sm:h-[18px] bg-blue-500 rounded-full"></div>
-          </div>
+          </div>  
           <div class="relative h-40 sm:h-60 w-3 sm:w-4 hidden sm:block">
             <div class="absolute top-12 sm:top-16 h-[80px] sm:h-[120px] left-1/2 -translate-x-1/2 w-[4px] sm:w-[6px] bg-blue-500"></div>
             <div class="absolute bottom-[20px] sm:bottom-[40px] left-1/2 -translate-x-1/2 w-[20px] h-[20px] sm:w-[28px] sm:h-[28px] bg-blue-500 rounded-full"></div>
@@ -110,8 +110,8 @@ api.posts
             <div>
               <img src="../assets/email-logo-02-02.png" alt="Email" class="w-32 h-auto object-contain">
             </div>
-            <div class="flex justify-end">
-              <h2 class="text-xl px-4 uppercase font-medium text-blue-600 underline underline-offset-8">SEND EMAIL :</h2>
+            <div class="flex flex-col items-center md:flex-row md:justify-end gap-2">
+              <h2 class="text-xl px-4 uppercase font-medium text-blue-600 underline underline-offset-8 text-center md:text-left">SEND EMAIL :</h2>
               <p class="text-xl text-gray-700">Recruitment@sibertahan.com</p>
             </div>
           </div>

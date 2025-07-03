@@ -14,8 +14,8 @@
         </a>
       </div>
       <div class="container max-w-[1600px] mx-auto px-6 relative z-10">
-        <div class="flex flex-col items-center text-center pt-8 pb-16">
-          <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4 md:mb-6 text-gray-800">
+        <div class="flex flex-col items-center text-center pt-0 pb-16">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4 md:mb-2 text-gray-800">
             Better Security,<br>Better Human Rights
           </h1>
           <p class="text-gray-600 text-base sm:text-lg mb-6 md:mb-8 max-w-lg">
@@ -471,7 +471,7 @@
 /* Any additional custom styles can go here */
 .hero-section {
   background: url('../assets/background.png') bottom center/cover no-repeat;
-  min-height: 100vh; /* Adjusted for better mobile experience */
+  min-height: 135vh; /* Adjusted for better mobile experience */
   position: relative;
 }
 
