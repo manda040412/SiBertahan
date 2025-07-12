@@ -14,8 +14,8 @@
         </a>
       </div>
       <div class="container max-w-[1600px] mx-auto px-6 relative z-10">
-        <div class="flex flex-col items-center text-center pt-0 pb-16">
-          <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4 md:mb-2 text-gray-800">
+        <div class="flex flex-col items-center text-center pt-8 pb-16">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4 md:mb-6 text-gray-800">
             Better Security,<br>Better Human Rights
           </h1>
           <p class="text-gray-600 text-base sm:text-lg mb-6 md:mb-8 max-w-lg">
@@ -40,7 +40,7 @@
       </div>
     </section>
 
-    <section class="recognition bg-[#001428] py-12 sm:py-16 md:py-20 relative overflow-hidden h-[50vh] sm:h-[60vh] md:h-[70vh] z-50">
+    <section class="recognition bg-[#001428] py-16 sm:py-20 md:py-24 relative overflow-hidden min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] z-50">
       <div class="absolute inset-0 z-0">
         <div class="absolute inset-0 bg-gradient-to-tl from-black to-blue-900/70 z-30 pointer-events-none"></div>
         <img src="../assets/background2.png" alt="" class="w-full h-full object-cover" />
@@ -53,54 +53,45 @@
         <div class="absolute inset-0 bg-gradient-to-t from-[#000000] to-transparent opacity-90"></div>
       </div>
 
-      <div class="absolute top-8 left-1/2 -translate-x-1/2 container px-2 sm:px-4 md:px-12 w-[98%] sm:w-full sm:max-w-[95%] md:max-w-6xl z-40 overflow-x-hidden">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+      <div class="absolute top-12 left-1/2 -translate-x-1/2 container px-4 sm:px-6 md:px-12 w-full max-w-7xl z-40">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 py-8">
           <div class="flex justify-center">
-            <div class="badge p-3 sm:p-4 md:p-6 lg:p-8 rounded-3xl flex flex-col items-center transition hover:shadow-lg border border-white/20 bg-gradient-to-b from-[#002045] to-[#001328] w-full max-w-[280px] sm:max-w-[320px] lg:max-w-md">
-              <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 md:mb-4 lg:mb-6">Whitelisted by</p>
-              <img src="../assets/BSSN Logo.png" alt="BSSN" class="h-10 sm:h-12 md:h-16 lg:h-20 mb-2 sm:mb-3 md:mb-4" />
-              <p class="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium text-center">
-                (BSSN) as Lembaga Konsultan
-              </p>
-              <a href="https://www.bssn.go.id/daftar-lembaga-konsultan-dan-lembaga-sertifikasi/" class="text-blue-400 mt-2 sm:mt-3 md:mt-4 lg:mt-6 flex items-center text-xs sm:text-sm md:text-base hover:text-blue-300">
-                https://encr.pw/TWJ5e
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 sm:h-4 sm:w-4 ml-1 sm:ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </a>
-            </div>
+            <a href="https://www.bssn.go.id/daftar-lembaga-konsultan-dan-lembaga-sertifikasi/" target="_blank" rel="noopener noreferrer" class="block w-full max-w-[280px] sm:max-w-[320px] lg:max-w-md">
+              <div class="badge p-3 sm:p-4 md:p-6 lg:p-8 rounded-3xl flex flex-col items-center transition-all duration-300 hover:shadow-lg hover:scale-105 border border-white/20 bg-gradient-to-b from-[#002045] to-[#001328] w-full cursor-pointer">
+                <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 md:mb-4 lg:mb-6">Whitelisted by</p>
+                <img src="../assets/BSSN Logo.png" alt="BSSN" class="h-10 sm:h-12 md:h-16 lg:h-20 mb-2 sm:mb-3 md:mb-4" />
+                <p class="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium text-center">
+                  (BSSN) as Lembaga Konsultan
+                </p>
+                
+              </div>
+            </a>
           </div>
 
           <div class="flex justify-center">
-            <div class="badge p-3 sm:p-4 md:p-6 lg:p-8 rounded-3xl flex flex-col items-center transition hover:shadow-lg border border-white/20 bg-gradient-to-b from-[#002045] to-[#001328] w-full max-w-[280px] sm:max-w-[320px] lg:max-w-md">
-              <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 md:mb-4 lg:mb-6">Verified by</p>
-              <img src="../assets/aspi-logo.png" alt="ASPI" class="h-10 sm:h-12 md:h-16 lg:h-20 mb-2 sm:mb-3 md:mb-4" />
-              <p class="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium text-center">
-                ASPI as Penyedia Jasa Audit
-              </p>
-              <a href="https://aspi-indonesia.or.id/standar-dan-layanan/daftar-penyedia-jasa-audit-ti/" class="text-blue-400 mt-2 sm:mt-3 md:mt-4 lg:mt-6 flex items-center text-xs sm:text-sm md:text-base hover:text-blue-300">
-                https://encr.pw/Ujmrq
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 sm:h-4 sm:w-4 ml-1 sm:ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </a>
-            </div>
+            <a href="https://aspi-indonesia.or.id/standar-dan-layanan/daftar-penyedia-jasa-audit-ti/" target="_blank" rel="noopener noreferrer" class="block w-full max-w-[280px] sm:max-w-[320px] lg:max-w-md">
+              <div class="badge p-3 sm:p-4 md:p-6 lg:p-8 rounded-3xl flex flex-col items-center transition-all duration-300 hover:shadow-lg hover:scale-105 border border-white/20 bg-gradient-to-b from-[#002045] to-[#001328] w-full cursor-pointer">
+                <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 md:mb-4 lg:mb-6">Verified by</p>
+                <img src="../assets/aspi-logo.png" alt="ASPI" class="h-10 sm:h-12 md:h-16 lg:h-20 mb-2 sm:mb-3 md:mb-4" />
+                <p class="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium text-center">
+                  ASPI as Penyedia Jasa Audit
+                </p>
+                
+              </div>
+            </a>
           </div>
 
           <div class="flex justify-center">
-            <div class="badge p-3 sm:p-4 md:p-6 lg:p-8 rounded-3xl flex flex-col items-center transition hover:shadow-lg border border-white/20 bg-gradient-to-b from-[#002045] to-[#001328] w-full max-w-[280px] sm:max-w-[320px] lg:max-w-md">
-              <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 md:mb-4 lg:mb-6">Verified by</p>
-              <img src="../assets/aspi-logo.png" alt="ASPI" class="h-10 sm:h-12 md:h-16 lg:h-20 mb-2 sm:mb-3 md:mb-4" />
-              <p class="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium text-center">
-                ASPI as Penyedia Jasa Pengujian Keamanan
-              </p>
-              <a href="https://aspi-indonesia.or.id/standar-dan-layanan/penyedia-jasa-audit-keamanan/" class="text-blue-400 mt-2 sm:mt-3 md:mt-4 lg:mt-6 flex items-center text-xs sm:text-sm md:text-base hover:text-blue-300">
-                https://encr.pw/Ujmrq
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 sm:h-4 sm:w-4 ml-1 sm:ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </a>
-            </div>
+            <a href="https://aspi-indonesia.or.id/standar-dan-layanan/penyedia-jasa-audit-keamanan/" target="_blank" rel="noopener noreferrer" class="block w-full max-w-[280px] sm:max-w-[320px] lg:max-w-md">
+              <div class="badge p-3 sm:p-4 md:p-6 lg:p-8 rounded-3xl flex flex-col items-center transition-all duration-300 hover:shadow-lg hover:scale-105 border border-white/20 bg-gradient-to-b from-[#002045] to-[#001328] w-full cursor-pointer">
+                <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 md:mb-4 lg:mb-6">Verified by</p>
+                <img src="../assets/aspi-logo.png" alt="ASPI" class="h-10 sm:h-12 md:h-16 lg:h-20 mb-2 sm:mb-3 md:mb-4" />
+                <p class="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium text-center">
+                  ASPI as Penyedia Jasa Pengujian Keamanan
+                </p>
+                
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -164,12 +155,12 @@
               ensure your peace of mind.
             </p>
 
-            <a href="#" class="text-blue-400 hover:text-blue-300 inline-flex items-center group text-sm md:text-base">
+            <router-link to="/about" class="text-blue-400 hover:text-blue-300 inline-flex items-center group text-sm md:text-base">
               Read more
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
-            </a>
+            </router-link>
           </div>
         </div>
       </div>
@@ -214,12 +205,12 @@
                   <p class="text-gray-300 pt-4 sm:pt-6 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base md:text-lg">
                     Siberserang is our suite of offensive cybersecurity services. It encompasses proactive and controlled simulated attack on computer systems, networks, and applications. Our ethical penetration testers conduct these assessments to identify vulnerabilities and weaknesses, providing valuable insights for your organization to fortify defenses, safeguard data, and mitigate potential real-world cyber threats.
                   </p>
-                  <a href="#" class="text-blue-400 hover:text-blue-300 inline-flex items-center group text-sm md:text-base">
+                  <router-link to="/services-siberserang" class="text-blue-400 hover:text-blue-300 inline-flex items-center group text-sm md:text-base">
                     Read more
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
-                  </a>
+                  </router-link>
                 </div>
               </div>
             </div>
@@ -236,12 +227,12 @@
                   <p class="text-gray-300 pt-4 sm:pt-6 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base md:text-lg">
                     Siberpatuh consulting services will help your organization in adhering to industry regulations, legal requirements, and internal policies that ensure the protection of your critical assets. We provide comprehensive security assessments and emphasize on proper governance by Top Management with a top-down approach to reach the highest cybersecurity governance posture across the board.
                   </p>
-                  <a href="#" class="text-blue-400 hover:text-blue-300 inline-flex items-center group text-sm md:text-base">
+                  <router-link to="/services-siberpatuh" class="text-blue-400 hover:text-blue-300 inline-flex items-center group text-sm md:text-base">
                     Read more
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
-                  </a>
+                  </router-link>
                 </div>
               </div>
             </div>
@@ -258,12 +249,12 @@
                   <p class="text-gray-300 pt-4 sm:pt-6 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base md:text-lg">
                     Siberjaga focuses on defensive cybersecurity consulting services which involve comprehensive strategies and the adoption of frameworks to better protect your organization from all authorized access, cyber attacks, and breaches. The ultimate goal is to improve your organization's capabilities to deter, detect and respond to threats and incidents while maintaining business continuity and operational resilience.
                   </p>
-                  <a href="#" class="text-blue-400 hover:text-blue-300 inline-flex items-center group text-sm md:text-base">
+                  <router-link to="/services-siberjaga" class="text-blue-400 hover:text-blue-300 inline-flex items-center group text-sm md:text-base">
                     Read more
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
-                  </a>
+                  </router-link>
                 </div>
               </div>
             </div>
@@ -299,14 +290,14 @@
               unwavering vigilance
             </p>
             <div class="pl-0 sm:pl-4 md:pl-10">
-              <a href="#" class="text-blue-500 py-2 pr-3 sm:py-3 sm:pr-4 rounded-full text-base sm:text-lg md:text-xl font-medium transition inline-flex items-center gap-1 sm:gap-2">
+              <router-link to="/about" class="text-blue-500 py-2 pr-3 sm:py-3 sm:pr-4 rounded-full text-base sm:text-lg md:text-xl font-medium transition inline-flex items-center gap-1 sm:gap-2">
                 Read more
                 <div class="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="blue">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </div>
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="flex justify-center mt-8 md:mt-0">
@@ -424,14 +415,14 @@
                 Contact <span class="text-blue-500">us.</span>
               </h2>
               <div class="flex justify-start pl-4 sm:pl-10 mt-6">
-                <a href="#" class="bg-[#1D1D1D] hover:bg-blue-700 text-white py-2 px-5 pr-3 rounded-full text-sm font-medium transition inline-flex items-center gap-2">
+                <router-link to="/contact" class="bg-[#1D1D1D] hover:bg-blue-700 text-white py-2 px-5 pr-3 rounded-full text-sm font-medium transition inline-flex items-center gap-2">
                   WORK WITH US
                   <div class="w-7 h-7 bg-white rounded-full flex items-center justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="BLACK">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
                   </div>
-                </a>
+                </router-link>
               </div>
             </div>
           </div>
@@ -467,11 +458,17 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'Home'
+};
+</script>
+
 <style scoped>
 /* Any additional custom styles can go here */
 .hero-section {
   background: url('../assets/background.png') bottom center/cover no-repeat;
-  min-height: 135vh; /* Adjusted for better mobile experience */
+  min-height: 100vh; /* Adjusted for better mobile experience */
   position: relative;
 }
 

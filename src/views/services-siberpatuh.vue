@@ -77,8 +77,7 @@
           desired place by accompanying you every step of the way.
           Example: Gap Assessment based on ISO/IEC 27001:2022 and CIS Controls.
         </p>
-        <img src="../assets/siberpatuh (2).png" alt="" class="hidden lg:block w-[640px] h-auto absolute lg:-bottom-[1500px] lg:-left-[300px] opacity-80">
-      </div>
+               <img src="../assets/siberpatuh (2).png" alt="" class="hidden lg:block w-[640px] h-auto absolute lg:-bottom-[1500px] lg:-left-[300px] opacity-80 z-10"></div>
     </div>
   </div>
 </template>
