@@ -4,7 +4,7 @@
     <div class="main-content max-w-7xl mx-auto px-4 sm:px-6 py-8 md:py-16 relative">
       
       <!-- Blue decorative lines (hidden on md and below) -->
-      <div class="absolute -left-[1000px] top-[90px] flex flex-col gap-[20px] z-0 hidden md:flex">
+      <div class="absolute -left-[1000px] top-[90px] flex-col gap-[20px] z-0 hidden md:flex">
         <!-- First line with dot -->
         <div class="relative w-[1220px] max-w-[90vw] flex items-center">
           <div class="h-[6px] w-full bg-blue-500"></div>

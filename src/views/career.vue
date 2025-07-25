@@ -5,10 +5,10 @@ import GhostContentAPI from '@tryghost/content-api'
 
 // Konfigurasi Ghost Content API
 const api = new GhostContentAPI({
-  url: 'http://localhost:2368', // PASTIKAN INI SESUAI DENGAN URL GHOST ANDA
-  key: '768024aa0a6dc1c5c34819f0cd', // GANTI DENGAN CONTENT API KEY ASLI ANDA
+  url: 'https://cms.sibertahan.com', 
+  key: 'd829ab1b6f36e8f424dddc2d25',
   version: 'v5.0'
-})
+});
 
 const jobListings = ref([])
 
