@@ -6,7 +6,7 @@ import GhostContentAPI from '@tryghost/content-api'
 // Konfigurasi Ghost Content API
 const api = new GhostContentAPI({
   url: 'http://localhost:2368', // PASTIKAN INI SESUAI DENGAN URL GHOST ANDA
-  key: '794cf32c3261801f8e9227ef56', // GANTI DENGAN CONTENT API KEY ASLI ANDA
+  key: '768024aa0a6dc1c5c34819f0cd', // GANTI DENGAN CONTENT API KEY ASLI ANDA
   version: 'v5.0'
 })
 
@@ -21,6 +21,7 @@ api.posts
   })
   .then((p) => {
     jobListings.value = p
+    console.log(p)
   })
   .catch((err) => {
     console.error('Error fetching job listings from Ghost:', err)
@@ -92,7 +93,7 @@ api.posts
           class="job-card bg-white rounded-2xl shadow-md p-6 flex flex-col"
         >
           <div class="job-type text-black-600 text-sm mb-2">
-            {{ job.primary_tag ? job.primary_tag.name : 'Full-Time / Part-Time' }}
+            {{ job.tags.map(tag => tag.name).join(', ') }}
           </div>
           <h3 class="job-title text-blue-600 text-xl sm:text-2xl font-medium mb-4">{{ job.title }}</h3>
           <p class="job-description text-gray-600 flex-grow mb-4 text-sm sm:text-base">

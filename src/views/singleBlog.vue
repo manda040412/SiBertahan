@@ -12,7 +12,7 @@
 
   const api = new GhostContentAPI({
     url: 'http://localhost:2368', 
-    key: '794cf32c3261801f8e9227ef56',
+    key: '768024aa0a6dc1c5c34819f0cd',
     version: 'v5.0'
   });
 
