@@ -468,7 +468,7 @@ export default {
 /* Any additional custom styles can go here */
 .hero-section {
   background: url('../assets/background.png') bottom center/cover no-repeat;
-  min-height: 100vh; /* Adjusted for better mobile experience */
+  min-height: 130vh; /* Adjusted for better mobile experience */
   position: relative;
 }
 

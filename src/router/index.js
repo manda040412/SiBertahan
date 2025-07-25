@@ -78,6 +78,14 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    // If there's a saved position (back/forward navigation), use it
+    if (savedPosition) {
+      return savedPosition
+    }
+    // For new navigation, scroll to top
+    return { top: 0 }
+  }
 })
 
 // Navigation Guard untuk mengatur judul halaman
