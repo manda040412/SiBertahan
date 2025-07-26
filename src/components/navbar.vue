@@ -80,11 +80,12 @@
 
         <!-- Contact Us button with vertical lines container -->
         <div class="relative ml-4">
-          <router-link to="/contact"
+          <a href="https://wa.me/6281234567890?text=Hello%20SiberTahan%20Team" target="_blank" rel="noopener noreferrer"
             class="bg-blue-500 text-white px-5 py-2 rounded-md text-xs hover:bg-blue-600 transition"
-            style="font-weight: 500;">
+            style="font-weight: 500;"
+            @click="handleWhatsAppClick">
             CONTACT US
-          </router-link>
+          </a>
           
           <!-- Vertical lines with dots - only visible on home page -->
           <div v-if="$route.path === '/' || $route.path === '/home'" class="absolute left-1/2 top-full m transform -translate-x-1/2 hidden md:flex gap-14 z-[9999]">
@@ -165,10 +166,11 @@
         BLOG
       </router-link>
 
-      <router-link @click="isOpen = false" to="/contact"
-        class="bg-blue-500 text-white px-5 py-2 rounded-md text-xs hover:bg-blue-600 transition mx-4 text-center">
+      <a href="https://wa.me/6281234567890?text=Hello%20SiberTahan%20Team" target="_blank" rel="noopener noreferrer"
+        class="bg-blue-500 text-white px-5 py-2 rounded-md text-xs hover:bg-blue-600 transition mx-4 text-center"
+        @click="handleWhatsAppClick">
         CONTACT US
-      </router-link>
+      </a>
     </div>
   </header>
 </template>
@@ -177,6 +179,12 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 const isOpen = ref(false)
 const isServiceDropdownOpen = ref(false)
+
+// Handle WhatsApp click
+const handleWhatsAppClick = (event) => {
+  // Let the default behavior happen - opening the link
+  console.log('WhatsApp link clicked')
+}
 
 // Close dropdown when clicking outside
 const closeDropdown = (event) => {

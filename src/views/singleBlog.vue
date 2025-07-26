@@ -30,7 +30,7 @@
       <div v-if="blog" class="bg-white p-6 md:p-8 rounded-lg shadow-lg">
         <img :src="blog.feature_image || 'https://via.placeholder.com/800x400'" :alt="blog.title" class="w-full h-64 object-cover rounded-lg mb-6">
         <h1 class="text-4xl font-bold text-gray-900 mb-4">{{ blog.title }}</h1>
-        <p class="text-gray-600 text-sm mb-6">{{ new Date(blog.published_at).toLocaleDateString('id-ID') }}</p>
+        <p class="text-gray-600 text-sm mb-6">By admin | {{ new Date(blog.published_at).toLocaleDateString('id-ID') }}</p>
         
         <div class="prose max-w-none text-gray-800 leading-relaxed" v-html="blog.html">
         </div>
