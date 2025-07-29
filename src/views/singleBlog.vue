@@ -8,17 +8,46 @@ const route = useRoute();
 const blog = ref({});
 const blogId = route.params.id; // Mengambil ID dari URL
 
-console.log('Fetching blog with ID:', blogId);
+const proxyFetch = async ({ url, method = 'GET', params = {}, headers = {} }) => {
+  const proxy = 'https://cms.sibertahan.com/proxy.php';
 
-  const api = new GhostContentAPI({
-    url: 'https://cms.sibertahan.com', 
-    key: 'd829ab1b6f36e8f424dddc2d25',
-    version: 'v5.0'
+  const body = {
+    endpoint: new URL(url).pathname,
+    method,
+    params,
+    headers,
+  };
+
+  const res = await fetch(proxy, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
   });
 
+  // if (!res.ok) throw new Error(`Proxy fetch failed: ${res.status}`);
+  const result = await res.json();
+
+  console.log(result)
+
+  return {
+    data: {
+      posts: result.posts ?? result,
+      meta: result.meta ?? {}
+    }
+  };
+};
+
+const api = new GhostContentAPI({
+  url: 'https://cms.sibertahan.com', 
+  key: 'd829ab1b6f36e8f424dddc2d25',
+  version: 'v5.0',
+  makeRequest: proxyFetch
+});
+
 onMounted(async () => {
-  blog.value = await api.posts.read({id: blogId})
-  console.log(blog.value)
+  await api.posts.read({id: blogId}).then((val) => {
+    blog.value = val[0]
+  })
 })
 </script>
 

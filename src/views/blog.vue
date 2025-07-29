@@ -5,15 +5,43 @@ import { RouterLink } from 'vue-router'
 import { formatReadableDate } from '../utils/DateFormatter'
 import GhostContentAPI from '@tryghost/content-api'
 
-  const api = new GhostContentAPI({
-    url: 'https://cms.sibertahan.com', 
-    key: 'd829ab1b6f36e8f424dddc2d25',
-    version: 'v5.0'
+const proxyFetch = async ({ url, method = 'GET', params = {}, headers = {} }) => {
+  const proxy = 'https://cms.sibertahan.com/proxy.php';
+
+  const body = {
+    endpoint: new URL(url).pathname,
+    method,
+    params,
+    headers,
+  };
+
+  const res = await fetch(proxy, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
   });
+
+  // if (!res.ok) throw new Error(`Proxy fetch failed: ${res.status}`);
+  const result = await res.json();
+
+  return {
+    data: {
+      posts: result.posts ?? result,
+      meta: result.meta ?? {}
+    }
+  };
+};
+
+const api = new GhostContentAPI({
+  url: 'https://cms.sibertahan.com', 
+  key: 'd829ab1b6f36e8f424dddc2d25',
+  version: 'v5.0',
+  makeRequest: proxyFetch
+});
 
 const posts = ref([])
 
-api.posts.browse({ limit: 5, include: 'tags,authors', filter: 'tag:-career', })
+api.posts.browse({ limit: 5, include: 'tags,authors', filter: 'tag:-career'})
 .then(p => {
   posts.value = p // Show on your Vue page
 })
