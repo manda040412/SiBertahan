@@ -56,16 +56,15 @@
       <div class="absolute top-12 left-1/2 -translate-x-1/2 container px-4 sm:px-6 md:px-12 w-full max-w-7xl z-40">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 py-8">
           <div class="flex justify-center">
-            <a href="https://www.bssn.go.id/daftar-lembaga-konsultan-dan-lembaga-sertifikasi/" target="_blank" rel="noopener noreferrer" class="block w-full max-w-[280px] sm:max-w-[320px] lg:max-w-md">
-              <div class="badge p-3 sm:p-4 md:p-6 lg:p-8 rounded-3xl flex flex-col items-center transition-all duration-300 hover:shadow-lg hover:scale-105 border border-white/20 bg-gradient-to-b from-[#002045] to-[#001328] w-full cursor-pointer">
-                <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 md:mb-4 lg:mb-6">Whitelisted by</p>
-                <img src="../assets/BSSN Logo.png" alt="BSSN" class="h-10 sm:h-12 md:h-16 lg:h-20 mb-2 sm:mb-3 md:mb-4" />
-                <p class="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium text-center">
-                  (BSSN) as Lembaga Konsultan
-                </p>
-                
-              </div>
-            </a>
+              <a href="https://www.bssn.go.id/daftar-lembaga-konsultan-dan-lembaga-sertifikasi/" target="_blank" rel="noopener noreferrer" class="block w-full max-w-[280px] sm:max-w-[320px] lg:max-w-md">
+                <div class="badge p-3 sm:p-4 md:p-6 lg:p-8 rounded-3xl flex flex-col items-center transition-all duration-300 hover:shadow-lg hover:scale-105 border border-white/20 bg-gradient-to-b from-[#002045] to-[#001328] w-full cursor-pointer">
+                  <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 md:mb-4 lg:mb-6" style="font-family: Arial, sans-serif;">Terdaftar di</p>
+                  <img src="../assets/BSSN Logo.png" alt="BSSN" class="h-10 sm:h-12 md:h-16 lg:h-20 mb-2 sm:mb-3 md:mb-4" />
+                  <p class="text-white text-xs sm:text-sm md:text-base lg:text-lg text-center font-medium" style="font-family: Arial, sans-serif;">
+                    Nomor Sertifikat: SMPI.LK.17/BSSN/D1/PS.02.01/10/2024
+                  </p>
+                </div>
+              </a>
           </div>
 
           <div class="flex justify-center">
@@ -468,7 +467,7 @@ export default {
 /* Any additional custom styles can go here */
 .hero-section {
   background: url('../assets/background.png') bottom center/cover no-repeat;
-  min-height: 130vh; /* Adjusted for better mobile experience */
+  min-height: 150vh; /* Adjusted for better mobile experience */
   position: relative;
 }
 

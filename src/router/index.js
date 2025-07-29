@@ -14,32 +14,32 @@ const routes = [
     path: '/', 
     redirect: '/home',
     // Anda bisa tambahkan meta title default untuk halaman redirect jika perlu
-    meta: { title: 'SiBertahan' } 
+    meta: { title: 'Sibertahan' } 
   },
   { 
     path: '/home', 
     name: 'Home', 
     component: Home,
-    meta: { title: 'SiBertahan - Home' } // Contoh: "SiBertahan - Home"
+    meta: { title: 'Sibertahan - Home' } // Contoh: "SiBertahan - Home"
   },
   { 
     path: '/about', 
     name: 'About', 
     component: AboutUs,
-    meta: { title: 'SiBertahan - About Us' } // Contoh: "SiBertahan - About Us"
+    meta: { title: 'Sibertahan - About Us' } // Contoh: "SiBertahan - About Us"
   },
   { 
     path: '/blog', 
     name: 'Blog', 
     component: Blog,
-    meta: { title: 'SiBertahan - Blog' } // Contoh: "SiBertahan - Blog"
+    meta: { title: 'Sibertahan - Blog' } // Contoh: "SiBertahan - Blog"
   },
   { 
     path: '/blog/:id', 
     name: 'single-blog', // Pastikan nama ini sesuai dengan yang di blog.vue
     component: SingleBlog, 
     props: true,
-    meta: { title: 'SiBertahan - Blog Post' } // Contoh: "SiBertahan - Blog Post"
+    meta: { title: 'Sibertahan - Blog Post' } // Contoh: "SiBertahan - Blog Post"
     // Untuk judul dinamis seperti "SiBertahan - Judul Blog", Anda perlu mengakses data blog di SingleBlog.vue
     // dan update document.title dari dalam komponen SingleBlog.vue.
   },
@@ -47,31 +47,31 @@ const routes = [
     path: '/career', 
     name: 'Career', 
     component: Career,
-    meta: { title: 'SiBertahan - Careers' } // Contoh: "SiBertahan - Careers"
+    meta: { title: 'Sibertahan - Careers' } // Contoh: "SiBertahan - Careers"
   },
   { 
     path: '/services-siberjaga', 
     name: 'ServicesSiberjaga', 
     component: ServicesSiberjaga,
-    meta: { title: 'SiBertahan - SiberJaga' }
+    meta: { title: 'Sibertahan - SiberJaga' }
   },
   { 
     path: '/services-siberserang', 
     name: 'ServicesSiberserang', 
     component: ServicesSiberserang,
-    meta: { title: 'SiBertahan - SiberSerang' }
+    meta: { title: 'Sibertahan - SiberSerang' }
   },
   { 
     path: '/services-siberpatuh', 
     name: 'ServicesSiberpatuh', 
     component: ServicesSiberpatuh,
-    meta: { title: 'SiBertahan - SiberPatuh' }
+    meta: { title: 'Sibertahan - SiberPatuh' }
   },
   { 
     path: '/contact', 
     name: 'Contact', 
     component: contact,
-    meta: { title: 'SiBertahan - Contact Us' }
+    meta: { title: 'Sibertahan - Contact Us' }
   },
 ]
 
@@ -91,7 +91,7 @@ const router = createRouter({
 // Navigation Guard untuk mengatur judul halaman
 router.beforeEach((to, from, next) => {
   // Jika rute memiliki meta.title, gunakan itu. Jika tidak, gunakan judul default.
-  document.title = to.meta.title || 'SiBertahan'; // Judul default jika tidak ada meta.title
+  document.title = to.meta.title || 'Sibertahan'; // Judul default jika tidak ada meta.title
 
   // Untuk rute dinamis seperti blog post, Anda mungkin ingin judulnya lebih spesifik.
   // Misalnya "SiBertahan - Judul Blog Post". Ini perlu dilakukan di dalam komponen SingleBlog.vue

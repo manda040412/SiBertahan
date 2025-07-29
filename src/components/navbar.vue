@@ -39,17 +39,17 @@
             <router-link to="/services-siberjaga" 
                         @click="isServiceDropdownOpen = false"
                         class="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-500">
-              SiberJaga
+              SIBERJAGA
             </router-link>
             <router-link to="/services-siberpatuh"
                         @click="isServiceDropdownOpen = false"
                         class="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-500">
-              SiberPatuh
+              SIBERPATUH
             </router-link>
             <router-link to="/services-siberserang"
                         @click="isServiceDropdownOpen = false"
                         class="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-500">
-              SiberSerang
+              SIBERSERANG
             </router-link>
           </div>
         </div>

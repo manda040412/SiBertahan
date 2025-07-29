@@ -1,25 +1,25 @@
 <script setup>
-  import { ref } from 'vue'
-  import { RouterLink } from 'vue-router'
+import { ref } from 'vue'
+import { RouterLink } from 'vue-router'
 
-  import { formatReadableDate } from '../utils/DateFormatter'
-  import GhostContentAPI from '@tryghost/content-api'
+import { formatReadableDate } from '../utils/DateFormatter'
+import GhostContentAPI from '@tryghost/content-api'
 
-  const api = new GhostContentAPI({
-    url: 'http://localhost:2368', // or your blog subdomain later
-    key: '794cf32c3261801f8e9227ef56',
-    version: 'v5.0'
-  });
+const api = new GhostContentAPI({
+  url: 'http://localhost:2368', // or your blog subdomain later
+  key: '794cf32c3261801f8e9227ef56',
+  version: 'v5.0'
+});
 
-  const posts = ref([])
+const posts = ref([])
 
-  api.posts.browse({ limit: 5, include: 'tags,authors', filter: 'tag:-career', })
-  .then(p => {
-    posts.value = p // Show on your Vue page
-  })
-  .catch(err => {
-    console.error(err);
-  });
+api.posts.browse({ limit: 5, include: 'tags,authors', filter: 'tag:-career', })
+.then(p => {
+  posts.value = p // Show on your Vue page
+})
+.catch(err => {
+  console.error(err);
+});
 </script>
 
 <template>
@@ -29,7 +29,7 @@
         <div class="col-md-12">
           <h1 class="text-center py-8 md:py-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Blog</h1>
         </div>
-        
+
         <div class="hidden md:flex absolute -left-[900px] top-[50%] -translate-y-1/2 flex-col gap-[20px] z-0 w-0 md:w-auto">
           <div class="relative w-[90vw] max-w-[1220px] flex items-center">
             <div class="h-[6px] w-full bg-blue-500"></div>
@@ -46,17 +46,16 @@
         </div>
       </div>
     </div>
-    
+
     <div class="container px-4 sm:px-6 lg:px-12 mx-auto py-8 md:py-12">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
-        <!-- Blog Cards -->
         <RouterLink
           v-for="(x, index) in posts"
           :key="index"
           :to="{ name: 'single-blog', params: { id: x.id } }"
           class="rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 ease-in-out bg-gradient-to-b from-[#000204] via-[#031931] to-[#06305C] hover:from-white hover:via-white hover:to-white shadow-blue-900/50 hover:scale-[1.02] lg:hover:scale-105 transform group flex flex-col"
         >
-          <div class="relative">
+          <div v-if="x.feature_image" class="relative">
             <img :src="x.feature_image" alt="Blog post image" class="w-full h-40 sm:h-48 object-cover" />
           </div>
           <div class="p-4 sm:p-6 relative pb-14 sm:pb-16 flex-1 flex flex-col">
@@ -81,9 +80,9 @@
             </div>
           </div>
         </RouterLink>
-      </div>      
+      </div>
     </div>
-    
+
     <div class="hidden md:block relative w-full py-12 lg:py-16 overflow-hidden">
       <div class="flex flex-col items-end gap-1 pl-6">
         <div class="relative w-[50%] h-[30px]">
@@ -129,13 +128,4 @@
     display: none !important;
   }
 }
-
-/* Responsive: Card hover effect off on mobile (keep if you want, remove if you want hover on mobile) */
-/*
-@media (max-width: 768px) {
-  .group:hover {
-    transform: none !important;
-  }
-}
-*/
 </style>

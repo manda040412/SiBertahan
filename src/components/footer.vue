@@ -6,7 +6,7 @@
       <div class="grid md:grid-cols-12 gap-8">
         <!-- Left section -->
         <div class="md:col-span-4">
-          <img src="../assets/logo-footer.png" class="h-10 mb-6" alt="Sibertahan Logo" />
+          <img src="../assets/Sibertahan.png" class="h-10 mb-6" alt="Sibertahan Logo" />
           <p class="text-sm text-gray-300 mb-10 leading-relaxed">
             Safeguard your valuable data,<br />
             mitigate risks, and ensure your<br />
