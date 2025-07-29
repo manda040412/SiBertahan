@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        bahnschrift: ['"Bahnschrift"', 'sans-serif'],
+        bahnschrift: ['"Poppins"', 'sans-serif'],
       },
     },
   },

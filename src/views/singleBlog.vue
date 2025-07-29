@@ -1,14 +1,14 @@
 <script setup>
-  import { ref, onMounted } from 'vue';
-  import { useRoute } from 'vue-router';
+import { ref, onMounted } from 'vue';
+import { useRoute } from 'vue-router';
 
-  import GhostContentAPI from '@tryghost/content-api'
+import GhostContentAPI from '@tryghost/content-api'
 
-  const route = useRoute();
-  const blog = ref({});
-  const blogId = route.params.id; // Mengambil ID dari URL
+const route = useRoute();
+const blog = ref({});
+const blogId = route.params.id; // Mengambil ID dari URL
 
-  console.log('Fetching blog with ID:', blogId);
+console.log('Fetching blog with ID:', blogId);
 
   const api = new GhostContentAPI({
     url: 'https://cms.sibertahan.com', 
@@ -16,22 +16,24 @@
     version: 'v5.0'
   });
 
-  onMounted(async () => {
-    blog.value = await api.posts.read({id: blogId})
-    console.log(blog.value)
-  })
+onMounted(async () => {
+  blog.value = await api.posts.read({id: blogId})
+  console.log(blog.value)
+})
 </script>
 
 <template>
   <div class="single-blog-page font-bahnschrift bg-gradient-to-b from-[#ffffff] via-[#D7E6FF] via-100% to-[#D7E6FF] min-h-screen py-8">
     <div class="container px-4 sm:px-6 lg:px-12 mx-auto">
       <router-link to="/blog" class="text-blue-600 hover:underline mb-4 inline-block">&larr; Back to all blogs</router-link>
-      
+
       <div v-if="blog" class="bg-white p-6 md:p-8 rounded-lg shadow-lg">
-        <img :src="blog.feature_image || 'https://via.placeholder.com/800x400'" :alt="blog.title" class="w-full h-64 object-cover rounded-lg mb-6">
+        <div v-if="blog.feature_image" class="mb-6">
+            <img :src="blog.feature_image" :alt="blog.title" class="w-full h-64 object-cover rounded-lg">
+        </div>
         <h1 class="text-4xl font-bold text-gray-900 mb-4">{{ blog.title }}</h1>
-        <p class="text-gray-600 text-sm mb-6">By admin | {{ new Date(blog.published_at).toLocaleDateString('id-ID') }}</p>
-        
+        <p class="text-gray-600 text-sm mb-6">{{ new Date(blog.published_at).toLocaleDateString('id-ID') }}</p>
+
         <div class="prose max-w-none text-gray-800 leading-relaxed" v-html="blog.html">
         </div>
       </div>
