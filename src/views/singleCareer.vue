@@ -6,13 +6,42 @@ import GhostContentAPI from '@tryghost/content-api';
 const route = useRoute();
 const careerPost = ref(null); // Gunakan nama variabel yang lebih spesifik untuk karir
 const careerId = route.params.id; // Mengambil ID dari URL
+const post = ref({});
 
-console.log('Fetching career post with ID:', careerId);
+const proxyFetch = async ({ url, method = 'GET', params = {}, headers = {} }) => {
+  const proxy = 'https://cms.sibertahan.com/proxy.php';
+
+  const body = {
+    endpoint: new URL(url).pathname,
+    method,
+    params,
+    headers,
+  };
+
+  const res = await fetch(proxy, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
+  });
+
+  // if (!res.ok) throw new Error(`Proxy fetch failed: ${res.status}`);
+  const result = await res.json();
+
+  console.log(result)
+
+  return {
+    data: {
+      posts: result.posts ?? result,
+      meta: result.meta ?? {}
+    }
+  };
+};
 
 const api = new GhostContentAPI({
-  url: 'http://localhost:2368', // PASTIKAN INI SESUAI DENGAN URL GHOST ANDA
-  key: '794cf32c3261801f8e9227ef56', // GANTI DENGAN CONTENT API KEY ASLI ANDA
-  version: 'v5.0'
+  url: 'https://cms.sibertahan.com', 
+  key: 'd829ab1b6f36e8f424dddc2d25',
+  version: 'v5.0',
+  makeRequest: proxyFetch
 });
 
 onMounted(async () => {
@@ -22,17 +51,21 @@ onMounted(async () => {
   }
   try {
     // Ambil postingan berdasarkan ID
-    const post = await api.posts.read({ id: careerId, include: 'tags,authors' });
-    careerPost.value = post;
+    await api.posts.read({ id: careerId, include: 'tags,authors' })
+    .then((val) => {
+      post.value = val[0]
+    });
+
+    careerPost.value = post.value;
 
     // Opsional: Perbarui judul halaman secara dinamis
-    if (post && post.title) {
-      document.title = `Sibertahan - ${post.title}`;
+    if (post.value && post.value.title) {
+      document.title = `Sibertahan - ${post.value.title}`;
     } else {
       document.title = 'Sibertahan - Career Detail';
     }
 
-    console.log('Fetched career post:', careerPost.value);
+    // console.log('Fetched career post:', careerPost.value);
   } catch (err) {
     console.error('Error fetching career post from Ghost:', err);
     // Tambahkan penanganan error di UI jika postingan tidak ditemukan
