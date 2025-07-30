@@ -59,15 +59,13 @@ api.posts
       <div class="content-overlay">
         <div class="mb-4 sm:mb-6 md:mb-8">
           <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white drop-shadow-lg leading-tight sm:leading-tight">
-            Success in <br>
-            the Career
+            Build Impact. <br>
+            Grow Together.
           </h1>
         </div>
         <div class="mb-6 sm:mb-8 md:mb-10">
           <p class="text-sm sm:text-base md:text-lg text-white drop-shadow-md max-w-sm sm:max-w-md md:max-w-lg">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-            diam nonummy nibh euismod tincidunt ut laoreet dolore
-            magna aliquam erat volutpat. Ut wisi enim ad minim veniam
+            At Sibertahan, your career is built on purpose, precision, and continuous growth. You’ll be part of a team that thrives on critical thinking, sharp analysis, and professional integrity. We value those who can see what others overlook, ask the hard questions, and deliver insight with clarity and responsibility.
           </p>
         </div>
         <div>
@@ -105,9 +103,7 @@ api.posts
     <div class="container px-4 sm:px-6 lg:px-12 py-8 sm:py-12 mx-auto">
       <h1 class="text-4xl sm:text-5xl md:text-6xl text-center py-4">Join Our Team!</h1>
       <p class="text-center text-gray-600 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-        magna aliquam erat volutpat
+        We’re looking for individuals who are driven by curiosity and committed to excellence. Whether your background is technical or analytical, you’ll find room to grow, share knowledge, and make real contributions to security and compliance in the digital age. Here, your work matters—because precision and accountability aren’t optional, they’re expected.
       </p>
 
       <div class="job-cards-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-8 sm:mt-12">
@@ -127,7 +123,9 @@ api.posts
           <p class="job-description text-gray-600 flex-grow mb-4 text-sm sm:text-base">
             {{ job.excerpt }}
           </p>
-          <button class="cek-btn bg-blue-600 text-white py-2 px-4 rounded-full text-sm font-medium w-32 mx-auto sm:mx-0">CEK NOW</button>
+          <router-link :to="{ name: 'single-career', params: { id: job.id } }" class="cek-btn bg-blue-600 text-white py-2 px-4 rounded-full text-sm font-medium w-32 mx-auto sm:mx-0 text-center">
+            CHECK NOW
+          </router-link>
         </div>
       </div>
     </div>
@@ -184,10 +182,7 @@ api.posts
     <div class="px-4 sm:px-6 lg:px-12 py-8 sm:py-12 mx-auto">
       <h1 class="text-4xl sm:text-5xl md:text-6xl text-center py-4">Core</h1>
       <p class="text-center text-gray-600 text-sm sm:text-base md:text-lg max-w-4xl mx-auto px-4 sm:px-8 md:px-12 py-6 sm:py-8 md:py-12">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh ut laoreet dolore magna aliquam erat
-        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-        consequat. Duis autem vel eumolestie. vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
-        qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        Integrity, independence, and trust are at the heart of everything we do. We maintain high standards not only in our deliverables but in how we collaborate as a team. Every engagement is approached with objectivity and respect, ensuring that our insights are grounded, our findings are clear, and our values remain intact.
       </p>
     </div>
   </div>

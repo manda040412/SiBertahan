@@ -1,13 +1,10 @@
 <template>
   <div class="font-sans">
     <Navbar />
-    
-    <!-- Floating WhatsApp Button - Show on all pages except contact -->
-    <div 
-      v-if="$route.name !== 'Contact'"
-      ref="whatsappButton" 
-      :class="buttonClass" 
-      class="right-4 z-[99999] transition-all duration-300"
+
+    <div
+      ref="whatsappButton"
+      class="fixed bottom-4 right-4 z-[99999] transition-all duration-300"
     >
       <button
         @click="sendWhatsApp"
@@ -19,55 +16,54 @@
         </svg>
       </button>
     </div>
-    
+
     <router-view />
     <Footer />
   </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted } from 'vue'
-import { useRoute } from 'vue-router'
+import { ref } from 'vue' // Remove computed, onMounted, onUnmounted, and useRoute
 import Navbar from "./components/Navbar.vue";
 import Footer from "./components/Footer.vue";
 
-const route = useRoute()
-const isButtonAtFooter = ref(false)
+// No need for route, isButtonAtFooter, buttonClass, or handleScroll
+// const route = useRoute()
+// const isButtonAtFooter = ref(false)
 
-const buttonClass = computed(() => {
-  return isButtonAtFooter.value 
-    ? 'fixed bottom-4 opacity-0 pointer-events-none' 
-    : 'fixed bottom-4 opacity-100';
-})
+// const buttonClass = computed(() => {
+//   return isButtonAtFooter.value
+//     ? 'fixed bottom-4 opacity-0 pointer-events-none'
+//     : 'fixed bottom-4 opacity-100';
+// })
 
-const handleScroll = () => {
-  const footer = document.querySelector('.bg-\\[\\#1D1D1D\\]'); // The actual footer component
-  if (footer) {
-    const footerRect = footer.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
-    
-    // Check if footer is visible in viewport - hide button when footer appears
-    if (footerRect.top <= windowHeight && footerRect.bottom >= 0) {
-      isButtonAtFooter.value = true;
-    } else {
-      isButtonAtFooter.value = false;
-    }
-  }
-}
+// const handleScroll = () => {
+//   const footer = document.querySelector('.bg-\\[\\#1D1D1D\\]');
+//   if (footer) {
+//     const footerRect = footer.getBoundingClientRect();
+//     const windowHeight = window.innerHeight;
+//     if (footerRect.top <= windowHeight && footerRect.bottom >= 0) {
+//       isButtonAtFooter.value = true;
+//     } else {
+//       isButtonAtFooter.value = false;
+//     }
+//   }
+// }
 
 const sendWhatsApp = () => {
-  const phoneNumber = '6221294622773';
+  const phoneNumber = '6281211120045';
   const message = 'Hello, I would like to inquire about your cybersecurity services.';
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   window.open(url, '_blank');
 }
 
-onMounted(() => {
-  handleScroll();
-  window.addEventListener('scroll', handleScroll);
-})
+// Remove onMounted and onUnmounted for scroll listener
+// onMounted(() => {
+//   handleScroll();
+//   window.addEventListener('scroll', handleScroll);
+// })
 
-onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll);
-})
+// onUnmounted(() => {
+//   window.removeEventListener('scroll', handleScroll);
+// })
 </script>

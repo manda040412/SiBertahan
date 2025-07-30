@@ -142,16 +142,13 @@
           </div>
           <div class="md:ml-1 w-full">
             <p class="text-gray-300 mb-6 md:mb-8 leading-relaxed text-base sm:text-lg md:text-2xl pt-0 md:pt-20">
-              We are PT Humanis Siber Indonesia "<span class="text-white font-semibold">SIBERTAHAN</span>",
-              a cybersecurity consulting firm that specializes in
-              providing comprehensive security solutions. Our team
-              of experts is equipped to handle all aspects of security,
-              from offensive tactics to defensive strategies and
-              governance protocols. With our in-depth knowledge
-              and cutting-edge technology, we offer unparalleled
-              protection for businesses of all sizes. Trust us to
-              safeguard your valuable data, mitigate risks, and
-              ensure your peace of mind.
+              PT Humanis Siber Indonesia, best known as Sibertahan, is a cybersecurity consulting firm focused on advancing digital security through independent assessment and strategic insight.
+
+With expertise across offensive, defensive, and governance domains, Sibertahan delivers comprehensive services that address real-world challenges in cybersecurity. Each engagement is approached with analytical precision and contextual understanding—recognizing that every organization operates under unique risks, structures, and compliance requirements.
+
+Sibertahan formulates tailored recommendations based on in-depth assessments, regulatory alignment, and operational relevance. This consulting-led approach ensures clarity, practicality, and impact across all advisory and testing activities.
+
+Built on a foundation of integrity, technical excellence, and sector experience, Sibertahan supports organizations in strengthening resilience and maintaining trust in an increasingly complex digital landscape.
             </p>
 
             <router-link to="/about" class="text-blue-400 hover:text-blue-300 inline-flex items-center group text-sm md:text-base">
@@ -432,7 +429,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 mb-2 sm:mb-3 md:mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="black">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              <p class="text-gray-600">+62 21 29492273</p>
+              <p class="text-gray-600">+6281211120045</p>
             </div>
             <div class="text-left text-sm md:text-base">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 mb-2 sm:mb-3 md:mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="black">

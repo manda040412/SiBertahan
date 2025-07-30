@@ -40,17 +40,12 @@
             </h2>
           </div>
           
-          <div class="text-content max-w-lg pl-0 md:pl-8 lg:pl-28">
+          <div class="text-content max-w-lg pl-0 md:pl-8 lg:pl-30">
             <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
-              We are a cybersecurity consulting firm that specializes in 
-              providing comprehensive security solutions. Our team of 
-              experts is equipped to handle all aspects of security, from 
-              offensive tactics to defensive strategies and governance 
-              protocols. With our in-depth knowledge and cutting-edge 
-              technology, we offer unparalleled protection for 
-              businesses of all sizes. Trust us to safeguard your 
-              valuable data, mitigate risks, and ensure your peace of 
-              mind.
+              PT Humanis Siber Indonesia, best known as Sibertahan, is a cybersecurity consulting firm focused on advancing digital security through independent assessment and strategic insight.
+With expertise across offensive, defensive, and governance domains, Sibertahan delivers comprehensive services that address real-world challenges in cybersecurity. Each engagement is approached with analytical precision and contextual understanding—recognizing that every organization operates under unique risks, structures, and compliance requirements.
+Sibertahan formulates tailored recommendations based on in-depth assessments, regulatory alignment, and operational relevance. This consulting-led approach ensures clarity, practicality, and impact across all advisory and testing activities.
+Built on a foundation of integrity, technical excellence, and sector experience, Sibertahan supports organizations in strengthening resilience and maintaining trust in an increasingly complex digital landscape.
             </p>
           </div>
 
@@ -119,8 +114,7 @@
       </div>
       <!-- Cards Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto">
-        <!-- SIBERSERANG -->
-        <div class="group relative bg-white/5 hover:bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 hover:border-white transition-all duration-300 hover:scale-[1.02] lg:hover:scale-105">
+        <router-link to="/services-siberserang" class="group relative bg-white/5 hover:bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 hover:border-white transition-all duration-300 hover:scale-[1.02] lg:hover:scale-105 block cursor-pointer">
           <img src="../assets/solutions logo (1).png" alt="SiberSerang" class="w-40 md:w-50 mx-auto mb-4 md:mb-6" />
           <h3 class="text-left text-lg md:text-xl font-bold mb-1">
             <span class="text-white">SIBER</span><span class="text-red-500">SERANG</span>
@@ -133,10 +127,9 @@
             providing valuable insights for your organization to fortify defenses, safeguard data, and
             mitigate potential real-world cyber threats.
           </p>
-        </div>
+        </router-link>
 
-        <!-- SIBERPATUH -->
-        <div class="group relative bg-white/5 hover:bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 hover:border-white transition-all duration-300 hover:scale-[1.02] lg:hover:scale-105">
+        <router-link to="/services-siberpatuh" class="group relative bg-white/5 hover:bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 hover:border-white transition-all duration-300 hover:scale-[1.02] lg:hover:scale-105 block cursor-pointer">
           <img src="../assets/solutions logo (2).png" alt="SiberPatuh" class="w-40 md:w-50 mx-auto mb-4 md:mb-6" />
           <h3 class="text-left text-lg md:text-xl font-bold mb-1">
             <span class="text-white">SIBER</span><span class="text-green-400">PATUH</span>
@@ -149,10 +142,9 @@
             governance by Top Management with a top-down approach to reach the sought cybersecurity
             governance posture across the brand.
           </p>
-        </div>
+        </router-link>
 
-        <!-- SIBERJAGA -->
-        <div class="group relative bg-white/5 hover:bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 hover:border-white transition-all duration-300 hover:scale-[1.02] lg:hover:scale-105">
+        <router-link to="/services-siberjaga" class="group relative bg-white/5 hover:bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 hover:border-white transition-all duration-300 hover:scale-[1.02] lg:hover:scale-105 block cursor-pointer">
           <img src="../assets/solutions logo (3).png" alt="SiberJaga" class="w-40 md:w-50 mx-auto mb-4 md:mb-6" />
           <h3 class="text-left text-lg md:text-xl font-bold mb-1">
             <span class="text-white">SIBER</span><span class="text-blue-400">JAGA</span>
@@ -165,7 +157,7 @@
             organization the capabilities to be resilient in responding to potential security incidents,
             ensuring the utmost protection of sensitive information.
           </p>
-        </div>
+        </router-link>
       </div>
     </div>
   </div>

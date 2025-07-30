@@ -36,21 +36,23 @@
           <div class="service-dropdown absolute bg-white shadow-lg rounded-md mt-2 py-2 w-48 border"
                :class="{ 'hidden': !isServiceDropdownOpen }"
                @click.stop>
-            <router-link to="/services-siberjaga" 
-                        @click="isServiceDropdownOpen = false"
-                        class="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-500">
-              SIBERJAGA
-            </router-link>
-            <router-link to="/services-siberpatuh"
-                        @click="isServiceDropdownOpen = false"
-                        class="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-500">
-              SIBERPATUH
-            </router-link>
             <router-link to="/services-siberserang"
                         @click="isServiceDropdownOpen = false"
                         class="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-500">
               SIBERSERANG
             </router-link>
+            
+            <router-link to="/services-siberpatuh"
+                        @click="isServiceDropdownOpen = false"
+                        class="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-500">
+              SIBERPATUH
+            </router-link>
+            <router-link to="/services-siberjaga" 
+                        @click="isServiceDropdownOpen = false"
+                        class="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-500">
+              SIBERJAGA
+            </router-link>
+            
           </div>
         </div>
 
@@ -80,7 +82,7 @@
 
         <!-- Contact Us button with vertical lines container -->
         <div class="relative ml-4">
-          <a href="https://wa.me/6281234567890?text=Hello%20SiberTahan%20Team" target="_blank" rel="noopener noreferrer"
+          <a href="https://wa.me/6281211120045?text=Hello%20SiberTahan%20Team" target="_blank" rel="noopener noreferrer"
             class="bg-blue-500 text-white px-5 py-2 rounded-md text-xs hover:bg-blue-600 transition"
             style="font-weight: 500;"
             @click="handleWhatsAppClick">

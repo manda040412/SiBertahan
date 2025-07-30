@@ -8,6 +8,7 @@ import ServicesSiberserang from '../views/services-siberserang.vue'
 import ServicesSiberpatuh from '../views/services-siberpatuh.vue'
 import contact from '../views/contact.vue'
 import SingleBlog from '../views/singleBlog.vue'
+import SingleCareer from '../views/singleCareer.vue'
 
 const routes = [
   { 
@@ -48,6 +49,13 @@ const routes = [
     name: 'Career', 
     component: Career,
     meta: { title: 'Sibertahan - Careers' } // Contoh: "SiBertahan - Careers"
+  },
+  {
+    path: '/career/:id', // Rute baru untuk detail karir
+    name: 'single-career', // Nama rute yang sama dengan yang digunakan di Career.vue
+    component: SingleCareer, // Menggunakan komponen SingleCareer.vue
+    props: true, // Untuk meneruskan params sebagai props (opsional, tapi bagus)
+    meta: { title: 'Sibertahan - Career Detail' } // Judul default, akan diupdate oleh komponen
   },
   { 
     path: '/services-siberjaga', 

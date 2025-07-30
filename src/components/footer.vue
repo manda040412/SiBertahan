@@ -60,9 +60,9 @@
         <div class="md:col-span-2.5">
           <h4 class="font-semibold mb-5 text-base">Quick Services</h4>
           <ul class="space-y-3 text-sm text-gray-400">
-            <li><router-link to="/service/siberserang" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Siberserang</router-link></li>
-            <li><router-link to="/service/siberpatuh" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Siberpatuh</router-link></li>
-            <li><router-link to="/service/siberjaga" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Siberjaga</router-link></li>
+            <li><router-link to="/services-siberserang" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Siberserang</router-link></li>
+            <li><router-link to="/services-siberpatuh" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Siberpatuh</router-link></li>
+            <li><router-link to="/services-siberjaga" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Siberjaga</router-link></li>
           </ul>
         </div>
       </div>

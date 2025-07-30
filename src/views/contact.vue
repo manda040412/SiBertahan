@@ -61,7 +61,7 @@
                   Phone:
                 </p>
               </div>
-              <p class="text-gray-700 text-sm leading-relaxed">+62 21 29492273</p>
+              <p class="text-gray-700 text-sm leading-relaxed">+6281211120045</p>
             </div>
           </div>
         </div>
@@ -150,7 +150,7 @@ export default {
   name: 'Contact',
   methods: {
     sendWhatsApp() {
-      const phoneNumber = '6221294622773';
+      const phoneNumber = '6281211120045';
       const message = 'Hello, I would like to inquire about your cybersecurity services.';
       const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
       window.open(url, '_blank');
