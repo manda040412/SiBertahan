@@ -32,7 +32,7 @@ const proxyFetch = async ({ url, method = 'GET', params = {}, headers = {} }) =>
 
 // Konfigurasi Ghost Content API
 const api = new GhostContentAPI({
-  url: 'https://cms.sibertahan.com', 
+  url: 'https://cms.sibertahan.com',
   key: 'd829ab1b6f36e8f424dddc2d25',
   version: 'v5.0',
   makeRequest: proxyFetch
@@ -53,7 +53,7 @@ api.posts
 </script>
 
 <template>
-  <div class="blog font-bahnschrift bg-gradient-to-b from-[#ffffff] via-[#ffffff] via-10% to-[#D7E6FF] hide-scrollbar">
+  <div class="blog font-bahnschrift bg-gradient-to-b from-[#ffffff] via-[#ffffff] via-10% to-[#D7E6FF] hide-scrollbar relative">
     <div class="cover-image-container">
       <img src="../assets/IMG-2.jpg" alt="Career Cover" class="cover-image" />
       <div class="content-overlay">
@@ -65,7 +65,7 @@ api.posts
         </div>
         <div class="mb-6 sm:mb-8 md:mb-10">
           <p class="text-sm sm:text-base md:text-lg text-white drop-shadow-md max-w-sm sm:max-w-md md:max-w-lg">
-            At Sibertahan, your career is built on purpose, precision, and continuous growth. You’ll be part of a team that thrives on critical thinking, sharp analysis, and professional integrity. We value those who can see what others overlook, ask the hard questions, and deliver insight with clarity and responsibility.
+            At Sibertahan, your career is built on purpose, precision, and continuous growth. You’ll be part of a team that thrives on critical thinking, sharp analysis, and professional integrity. We value those who can see what others overlook, ask the hard questions, and deliver insight with clarity and responsibility.
           </p>
         </div>
         <div>
@@ -103,7 +103,7 @@ api.posts
     <div class="container px-4 sm:px-6 lg:px-12 py-8 sm:py-12 mx-auto">
       <h1 class="text-4xl sm:text-5xl md:text-6xl text-center py-4">Join Our Team!</h1>
       <p class="text-center text-gray-600 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8">
-        We’re looking for individuals who are driven by curiosity and committed to excellence. Whether your background is technical or analytical, you’ll find room to grow, share knowledge, and make real contributions to security and compliance in the digital age. Here, your work matters—because precision and accountability aren’t optional, they’re expected.
+        We’re looking for individuals who are driven by curiosity and committed to excellence. Whether your background is technical or analytical, you’ll find room to grow, share knowledge, and make real contributions to security and compliance in the digital age. Here, your work matters—because precision and accountability aren’t optional, they’re expected.
       </p>
 
       <div class="job-cards-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-8 sm:mt-12">
@@ -177,10 +177,10 @@ api.posts
         </div>
       </div>
     </div>
-    <div class="absolute bg-gray-500 opacity-5 w-[400px] h-[180px] sm:w-[640px] sm:h-[280px] bottom-[-1000px] right-0 z-0 rounded-2xl"></div>
+    <div class="absolute bg-gray-500 opacity-5 w-[400px] h-[180px] sm:w-[640px] sm:h-[280px] bottom-0 right-0 z-0 rounded-2xl"></div>
 
     <div class="px-4 sm:px-6 lg:px-12 py-8 sm:py-12 mx-auto">
-      <h1 class="text-4xl sm:text-5xl md:text-6xl text-center py-4">Core</h1>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl text-center py-4">Our Core</h1>
       <p class="text-center text-gray-600 text-sm sm:text-base md:text-lg max-w-4xl mx-auto px-4 sm:px-8 md:px-12 py-6 sm:py-8 md:py-12">
         Integrity, independence, and trust are at the heart of everything we do. We maintain high standards not only in our deliverables but in how we collaborate as a team. Every engagement is approached with objectivity and respect, ensuring that our insights are grounded, our findings are clear, and our values remain intact.
       </p>

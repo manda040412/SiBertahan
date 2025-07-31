@@ -4,7 +4,7 @@
       <div class="relative">
         <div class="col-md-12">
           <div>
-            <h1 class="text-center font-bold py-12 text-5xl md:text-7xl lg:text-8xl">SIBER<span class="text-red-500">SERANG</span></h1>
+            <h1 class="text-center font-bold py-12 md:py-20 lg:py-28 text-5xl md:text-7xl lg:text-8xl">SIBER<span class="text-red-500">SERANG</span></h1>
           </div>
           <div class="hidden lg:flex absolute -left-[300px] top-[13.8%] -translate-y-1/2 flex-col">
             <img src="../assets/line dot.png" alt="" class="w-[600px] h-auto">
@@ -12,11 +12,11 @@
         </div>
         <div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12">
           <div class="order-1 lg:order-1">
-            <p class="text-blue-400 text-lg md:text-xl lg:text-2xl tracking-wider font-medium underline underline-offset-[15px] mb-4 text-start">
+            <p class="text-black text-lg md:text-xl lg:text-2xl tracking-wider font-medium underline underline-offset-[15px] mb-4 text-start">
               WHAT WE DO
             </p>
-            <h1 class="text-start py-10 text-5xl md:text-7xl lg:text-8xl">SIBER<span class="text-red-500">SERANG</span></h1>
-            <P class="text-base md:text-lg lg:text-xl"> Siberserang is our suite of offensive cybersecurity
+            <h1 class="text-start py-8 lg:py-20 text-4xl md:text-6xl lg:text-8xl">SIBER<span class="text-red-500">SERANG</span></h1>
+            <P class="text-base md:text-lg lg:text-xl leading-relaxed"> Siberserang is our suite of offensive cybersecurity
               services. It encompass proactive and controlled
               simulated attack on computer systems, networks, and
               applications. Our ethical penetration testers conduct
@@ -25,57 +25,46 @@
               organization to fortify defenses, safeguard data, and
               mitigate potential real-world cyber threats.</P>
 
-            <p class="text-blue-400 text-lg md:text-xl py-8 tracking-wider font-medium underline underline-offset-[15px] mb-1 text-start">
+            <p class="text-black text-lg md:text-xl py-8 lg:py-12 tracking-wider font-medium underline underline-offset-[15px] mb-1 text-start">
               SERVICE
             </p>
             <div class="flex flex-col gap-4 justify-start items-start">
-              <div class="p-4 bg-blue-500 text-white rounded-xl text-base md:text-lg">
+              <div class="p-4 bg-blue-500 text-white rounded-xl text-sm md:text-base lg:text-lg">
                 1. PENETRATION TESTING
               </div>
-              <div class="p-4 bg-blue-500 text-white rounded-xl text-base md:text-lg">
+              <div class="p-4 bg-blue-500 text-white rounded-xl text-sm md:text-base lg:text-lg">
                 2. RED TEAMING
               </div>
-              <div class="p-4 bg-blue-500 text-white rounded-xl text-base md:text-lg">
+              <div class="p-4 bg-blue-500 text-white rounded-xl text-sm md:text-base lg:text-lg">
                 3. ADVERSARY EMULATION
               </div>
-
             </div>
           </div>
           <div class="order-2 lg:order-2 flex justify-center items-center mt-8 lg:mt-0">
-            <img src="../assets/SIBERSERANG-03.png" alt="Siberjaga Services" class="w-full max-w-sm md:max-w-md lg:max-w-none lg:w-full h-auto">
+            <img src="../assets/SIBERSERANG-03.png" alt="Siberjaga Services" class="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-none lg:w-full h-auto">
           </div>
         </div>
       </div>
     </div>
-    <div class="container py-8 px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col gap-12 justify-center items-center mx-auto">
-      <div class="hidden lg:block absolute -bottom-[2100px] -right-[0px]">
-        <img src="../assets/Asset 1.png" alt="" class="w-[110px] h-auto">
-      </div>
-      <div class="hidden lg:block absolute -bottom-[1700px] -left-[300px] opacity-80">
-        <img src="../assets/SIBERSERANG-02.png" alt="" class="w-[540px] h-auto">
-      </div>
-      <div class="hidden lg:block absolute -bottom-[3500px] -right-[300px] opacity-80">
-        <img src="../assets/SIBERSERANG-02.png" alt="" class="w-[640px] h-auto">
-      </div>
-    </div>
 
-    <div class="container py-8 px-4 sm:px-6 md:px-8 lg:px-12 mx-auto relative">
-      <h2 class="text-xl md:text-2xl font-bold text-blue-500 mb-4">1. PENETRATION TESTING</h2>
-
-      <div class="mb-8 max-w-4xl">
-        <p class="text-base md:text-lg text-gray-700 mb-4">
+    <div class="container py-12 md:py-20 lg:py-32 px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col gap-8 md:gap-10 lg:gap-12 justify-center items-start mx-auto">
+      <div>
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-500 mb-4 md:mb-6 lg:mb-8">
+          1. PENETRATION TESTING
+        </h1>
+        <p class="text-base md:text-lg lg:text-xl pr-0 md:pr-4 lg:pr-16 xl:pr-32">
           Also known as “pentesting,” it is a controlled and simulated attack on a computer system, network, application,
           or infrastructure to identify vulnerabilities and weaknesses that could potentially be exploited by malicious
           hackers. The goal of penetration testing is to evaluate the security posture of the target system and provide
           insights into areas that need improvement.
         </p>
-        <p class="text-base md:text-lg text-gray-700 mb-6">
+        <p class="text-base md:text-lg lg:text-xl pr-0 md:pr-4 lg:pr-16 xl:pr-32 mb-6">
           Our approach at sibertahan involves the following activities.
         </p>
+        <img src="../assets/line-siku-pendek.png" alt="" class="hidden lg:block w-[140px] h-auto absolute lg:-bottom-[900px] lg:-right-[10px]">
       </div>
 
       <div class="ml-0 md:ml-4 space-y-6 max-w-4xl">
-
         <div class="flex flex-col sm:flex-row gap-2 sm:gap-4">
           <div class="font-bold min-w-[24px]">1.</div>
           <div>
@@ -154,23 +143,21 @@
       </div>
     </div>
 
-    <div class="container py-10 px-4 sm:px-6 md:px-8 lg:px-12 mx-auto relative mt-16">
-      <h2 class="text-xl md:text-2xl font-bold text-blue-500 mb-4">2. RED TEAMING</h2>
-
-      <div class="mb-8 max-w-4xl">
-        <p class="text-base md:text-lg text-gray-700 mb-4">
-          Red Teaming is an advanced form of cybersecurity assessment that goes beyond traditional penetration testing.
-          It involves simulating real-world attacks to evaluate the effectiveness of an organization’s security measures,
-          processes, and people. Red Teaming aims to provide a holistic view of an organization’s ability to detect,
-          respond to, and mitigate sophisticated and targeted cyber threats.
-        </p>
-        <p class="text-base md:text-lg text-gray-700 mb-6">
-          At sibertahan, our Red Teaming service has the following characteristics:
-        </p>
-      </div>
+    <div class="container py-0 md:py-4 lg:py-12 px-4 sm:px-6 md:px-8 lg:px-12 mx-auto relative mt-16">
+      <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-500 mb-4 md:mb-6 lg:mb-8">
+        2. RED TEAMING
+      </h1>
+      <p class="text-base md:text-lg lg:text-xl pr-0 md:pr-4 lg:pr-16 xl:pr-32">
+        Red Teaming is an advanced form of cybersecurity assessment that goes beyond traditional penetration testing.
+        It involves simulating real-world attacks to evaluate the effectiveness of an organization’s security measures,
+        processes, and people. Red Teaming aims to provide a holistic view of an organization’s ability to detect,
+        respond to, and mitigate sophisticated and targeted cyber threats.
+      </p>
+      <p class="text-base md:text-lg lg:text-xl pr-0 md:pr-4 lg:pr-16 xl:pr-32 mb-6">
+        At sibertahan, our Red Teaming service has the following characteristics:
+      </p>
 
       <div class="ml-0 md:ml-4 space-y-6 max-w-4xl">
-
         <div class="flex flex-col sm:flex-row gap-2 sm:gap-4">
           <div class="font-bold min-w-[24px]">1.</div>
           <div>
@@ -245,24 +232,22 @@
       </div>
     </div>
 
-    <div class="container py-10 px-4 sm:px-6 md:px-8 lg:px-12 mx-auto relative mt-16">
-      <h2 class="text-xl md:text-2xl font-bold text-blue-500 mb-4">3. ADVERSARY EMULATION</h2>
-
-      <div class="mb-8 max-w-4xl">
-        <p class="text-base md:text-lg text-gray-700 mb-4">
-          Adversary Emulation, also known as Purple Teaming, is a cybersecurity practice that involves simulating the
-          tactics, techniques, and procedures (TTPs) of specific threat actors or attack groups in order to assess an
-          organization’s ability to detect, respond to, and defend against those specific threats. This approach helps
-          organizations enhance their threat detection and incident response capabilities by testing them against
-          realistic attack scenarios.
-        </p>
-        <p class="text-base md:text-lg text-gray-700 mb-6">
-          At sibertahan, our approach to Adversary Emulation includes:
-        </p>
-      </div>
+    <div class="container py-0 md:py-4 lg:py-12 pl-0 md:pl-0 lg:pl-24 px-4 sm:px-6 md:px-8 lg:px-12 mx-auto relative mt-16">
+      <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-500 mb-4 md:mb-6 lg:mb-8">
+        3. ADVERSARY EMULATION
+      </h1>
+      <p class="text-base md:text-lg lg:text-xl pr-0 md:pr-4 lg:pr-16 xl:pr-32">
+        Adversary Emulation, also known as Purple Teaming, is a cybersecurity practice that involves simulating the
+        tactics, techniques, and procedures (TTPs) of specific threat actors or attack groups in order to assess an
+        organization’s ability to detect, respond to, and defend against those specific threats. This approach helps
+        organizations enhance their threat detection and incident response capabilities by testing them against
+        realistic attack scenarios.
+      </p>
+      <p class="text-base md:text-lg lg:text-xl pr-0 md:pr-4 lg:pr-16 xl:pr-32 mb-6">
+        At sibertahan, our approach to Adversary Emulation includes:
+      </p>
 
       <div class="ml-0 md:ml-4 space-y-6 max-w-4xl">
-
         <div class="flex flex-col sm:flex-row gap-2 sm:gap-4">
           <div class="font-bold min-w-[24px]">1.</div>
           <div>
@@ -346,7 +331,6 @@
             </p>
           </div>
         </div>
-
       </div>
 
       <div class="mt-8 max-w-4xl">
@@ -357,6 +341,7 @@
           cyberattacks.
         </p>
       </div>
+      <img src="../assets/siberserang-02.png" alt="" class="hidden lg:block w-[640px] h-auto absolute lg:-bottom-[-2500px] lg:-left-[500px] opacity-50 z-1 ">
     </div>
   </div>
 </template>

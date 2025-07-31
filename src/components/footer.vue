@@ -8,9 +8,8 @@
         <div class="md:col-span-4">
           <img src="../assets/Sibertahan.png" class="h-10 mb-6" alt="Sibertahan Logo" />
           <p class="text-sm text-gray-300 mb-10 leading-relaxed">
-            Safeguard your valuable data,<br />
-            mitigate risks, and ensure your<br />
-            peace of mind.
+            Better Security,<br />
+            Better Human Rights<br />
           </p>
           <p class="text-sm mb-4 font-medium">Follow us:</p>
           
@@ -45,7 +44,7 @@
           <h4 class="font-semibold mb-5 text-base">Quick Link</h4>
           <ul class="space-y-3 text-sm text-gray-400">
             <li><router-link to="/" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Home</router-link></li>
-            <li><router-link to="/service" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Our Services</router-link></li>
+            <li><router-link to="/services-siberserang" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Our Services</router-link></li>
             <li><router-link to="/about" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>About Us</router-link></li>
             <li><router-link to="/contact" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Contact Us</router-link></li>
             <li><router-link to="/blog" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Blog</router-link></li>
@@ -60,9 +59,9 @@
         <div class="md:col-span-2.5">
           <h4 class="font-semibold mb-5 text-base">Quick Services</h4>
           <ul class="space-y-3 text-sm text-gray-400">
-            <li><router-link to="/services-siberserang" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Siberserang</router-link></li>
-            <li><router-link to="/services-siberpatuh" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Siberpatuh</router-link></li>
-            <li><router-link to="/services-siberjaga" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Siberjaga</router-link></li>
+            <li><router-link to="/services-siberserang" class="font-bold hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Siberserang</router-link></li>
+            <li><router-link to="/services-siberpatuh" class="font-bold hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Siberpatuh</router-link></li>
+            <li><router-link to="/services-siberjaga" class="font-bold hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Siberjaga</router-link></li>
           </ul>
         </div>
       </div>

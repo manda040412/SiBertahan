@@ -16,24 +16,27 @@
               WHAT WE DO
             </p>
             <h1 class="text-start py-8 lg:py-20 text-4xl md:text-6xl lg:text-8xl">SIBER<span class="text-green-500">PATUH</span></h1>
-            <P class="text-base md:text-lg lg:text-xl leading-relaxed"> Siberjaga focuses on defensive cybersecurity consulting
-              services which involve comprehensive strategies and the
-              adoption of frameworks to better protect your
-              organization from unauthorized access, cyberattacks,
-              and breaches. The ultimate goal is to provide your
-              organization the capabilities to be cyber resilient in
-              responding to potential security incident, ensuring the
-              utmost protection of sensitive information.</P>
+            <P class="text-base md:text-lg lg:text-xl leading-relaxed">  Siberpatuh consulting servicess will help your 
+organization in adhering to industry regulations, legal 
+requirements, and internal policies that ensure the 
+protection of your critical assets as well as the protection 
+of data. This service emphasize on proper governance by 
+Top Managemant with a top-down approach to reach the 
+sought cybersecurity governance posture across the 
+brand.</P>
 
             <p class="text-lg md:text-xl lg:text-2xl py-8 lg:py-12 tracking-wider font-medium underline underline-offset-[15px] mb-4 text-start">
               SERVICE
             </p>
             <div class="flex flex-col gap-4 justify-start items-start">
               <div class="p-4 bg-blue-500 text-white rounded-xl text-sm md:text-base lg:text-lg">
-                1. SECURITY HARDENING ASSESSMENT
+                1. REGULATORY COMPLIANCE
               </div>
               <div class="p-4 bg-blue-500 text-white rounded-xl text-sm md:text-base lg:text-lg">
-                2. CYBERSECURITY RESILIENCE IMPROVEMENT
+                2. AUDIT ASSISTANCE
+              </div>
+              <div class="p-4 bg-blue-500 text-white rounded-xl text-sm md:text-base lg:text-lg">
+                3.  SECURITY GAP ANALYSIS
               </div>
             </div>
           </div>
@@ -68,7 +71,7 @@
           Perlindungan Data Pribadi (UU PDP).
         </p>
       </div>
-      <div class="py-0 md:py-4 lg:py-12 pl-0 md:pl-0 lg:pl-24">
+      <div class="py-0 md:py-4 lg:py-2 pl-0 md:pl-0 lg:pl-24">
         <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-500 mb-4 md:mb-6 lg:mb-8">
           3. SECURITY GAP ANALYSIS
         </h1>
@@ -77,7 +80,8 @@
           desired place by accompanying you every step of the way.
           Example: Gap Assessment based on ISO/IEC 27001:2022 and CIS Controls.
         </p>
-               <img src="../assets/siberpatuh (2).png" alt="" class="hidden lg:block w-[640px] h-auto absolute lg:-bottom-[1500px] lg:-left-[300px] opacity-80 z-10"></div>
+               <img src="../assets/siberpatuh (2).png" alt="" class="hidden lg:block w-[640px] h-auto absolute lg:-bottom-[1100px] lg:-left-[300px] opacity-80 z-10">
+              </div>
     </div>
   </div>
 </template>

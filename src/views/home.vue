@@ -18,12 +18,8 @@
           <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4 md:mb-6 text-gray-800">
             Better Security,<br>Better Human Rights
           </h1>
-          <p class="text-gray-600 text-base sm:text-lg mb-6 md:mb-8 max-w-lg">
-            Trust us to safeguard your valuable data, mitigate risks,<br class="hidden md:block">
-            and ensure your peace of mind.
-          </p>
-          <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-5 sm:py-3 sm:px-6 pr-3 sm:pr-4 rounded-full text-sm font-medium transition inline-flex items-center gap-2 sm:gap-3">
-            JOIN US
+          <a href="tel:+6281211120045" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-5 sm:py-3 sm:px-6 pr-3 sm:pr-4 rounded-full text-sm font-medium transition inline-flex items-center gap-2 sm:gap-3">
+            CONTACT US
             <div class="w-7 h-7 sm:w-8 sm:h-8 bg-white rounded-full flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="blue">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -53,7 +49,7 @@
         <div class="absolute inset-0 bg-gradient-to-t from-[#000000] to-transparent opacity-90"></div>
       </div>
 
-      <div class="absolute top-12 left-1/2 -translate-x-1/2 container px-4 sm:px-6 md:px-12 w-full max-w-7xl z-40">
+      <div class="absolute top-2 left-1/2 -translate-x-1/2 container px-4 sm:px-6 md:px-12 w-full max-w-7xl z-40">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 py-8">
           <div class="flex justify-center">
               <a href="https://www.bssn.go.id/daftar-lembaga-konsultan-dan-lembaga-sertifikasi/" target="_blank" rel="noopener noreferrer" class="block w-full max-w-[280px] sm:max-w-[320px] lg:max-w-md">
@@ -101,12 +97,12 @@
         <img src="../assets/background-dot.png" alt="" class="w-full h-full object-cover opacity-50" />
       </div>
 
-      <div class="bg-[#00204a] opacity-80 absolute top-0 sm:top-[80px] md:top-[160px] left-0 w-full md:w-[80%] lg:w-[1600px] h-32 sm:h-40 md:h-[200px] flex flex-col p-4 relative z-10 rounded-r-lg">
+      <div class="bg-[#00204a] opacity-80 absolute top-0 sm:top-[80px] md:top-[110px] left-0 w-full md:w-[80%] lg:w-[1200px] h-32 sm:h-40 md:h-[200px] flex flex-col p-4 relative z-10 rounded-r-lg">
       </div>
 
-      <div class="absolute top-12 sm:top-20 md:top-1/2 md:-translate-y-1/2 left-1/2 -translate-x-1/2 z-20 flex flex-col w-full sm:w-[90%] md:w-[80%] lg:w-[880px] px-4 sm:px-0">
-        <p class="text-blue-400 text-lg sm:text-xl md:text-2xl tracking-wider font-medium underline underline-offset-[15px] mb-4">ABOUT US</p>
-        <div class="relative">
+      <div class="absolute top-12 sm:top-20 md:top-1/2 md:-translate-y-1/2 left-1/2 -translate-x-1/2 z-20 flex flex-col w-full sm:w-[90%] md:w-[80%] lg:w-[880px] px-4 sm:px-0 justify-center">
+        <p class="text-blue-400 text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-wider font-medium underline underline-offset-[15px] text-start">ABOUT US</p>
+        <div class="relative w-full">
           <div class="hidden lg:flex absolute -left-[900px] top-[50%] -translate-y-1/2 flex-col gap-[20px]">
             <div class="relative w-[720px] flex items-center">
               <div class="h-[6px] w-full bg-blue-500"></div>
@@ -121,11 +117,7 @@
               <div class="absolute right-0 w-[18px] h-[18px] bg-blue-500 rounded-full transform translate-x-1/2"></div>
             </div>
           </div>
-
-          <h2 class="text-2xl sm:text-4xl md:text-5xl lg:text-7xl text-white leading-tight max-w-full md:max-w-[880px] mx-auto">
-            Establish and Maintain<br class="hidden sm:block">Complete Digital Security
-          </h2>
-        </div>
+          </div>
       </div>
 
       <div class="container max-w-[1600px] mx-auto px-6 relative z-10 pt-40 sm:pt-48 md:pt-60 pb-12 md:pb-24">
@@ -262,10 +254,10 @@ Built on a foundation of integrity, technical excellence, and sector experience,
     <section class="experts bg-gradient-to-tr from-[#D7E6FF] from-0% to-[#F4F7FF] to-40% text-[#00101f] py-12 md:py-20 relative">
       <div class="container px-4 sm:px-6 md:px-12 max-w-[1600px] mx-auto">
         <div class="flex justify-end text-sm sm:text-base md:text-lg text-right">
-          <p>
+          <!-- <p>
             <span class="opacity-50">Safeguard your valuable data</span>
             <span class="opacity-100 font-bold"> and ensure your peace of mind</span>
-          </p>
+          </p> -->
         </div>
         <div class="flex flex-col w-full my-6 md:my-8">
           <div class="w-1/2 h-[3px] bg-gray-600 opacity-30"></div>
@@ -301,7 +293,7 @@ Built on a foundation of integrity, technical excellence, and sector experience,
           </div>
         </div>
 
-        <div class="hidden lg:flex absolute -left-[750px] lg:top-[870px] xl:top-[900px] 2xl:top-[950px] flex-col gap-[20px]">
+        <div class="hidden lg:flex absolute -left-[750px] lg:top-[870px] xl:top-[900px] 2xl:top-[750px] flex-col gap-[20px]">
           <div class="relative w-[1220px] flex items-center">
             <div class="h-[6px] w-full bg-blue-500"></div>
             <div class="absolute right-0 w-[18px] h-[18px] bg-blue-500 rounded-full transform translate-x-1/2"></div>
@@ -335,7 +327,7 @@ Built on a foundation of integrity, technical excellence, and sector experience,
               strategies, we fortify your digital landscape with expert
               precision
             </p>
-            <div class="pt-6 md:pt-10">
+            <!-- <div class="pt-6 md:pt-10">
               <div class="flex flex-wrap justify-start items-center gap-4 sm:gap-8 md:gap-12">
                 <div class="relative flex flex-col items-center">
                   <div class="bg-gradient-to-br from-[#06305C] from-30% to-[#000203] p-2 sm:p-3 rounded-xl shadow-[0_8px_16px_-4px_rgba(0,0,0,0.5)] transition-all flex items-center justify-center w-28 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24">
@@ -397,7 +389,7 @@ Built on a foundation of integrity, technical excellence, and sector experience,
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="py-12 md:py-20">
@@ -410,7 +402,7 @@ Built on a foundation of integrity, technical excellence, and sector experience,
               <h2 class="text-5xl sm:text-7xl md:text-8xl lg:text-[100px] xl:text-[120px] 2xl:text-[160px] leading-none text-[#00101f] relative z-10">
                 Contact <span class="text-blue-500">us.</span>
               </h2>
-              <div class="flex justify-start pl-4 sm:pl-10 mt-6">
+              <!-- <div class="flex justify-start pl-4 sm:pl-10 mt-6">
                 <router-link to="/contact" class="bg-[#1D1D1D] hover:bg-blue-700 text-white py-2 px-5 pr-3 rounded-full text-sm font-medium transition inline-flex items-center gap-2">
                   WORK WITH US
                   <div class="w-7 h-7 bg-white rounded-full flex items-center justify-center">
@@ -419,7 +411,7 @@ Built on a foundation of integrity, technical excellence, and sector experience,
                     </svg>
                   </div>
                 </router-link>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>

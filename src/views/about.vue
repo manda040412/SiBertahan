@@ -36,7 +36,7 @@
 
           <div class="section-subheading">
             <h2 class="text-blue-500 text-3xl sm:text-4xl lg:text-5xl leading-tight">
-              Ensuring Your Peace<br>of Mind
+              Better Security, <br>Better Human Rights
             </h2>
           </div>
           
