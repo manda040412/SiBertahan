@@ -1,19 +1,19 @@
+// src/utils/DateFormatter.js
+
 export function formatReadableDate(isoString, options = {}) {
-    const date = new Date(isoString);
-  
-    const defaultOptions = {
-      weekday: 'long',
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-      hour: '2-digit',
-      minute: '2-digit',
-      hour12: false,
-      timeZone: 'UTC',
-    };
-  
-    const mergedOptions = { ...defaultOptions, ...options };
-    const formatted = new Intl.DateTimeFormat('id-ID', mergedOptions).format(date);
-  
-    return formatted.replace(' pukul', ' -');
+  const date = new Date(isoString);
+
+  // Opsi default untuk format tanggal dalam Bahasa Inggris
+  const defaultOptions = {
+    year: 'numeric',
+    month: 'long', // 'long' untuk "August", 'short' untuk "Aug"
+    day: 'numeric',
+  };
+
+  const mergedOptions = { ...defaultOptions, ...options };
+
+  // Menggunakan 'en-US' locale untuk Bahasa Inggris
+  const formatted = new Intl.DateTimeFormat('en-US', mergedOptions).format(date);
+
+  return formatted;
 }

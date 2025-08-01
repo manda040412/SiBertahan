@@ -1,18 +1,12 @@
 <template>
-  <!-- Main container with flex column layout -->
   <div class="flex flex-col min-h-screen">
-    <!-- Content that will grow to push footer down -->
     <div class="flex-grow">
-      <!-- Main Contact Section -->
       <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
-        <!-- Contact Title -->
         <div class="text-center mb-10 sm:mb-16">
           <h1 class="text-4xl sm:text-5xl lg:text-6xl text-gray-900 font-light mb-4">Contact</h1>
         </div>
 
-        <!-- Contact Info Section -->
         <div class="mb-16 sm:mb-20 px-0 sm:px-4">
-          <!-- Title -->
           <div class="text-left mb-4">
             <p class="text-blue-500 font-semibold text-sm tracking-wider uppercase border-b-2 border-blue-500 inline-block pb-1">
               CONTACT INFO
@@ -23,9 +17,7 @@
             Our Contact Information
           </h2>
 
-          <!-- Contact Cards -->
           <div class="flex flex-col md:flex-row justify-between items-stretch gap-8 sm:gap-12 max-w-7xl mx-auto">
-            <!-- Location Card -->
             <div class="flex flex-col w-full md:w-72">
               <div class="flex items-end gap-4 mb-4">
                 <img src="../assets/location.png" alt="Location Icon" class="w-12 h-12 sm:w-16 sm:h-16 object-contain" />
@@ -42,7 +34,6 @@
               </p>
             </div>
 
-            <!-- Email Card -->
             <div class="flex flex-col w-full md:w-72">
               <div class="flex items-end gap-4 mb-4">
                 <img src="../assets/email.png" alt="Email Icon" class="w-12 h-12 sm:w-16 sm:h-16 object-contain" />
@@ -53,7 +44,6 @@
               <p class="text-gray-700 text-sm leading-relaxed break-all">info@sibertahan.com</p>
             </div>
 
-            <!-- Phone Card -->
             <div class="flex flex-col w-full md:w-72">
               <div class="flex items-end gap-4 mb-4">
                 <img src="../assets/phone.png" alt="Phone Icon" class="w-12 h-12 sm:w-16 sm:h-16 object-contain" />
@@ -61,55 +51,44 @@
                   Phone:
                 </p>
               </div>
-              <p class="text-gray-700 text-sm leading-relaxed">+6281211120045</p>
+              <p class="text-gray-700 text-sm leading-relaxed">+622129492273</p>
             </div>
           </div>
         </div>
 
-        <!-- Zigzag Decorative Lines -->
         <div class="flex flex-col items-center gap-5 my-[-20px] z-0">
-          <!-- First line: Dot on the left, full width -->
           <div class="relative w-full max-w-[95vw] sm:w-[130%] sm:max-w-[1300px] sm:translate-x-[230px] flex items-center">
-              <div class="h-[6px] w-full bg-blue-500 rounded-full"></div>
-              <div class="absolute -left-[5px] w-[20px] h-[20px] bg-blue-500 rounded-full translate-x-[-50%]"></div>
+            <div class="h-[6px] w-full bg-blue-500 rounded-full"></div>
+            <div class="absolute -left-[5px] w-[20px] h-[20px] bg-blue-500 rounded-full translate-x-[-50%]"></div>
           </div>
 
-          <!-- Second line: Dot on the right, shorter -->
           <div class="relative w-[80%] sm:w-[41%] max-w-[800px] -translate-x-0 sm:-translate-x-[650px] flex items-center">
-              <div class="h-[6px] w-full bg-blue-500 rounded-full"></div>
-              <div class="absolute -right-[5px] w-[20px] h-[20px] bg-blue-500 rounded-full translate-x-[50%]"></div>
+            <div class="h-[6px] w-full bg-blue-500 rounded-full"></div>
+            <div class="absolute -right-[5px] w-[20px] h-[20px] bg-blue-500 rounded-full translate-x-[50%]"></div>
           </div>
 
-          <!-- Third line: Dot on the left, full width -->
           <div class="relative w-full max-w-[95vw] sm:w-[130%] sm:max-w-[1300px] sm:translate-x-[230px] flex items-center">
-              <div class="h-[6px] w-full bg-blue-500 rounded-full"></div>
-              <div class="absolute -left-[5px] w-[20px] h-[20px] bg-blue-500 rounded-full translate-x-[-50%]"></div>
+            <div class="h-[6px] w-full bg-blue-500 rounded-full"></div>
+            <div class="absolute -left-[5px] w-[20px] h-[20px] bg-blue-500 rounded-full translate-x-[-50%]"></div>
           </div>
         </div>
       </div>
 
-      <!-- Send Message Section -->
       <div class="bg-gradient-to-b from-white to-blue-50 py-10 sm:py-16 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
-          <!-- Top Section: Judul + WhatsApp Icon -->
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-            <!-- Image contact1 on far left -->
             <div class="flex justify-center lg:justify-start">
               <img src="../assets/contact1.png" alt="Contact Illustration" class="w-full max-w-xs sm:max-w-md md:max-w-lg object-contain mb-10 mt-[-30px] sm:mt-[-50px]">
             </div>
 
-            <!-- Heading & WhatsApp Image -->
             <div class="flex flex-col items-start justify-start">
               <p class="text-blue-500 font-semibold text-sm tracking-wider uppercase mb-6 sm:mb-8 border-b-2 border-blue-500 pb-1">GET IN TOUCH</p>
               <h2 class="text-3xl sm:text-4xl lg:text-5xl text-blue-500 font-light mb-6 sm:mb-10">Send Us a Message</h2>
 
-              <!-- WhatsApp Image under heading -->
-              <img src="../assets/contact2.png" alt="WhatsApp Illustration" class="w-60 sm:w-72 md:w-80 h-auto object-contain mb-8 sm:mb-12">
-
-              <!-- WhatsApp Text & Button -->
-              <div class="flex flex-col sm:flex-row sm:items-center sm:gap-10 w-full">
-                <p class="text-lg sm:text-xl text-gray-700 mb-4 sm:mb-0">By WhatsApp.</p>
-                <button
+              <div class="w-full flex justify-center mb-8 sm:mb-12"> <img src="../assets/contact2.png" alt="WhatsApp Illustration" class="w-60 sm:w-72 md:w-80 h-auto object-contain">
+              </div>
+              
+              <div class="flex justify-center w-full"> <button
                   @click="sendWhatsApp"
                   class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 w-full sm:w-auto"
                 >
@@ -119,20 +98,16 @@
             </div>
           </div>
 
-          <!-- Decorative Blue Lines (updated version) -->
           <div class="absolute -left-[100px] sm:-left-[300px] items-center mt-2 mb-5 relative z-0 hidden sm:block">
             <div class="flex flex-col gap-5">
-                <!-- First line with dot -->
                 <div class="relative w-[220px] sm:w-[420px] flex items-center">
                   <div class="h-[6px] w-full bg-blue-500 rounded-full"></div>
                   <div class="absolute right-0 w-[20px] h-[20px] bg-blue-500 rounded-full translate-x-1/2"></div>
                 </div>
-                <!-- Second line with dot -->
                 <div class="relative w-[240px] sm:w-[460px] flex items-center">
                   <div class="h-[6px] w-full bg-blue-500 rounded-full"></div>
                   <div class="absolute right-0 w-[20px] h-[20px] bg-blue-500 rounded-full translate-x-1/2"></div>
                 </div>
-                <!-- Third line with dot -->
                 <div class="relative w-[220px] sm:w-[420px] flex items-center">
                   <div class="h-[6px] w-full bg-blue-500 rounded-full"></div>
                   <div class="absolute right-0 w-[20px] h-[20px] bg-blue-500 rounded-full translate-x-1/2"></div>

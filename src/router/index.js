@@ -87,14 +87,23 @@ const router = createRouter({
   history: createWebHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
-    // If there's a saved position (back/forward navigation), use it
+    // If there's a saved position (e.g., from browser back/forward buttons), use it
     if (savedPosition) {
-      return savedPosition
+      return savedPosition;
+    } 
+    // If the 'to' route has a hash (like #services-section), scroll to that element
+    else if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth', // Optional: for smooth scrolling animation
+      };
+    } 
+    // Otherwise, scroll to the top of the page for new navigations
+    else {
+      return { top: 0 };
     }
-    // For new navigation, scroll to top
-    return { top: 0 }
-  }
-})
+  },
+});
 
 // Navigation Guard untuk mengatur judul halaman
 router.beforeEach((to, from, next) => {
@@ -108,4 +117,4 @@ router.beforeEach((to, from, next) => {
   next();
 });
 
-export default router
+export default router;

@@ -18,7 +18,7 @@
           <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4 md:mb-6 text-gray-800">
             Better Security,<br>Better Human Rights
           </h1>
-          <a href="tel:+6281211120045" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-5 sm:py-3 sm:px-6 pr-3 sm:pr-4 rounded-full text-sm font-medium transition inline-flex items-center gap-2 sm:gap-3">
+          <a href="https://wa.me/6281211120045" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-5 sm:py-3 sm:px-6 pr-3 sm:pr-4 rounded-full text-sm font-medium transition inline-flex items-center gap-2 sm:gap-3">
             CONTACT US
             <div class="w-7 h-7 sm:w-8 sm:h-8 bg-white rounded-full flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="blue">
@@ -153,7 +153,7 @@ Built on a foundation of integrity, technical excellence, and sector experience,
         </div>
       </div>
 
-      <section class="solutions py-12 md:py-20">
+      <section class="solutions py-12 md:py-20" id="services-section">
         <div class="container mx-auto px-4 sm:px-6 md:px-12">
           <div class="relative">
           <div class="flex flex-col md:flex-row md:items-center md:justify-between relative mb-8 md:mb-12">
@@ -181,72 +181,78 @@ Built on a foundation of integrity, technical excellence, and sector experience,
         </div>
 
           <div class="flex flex-col gap-8">
-            <div class="solution-card bg-[#06305C]/80 p-6 sm:p-8 rounded-xl backdrop-blur-sm border-2 border-white/20 hover:border-blue-500/80 transition-all duration-300 shadow-[0_0_50px_0_rgba(0,0,0,0.5)]">
-              <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
-                <div class="flex-shrink-0 w-40 h-40 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-[300px] lg:h-[300px] flex items-center justify-center relative solution-image">
-                  <div class="relative z-10 w-full h-full">
-                    <img src="../assets/solutions logo (1).png" alt="Siberserang" class="w-full h-full object-contain" />
-                  </div>
-                </div>
-                <div class="flex-grow">
-                  <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-white underline decoration-2 underline-offset-[20px] md:underline-offset-[30px] text-center md:text-left">SIBER<span class="text-red-500">SERANG</span></h3>
-                  <p class="text-gray-300 pt-4 sm:pt-6 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base md:text-lg">
-                    Siberserang is our suite of offensive cybersecurity services. It encompasses proactive and controlled simulated attack on computer systems, networks, and applications. Our ethical penetration testers conduct these assessments to identify vulnerabilities and weaknesses, providing valuable insights for your organization to fortify defenses, safeguard data, and mitigate potential real-world cyber threats.
-                  </p>
-                  <router-link to="/services-siberserang" class="text-blue-400 hover:text-blue-300 inline-flex items-center group text-sm md:text-base">
-                    Read more
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </router-link>
-                </div>
+      <router-link to="/services-siberserang" class="block">
+        <div class="solution-card bg-[#06305C]/80 p-6 sm:p-8 rounded-xl backdrop-blur-sm border-2 border-white/20 hover:border-blue-500/80 transition-all duration-300 shadow-[0_0_50px_0_rgba(0,0,0,0.5)] cursor-pointer">
+          <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
+            <div class="flex-shrink-0 w-40 h-40 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-[300px] lg:h-[300px] flex items-center justify-center relative solution-image">
+              <div class="relative z-10 w-full h-full">
+                <img src="../assets/solutions logo (1).png" alt="Siberserang" class="w-full h-full object-contain" />
               </div>
             </div>
-
-            <div class="solution-card bg-[#06305C]/80 p-6 sm:p-8 rounded-xl backdrop-blur-sm border-2 border-white/20 hover:border-blue-500/80 transition-all duration-300 shadow-[0_0_50px_0_rgba(0,0,0,0.5)]">
-              <div class="flex flex-col md:flex-row-reverse items-center justify-center gap-6 md:gap-8">
-                <div class="flex-shrink-0 w-40 h-40 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-[300px] lg:h-[300px] flex items-center justify-center relative solution-image">
-                  <div class="relative z-10 w-full h-full">
-                    <img src="../assets/solutions logo (2).png" alt="Siberpatuh" class="w-full h-full object-contain" />
-                  </div>
-                </div>
-                <div class="flex-grow">
-                  <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-white underline decoration-2 underline-offset-[20px] md:underline-offset-[30px] text-center md:text-left">SIBER<span class="text-green-500">PATUH</span></h3>
-                  <p class="text-gray-300 pt-4 sm:pt-6 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base md:text-lg">
-                    Siberpatuh consulting services will help your organization in adhering to industry regulations, legal requirements, and internal policies that ensure the protection of your critical assets. We provide comprehensive security assessments and emphasize on proper governance by Top Management with a top-down approach to reach the highest cybersecurity governance posture across the board.
-                  </p>
-                  <router-link to="/services-siberpatuh" class="text-blue-400 hover:text-blue-300 inline-flex items-center group text-sm md:text-base">
-                    Read more
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </router-link>
-                </div>
-              </div>
-            </div>
-
-            <div class="solution-card bg-[#06305C]/80 p-6 sm:p-8 rounded-xl backdrop-blur-sm border-2 border-white/20 hover:border-blue-500/80 transition-all duration-300 shadow-[0_0_50px_0_rgba(0,0,0,0.5)]">
-              <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
-                <div class="flex-shrink-0 w-40 h-40 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-[300px] lg:h-[300px] flex items-center justify-center relative solution-image">
-                  <div class="relative z-10 w-full h-full">
-                    <img src="../assets/solutions logo (3).png" alt="Siberjaga" class="w-full h-full object-contain" />
-                  </div>
-                </div>
-                <div class="flex-grow">
-                  <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-white underline decoration-2 underline-offset-[20px] md:underline-offset-[30px] text-center md:text-left">SIBER<span class="text-blue-500">JAGA</span></h3>
-                  <p class="text-gray-300 pt-4 sm:pt-6 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base md:text-lg">
-                    Siberjaga focuses on defensive cybersecurity consulting services which involve comprehensive strategies and the adoption of frameworks to better protect your organization from all authorized access, cyber attacks, and breaches. The ultimate goal is to improve your organization's capabilities to deter, detect and respond to threats and incidents while maintaining business continuity and operational resilience.
-                  </p>
-                  <router-link to="/services-siberjaga" class="text-blue-400 hover:text-blue-300 inline-flex items-center group text-sm md:text-base">
-                    Read more
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </router-link>
-                </div>
-              </div>
+            <div class="flex-grow">
+              <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-white underline decoration-2 underline-offset-[20px] md:underline-offset-[30px] text-center md:text-left">SIBER<span class="text-red-500">SERANG</span></h3>
+              <p class="text-gray-300 pt-4 sm:pt-6 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base md:text-lg">
+                Siberserang is our suite of offensive cybersecurity services. It encompasses proactive and controlled simulated attack on computer systems, networks, and applications. Our ethical penetration testers conduct these assessments to identify vulnerabilities and weaknesses, providing valuable insights for your organization to fortify defenses, safeguard data, and mitigate potential real-world cyber threats.
+              </p>
+              <span class="text-blue-400 hover:text-blue-300 inline-flex items-center group text-sm md:text-base">
+                Read more
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </span>
             </div>
           </div>
+        </div>
+      </router-link>
+
+      <router-link to="/services-siberpatuh" class="block">
+        <div class="solution-card bg-[#06305C]/80 p-6 sm:p-8 rounded-xl backdrop-blur-sm border-2 border-white/20 hover:border-blue-500/80 transition-all duration-300 shadow-[0_0_50px_0_rgba(0,0,0,0.5)] cursor-pointer">
+          <div class="flex flex-col md:flex-row-reverse items-center justify-center gap-6 md:gap-8">
+            <div class="flex-shrink-0 w-40 h-40 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-[300px] lg:h-[300px] flex items-center justify-center relative solution-image">
+              <div class="relative z-10 w-full h-full">
+                <img src="../assets/solutions logo (2).png" alt="Siberpatuh" class="w-full h-full object-contain" />
+              </div>
+            </div>
+            <div class="flex-grow">
+              <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-white underline decoration-2 underline-offset-[20px] md:underline-offset-[30px] text-center md:text-left">SIBER<span class="text-green-500">PATUH</span></h3>
+              <p class="text-gray-300 pt-4 sm:pt-6 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base md:text-lg">
+                Siberpatuh consulting services will help your organization in adhering to industry regulations, legal requirements, and internal policies that ensure the protection of your critical assets. We provide comprehensive security assessments and emphasize on proper governance by Top Management with a top-down approach to reach the highest cybersecurity governance posture across the board.
+              </p>
+              <span class="text-blue-400 hover:text-blue-300 inline-flex items-center group text-sm md:text-base">
+                Read more
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </router-link>
+
+      <router-link to="/services-siberjaga" class="block">
+        <div class="solution-card bg-[#06305C]/80 p-6 sm:p-8 rounded-xl backdrop-blur-sm border-2 border-white/20 hover:border-blue-500/80 transition-all duration-300 shadow-[0_0_50px_0_rgba(0,0,0,0.5)] cursor-pointer">
+          <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
+            <div class="flex-shrink-0 w-40 h-40 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-[300px] lg:h-[300px] flex items-center justify-center relative solution-image">
+              <div class="relative z-10 w-full h-full">
+                <img src="../assets/solutions logo (3).png" alt="Siberjaga" class="w-full h-full object-contain" />
+              </div>
+            </div>
+            <div class="flex-grow">
+              <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-white underline decoration-2 underline-offset-[20px] md:underline-offset-[30px] text-center md:text-left">SIBER<span class="text-blue-500">JAGA</span></h3>
+              <p class="text-gray-300 pt-4 sm:pt-6 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base md:text-lg">
+                Siberjaga focuses on defensive cybersecurity consulting services which involve comprehensive strategies and the adoption of frameworks to better protect your organization from all authorized access, cyber attacks, and breaches. The ultimate goal is to improve your organization's capabilities to deter, detect and respond to threats and incidents while maintaining business continuity and operational resilience.
+              </p>
+              <span class="text-blue-400 hover:text-blue-300 inline-flex items-center group text-sm md:text-base">
+                Read more
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </router-link>
+    </div>
         </div>
       </section>
     </section>
@@ -293,7 +299,7 @@ Built on a foundation of integrity, technical excellence, and sector experience,
           </div>
         </div>
 
-        <div class="hidden lg:flex absolute -left-[750px] lg:top-[870px] xl:top-[900px] 2xl:top-[750px] flex-col gap-[20px]">
+        <div class="hidden lg:flex absolute -left-[750px] lg:top-[870px] xl:top-[700px] 2xl:top-[750px] flex-col gap-[20px]">
           <div class="relative w-[1220px] flex items-center">
             <div class="h-[6px] w-full bg-blue-500"></div>
             <div class="absolute right-0 w-[18px] h-[18px] bg-blue-500 rounded-full transform translate-x-1/2"></div>
@@ -421,7 +427,7 @@ Built on a foundation of integrity, technical excellence, and sector experience,
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 mb-2 sm:mb-3 md:mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="black">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              <p class="text-gray-600">+6281211120045</p>
+              <p class="text-gray-600">+622129492273</p>
             </div>
             <div class="text-left text-sm md:text-base">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 mb-2 sm:mb-3 md:mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="black">

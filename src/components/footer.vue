@@ -1,22 +1,39 @@
 <template>
-  <!-- Full width footer container with dark background -->
   <div class="w-full bg-[#1D1D1D] ">
-    <!-- Inner content container with max width and padding -->
     <div class="font-bahnschrift text-white px-4 md:px-14 py-14 mx-auto max-w-8xl">
       <div class="grid md:grid-cols-12 gap-8">
-        <!-- Left section -->
         <div class="md:col-span-4">
-          <img src="../assets/Sibertahan.png" class="h-10 mb-6" alt="Sibertahan Logo" />
-          <p class="text-sm text-gray-300 mb-10 leading-relaxed">
-            Better Security,<br />
+          <img src="../assets/logofooter.png" class="h-20 mb-2" alt="Sibertahan Logo" />
+          <p class="text-sm text-gray-300 mb-6 leading-relaxed">
+            Better Security
             Better Human Rights<br />
           </p>
+
+          <div class="text-sm text-gray-300 mb-6 space-y-3"> <p class="flex items-start"> <a href="tel:+622129492273" class="hover:text-white transition-colors flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <span class="text-white">+62 21 2949 2273</span>
+              </a>
+            </p>
+            <p class="flex items-start"> <a href="mailto:info@sibertahan.com" class="hover:text-white transition-colors flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <span class="text-white break-all">info@sibertahan.com</span>
+              </a>
+            </p>
+            <p class="flex items-start"> <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span class="ml-2 text-white">District 8, Treasury Tower Lt. 6 Unit F, Jl. Jend. Sudirman Kav. 52-53, SCBD Lot 28 RT. 005 RW. 003, Senayan, Kebayoran Baru, Jakarta Selatan 12190</span>
+            </p>
+          </div>
           <p class="text-sm mb-4 font-medium">Follow us:</p>
           
-          <!-- Social icons -->
           <div class="flex space-x-4">
             
-            <!-- LinkedIn -->
             <a href="https://www.linkedin.com/company/sibertahan/" class="text-white hover:text-gray-300 transition-colors">
               <div class="w-6 h-6 flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -25,7 +42,6 @@
               </div>
             </a>
             
-            <!-- Instagram -->
             <a href="https://www.instagram.com/sibertahan" class="text-white hover:text-gray-300 transition-colors">
               <div class="w-6 h-6 flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -36,15 +52,13 @@
           </div>
         </div>
 
-        <!-- Spacer -->
         <div class="md:col-span-2"></div>
 
-        <!-- Quick Link -->
         <div class="md:col-span-2.5">
           <h4 class="font-semibold mb-5 text-base">Quick Link</h4>
           <ul class="space-y-3 text-sm text-gray-400">
             <li><router-link to="/" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Home</router-link></li>
-            <li><router-link to="/services-siberserang" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Our Services</router-link></li>
+            <li><router-link to="/#services-section" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Our Services</router-link></li>
             <li><router-link to="/about" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>About Us</router-link></li>
             <li><router-link to="/contact" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Contact Us</router-link></li>
             <li><router-link to="/blog" class="hover:text-white flex items-center transition-colors"><span class="mr-3 text-gray-500 text-lg leading-none">·</span>Blog</router-link></li>
@@ -52,10 +66,8 @@
           </ul>
         </div>
 
-        <!-- Spacer -->
         <div class="md:col-span-1"></div>
 
-        <!-- Quick Services -->
         <div class="md:col-span-2.5">
           <h4 class="font-semibold mb-5 text-base">Quick Services</h4>
           <ul class="space-y-3 text-sm text-gray-400">
@@ -66,30 +78,25 @@
         </div>
       </div>
 
-      <!-- Decorative Lines Section -->
       <div class="w-full mt-20 mb-10 select-none pointer-events-none">
-        <!-- First line with dot -->
         <div class="relative w-full h-4 flex items-center mb-2">
           <div class="absolute left-[-3%] right-[60%] top-1/2 -translate-y-1/2 h-[4px] bg-[#333333] rounded-full"></div>
           <div class="absolute left-[40%] top-1/2 -translate-y-1/2 w-[14px] h-[14px] bg-[#333333] rounded-full"></div>
         </div>
         
-        <!-- Second line with dot -->
         <div class="relative w-full h-4 flex items-center mb-2">
           <div class="absolute left-[38%] right-[-3%] top-1/2 -translate-y-1/2 h-[4px] bg-[#333333] rounded-full"></div>
           <div class="absolute left-[38%] top-1/2 -translate-y-1/2 w-[14px] h-[14px] bg-[#333333] rounded-full"></div>
         </div>
         
-        <!-- Third line with dot -->
         <div class="relative w-full h-4 flex items-center mb-2">
           <div class="absolute left-[-3%] right-[60%] top-1/2 -translate-y-1/2 h-[4px] bg-[#333333] rounded-full"></div>
           <div class="absolute left-[40%] top-1/2 -translate-y-1/2 w-[14px] h-[14px] bg-[#333333] rounded-full"></div>
         </div>
       </div>
 
-      <!-- Copyright -->
       <div class="text-right text-xs text-gray-500 font-light">
-        Sibertahan copyright © 2023. All Rights Reserved.
+        Sibertahan copyright © 2025. All Rights Reserved.
       </div>
     </div>
   </div>

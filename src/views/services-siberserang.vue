@@ -6,8 +6,8 @@
           <div>
             <h1 class="text-center font-bold py-12 md:py-20 lg:py-28 text-5xl md:text-7xl lg:text-8xl">SIBER<span class="text-red-500">SERANG</span></h1>
           </div>
-          <div class="hidden lg:flex absolute -left-[300px] top-[13.8%] -translate-y-1/2 flex-col">
-            <img src="../assets/line dot.png" alt="" class="w-[600px] h-auto">
+          <div class="hidden lg:flex absolute top-[13.8%] -translate-y-1/2 flex-col
+                      lg:-left-[150px] xl:-left-[320px] 2xl:-left-[300px]"> <img src="../assets/line dot.png" alt="" class="w-[600px] h-auto">
           </div>
         </div>
         <div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12">
@@ -143,7 +143,7 @@
       </div>
     </div>
 
-    <div class="container py-0 md:py-4 lg:py-12 px-4 sm:px-6 md:px-8 lg:px-12 mx-auto relative mt-16">
+    <div class="container py-0 md:py-4 lg:py-12 pl-0 md:pl-0 lg:pl-24 px-4 sm:px-6 md:px-8 lg:px-12 mx-auto relative mt-16">
       <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-500 mb-4 md:mb-6 lg:mb-8">
         2. RED TEAMING
       </h1>
@@ -177,7 +177,7 @@
             <p class="text-sm md:text-base text-gray-700">
               They use a combination of technical expertise, social engineering, and other creative tactics to achieve
               their objectives, just as real cybercriminals would.<br />
-              <strong>Comprehensive Assessment:</strong> Red Teaming goes beyond just technical vulnerabilities. It assesses the
+              <strong>Comprehensive Assessment:</strong> Red Teaming assesses the
               entire cybersecurity ecosystem, including technology, personnel, physical security, processes, and even
               the organization’s ability to detect and respond to threats.
             </p>
@@ -349,24 +349,24 @@
 <style scoped>
 /* Hide scrollbar for modern browsers */
 .hide-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
   overflow-y: auto;
 }
 .hide-scrollbar::-webkit-scrollbar {
-  display: none;  /* Chrome, Safari and Opera */
+  display: none; /* Chrome, Safari and Opera */
 }
 
 /* Global styles to hide scrollbars */
 :global(html),
 :global(body) {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
   overflow-x: hidden; /* Ensure horizontal scroll is always hidden */
 }
 :global(html::-webkit-scrollbar),
 :global(body::-webkit-scrollbar) {
   width: 0;
-  display: none;  /* Chrome, Safari and Opera */
+  display: none; /* Chrome, Safari and Opera */
 }
 </style>
