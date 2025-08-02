@@ -41,7 +41,7 @@ const api = new GhostContentAPI({
 
 const posts = ref([])
 
-api.posts.browse({ limit: 5, include: 'tags,authors', filter: 'tag:-career'})
+api.posts.browse({ limit: 'all',include: 'tags,authors', filter: 'tag:-career'})
 .then(p => {
   posts.value = p // Show on your Vue page
 })
