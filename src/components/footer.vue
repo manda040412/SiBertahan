@@ -5,7 +5,7 @@
         <div class="md:col-span-4">
           <img src="../assets/logofooter.png" class="h-20 mb-2" alt="Sibertahan Logo" />
           <p class="text-sm text-gray-300 mb-6 leading-relaxed">
-            Better Security
+            Better Security,
             Better Human Rights<br />
           </p>
 

@@ -43,7 +43,7 @@ const jobListings = ref([])
 // Mengambil postingan dari Ghost CMS dengan tag 'career'
 api.posts
   .browse({
-    limit: all, // Sesuaikan jumlah postingan yang ingin ditampilkan
+    limit: 'all', // Sesuaikan jumlah postingan yang ingin ditampilkan
     include: 'tags,authors',
     filter: 'tag:career' // Hanya ambil postingan dengan tag 'career'
   })

@@ -44,16 +44,16 @@
 
       <div class="absolute inset-x-0 top-[20%] sm:top-[25%] md:top-[30%] bottom-0 z-0">
         <img src="../assets/mohammad-rahmani-Y5yxdx2a4PI-unsplash.jpg"
-             alt="Cyber Security Background"
-             class="w-full h-full object-cover object-center" />
+              alt="Cyber Security Background"
+              class="w-full h-full object-cover object-center" />
         <div class="absolute inset-0 bg-gradient-to-t from-[#000000] to-transparent opacity-90"></div>
       </div>
 
       <div class="absolute top-2 left-1/2 -translate-x-1/2 container px-4 sm:px-6 md:px-12 w-full max-w-7xl z-40">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 py-8">
           <div class="flex justify-center">
-              <a href="https://www.bssn.go.id/daftar-lembaga-konsultan-dan-lembaga-sertifikasi/" target="_blank" rel="noopener noreferrer" class="block w-full max-w-[280px] sm:max-w-[320px] lg:max-w-md">
-                <div class="badge p-3 sm:p-4 md:p-6 lg:p-8 rounded-3xl flex flex-col items-center transition-all duration-300 hover:shadow-lg hover:scale-105 border border-white/20 bg-gradient-to-b from-[#002045] to-[#001328] w-full cursor-pointer">
+              <a href="https://www.bssn.go.id/daftar-lembaga-konsultan-dan-lembaga-sertifikasi/" target="_blank" rel="noopener noreferrer" class="block w-full max-w-[280px] sm:max-w-[320px] lg:max-w-md min-h-[220px]">
+                <div class="badge p-3 sm:p-4 md:p-6 lg:p-8 rounded-3xl flex flex-col items-center transition-all duration-300 hover:shadow-lg hover:scale-105 border border-white/20 bg-gradient-to-b from-[#002045] to-[#001328] w-full h-full cursor-pointer">
                   <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 md:mb-4 lg:mb-6" style="font-family: Arial, sans-serif;">Terdaftar di</p>
                   <img src="../assets/BSSN Logo.png" alt="BSSN" class="h-10 sm:h-12 md:h-16 lg:h-20 mb-2 sm:mb-3 md:mb-4" />
                   <p class="text-white text-xs sm:text-sm md:text-base lg:text-lg text-center font-medium" style="font-family: Arial, sans-serif;">
@@ -64,27 +64,25 @@
           </div>
 
           <div class="flex justify-center">
-            <a href="https://aspi-indonesia.or.id/standar-dan-layanan/daftar-penyedia-jasa-audit-ti/" target="_blank" rel="noopener noreferrer" class="block w-full max-w-[280px] sm:max-w-[320px] lg:max-w-md">
-              <div class="badge p-3 sm:p-4 md:p-6 lg:p-8 rounded-3xl flex flex-col items-center transition-all duration-300 hover:shadow-lg hover:scale-105 border border-white/20 bg-gradient-to-b from-[#002045] to-[#001328] w-full cursor-pointer">
+            <a href="https://aspi-indonesia.or.id/standar-dan-layanan/daftar-penyedia-jasa-audit-ti/" target="_blank" rel="noopener noreferrer" class="block w-full max-w-[280px] sm:max-w-[320px] lg:max-w-md min-h-[220px]">
+              <div class="badge p-3 sm:p-4 md:p-6 lg:p-8 rounded-3xl flex flex-col items-center transition-all duration-300 hover:shadow-lg hover:scale-105 border border-white/20 bg-gradient-to-b from-[#002045] to-[#001328] w-full h-full cursor-pointer">
                 <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 md:mb-4 lg:mb-6">Verified by</p>
                 <img src="../assets/aspi-logo.png" alt="ASPI" class="h-10 sm:h-12 md:h-16 lg:h-20 mb-2 sm:mb-3 md:mb-4" />
                 <p class="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium text-center">
                   ASPI as Penyedia Jasa Audit
                 </p>
-                
               </div>
             </a>
           </div>
 
           <div class="flex justify-center">
-            <a href="https://aspi-indonesia.or.id/standar-dan-layanan/penyedia-jasa-audit-keamanan/" target="_blank" rel="noopener noreferrer" class="block w-full max-w-[280px] sm:max-w-[320px] lg:max-w-md">
-              <div class="badge p-3 sm:p-4 md:p-6 lg:p-8 rounded-3xl flex flex-col items-center transition-all duration-300 hover:shadow-lg hover:scale-105 border border-white/20 bg-gradient-to-b from-[#002045] to-[#001328] w-full cursor-pointer">
+            <a href="https://aspi-indonesia.or.id/standar-dan-layanan/penyedia-jasa-audit-keamanan/" target="_blank" rel="noopener noreferrer" class="block w-full max-w-[280px] sm:max-w-[320px] lg:max-w-md min-h-[220px]">
+              <div class="badge p-3 sm:p-4 md:p-6 lg:p-8 rounded-3xl flex flex-col items-center transition-all duration-300 hover:shadow-lg hover:scale-105 border border-white/20 bg-gradient-to-b from-[#002045] to-[#001328] w-full h-full cursor-pointer">
                 <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 md:mb-4 lg:mb-6">Verified by</p>
                 <img src="../assets/aspi-logo.png" alt="ASPI" class="h-10 sm:h-12 md:h-16 lg:h-20 mb-2 sm:mb-3 md:mb-4" />
                 <p class="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium text-center">
                   ASPI as Penyedia Jasa Pengujian Keamanan
                 </p>
-                
               </div>
             </a>
           </div>
@@ -140,7 +138,7 @@ With expertise across offensive, defensive, and governance domains, Sibertahan d
 
 Sibertahan formulates tailored recommendations based on in-depth assessments, regulatory alignment, and operational relevance. This consulting-led approach ensures clarity, practicality, and impact across all advisory and testing activities.
 
-Built on a foundation of integrity, technical excellence, and sector experience, Sibertahan supports organizations in strengthening resilience and maintaining trust in an increasingly complex digital landscape.
+Built on a foundation of integrity, technical excellence, and sector experience, Sibertahan supports organizations in strengthening resilience and maintaining trust in an increasingly complex digital&nbsp;landscape.
             </p>
 
             <router-link to="/about" class="text-blue-400 hover:text-blue-300 inline-flex items-center group text-sm md:text-base">
@@ -260,11 +258,7 @@ Built on a foundation of integrity, technical excellence, and sector experience,
     <section class="experts bg-gradient-to-tr from-[#D7E6FF] from-0% to-[#F4F7FF] to-40% text-[#00101f] py-12 md:py-20 relative">
       <div class="container px-4 sm:px-6 md:px-12 max-w-[1600px] mx-auto">
         <div class="flex justify-end text-sm sm:text-base md:text-lg text-right">
-          <!-- <p>
-            <span class="opacity-50">Safeguard your valuable data</span>
-            <span class="opacity-100 font-bold"> and ensure your peace of mind</span>
-          </p> -->
-        </div>
+          </div>
         <div class="flex flex-col w-full my-6 md:my-8">
           <div class="w-1/2 h-[3px] bg-gray-600 opacity-30"></div>
           <div class="w-full h-[1px] bg-gray-600 opacity-60"></div>
@@ -299,7 +293,7 @@ Built on a foundation of integrity, technical excellence, and sector experience,
           </div>
         </div>
 
-        <div class="hidden lg:flex absolute -left-[750px] lg:top-[870px] xl:top-[700px] 2xl:top-[750px] flex-col gap-[20px]">
+        <div class="hidden lg:flex absolute -left-[750px] lg:top-[750px] xl:top-[700px] 2xl:top-[750px] flex-col gap-[20px]">
           <div class="relative w-[1220px] flex items-center">
             <div class="h-[6px] w-full bg-blue-500"></div>
             <div class="absolute right-0 w-[18px] h-[18px] bg-blue-500 rounded-full transform translate-x-1/2"></div>
@@ -333,70 +327,7 @@ Built on a foundation of integrity, technical excellence, and sector experience,
               strategies, we fortify your digital landscape with expert
               precision
             </p>
-            <!-- <div class="pt-6 md:pt-10">
-              <div class="flex flex-wrap justify-start items-center gap-4 sm:gap-8 md:gap-12">
-                <div class="relative flex flex-col items-center">
-                  <div class="bg-gradient-to-br from-[#06305C] from-30% to-[#000203] p-2 sm:p-3 rounded-xl shadow-[0_8px_16px_-4px_rgba(0,0,0,0.5)] transition-all flex items-center justify-center w-28 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24">
-                    <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-[60px] md:h-[60px]">
-                      <img src="../assets/cloud-who.png" alt="Cloud Security" class="w-full h-full object-contain" />
-                    </div>
-                  </div>
-                  <div class="hidden lg:flex absolute top-[100px] left-[90px] h-[100px] w-4 justify-center">
-                    <div class="absolute top-0 bottom-[60%] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
-                    <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
-                  </div>
-                  <div class="hidden lg:flex absolute top-[100px] left-1/2 -translate-x-1/2 h-[200px] w-4 justify-center">
-                    <div class="absolute top-0 bottom-[60%] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
-                    <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
-                  </div>
-                  <div class="hidden lg:flex absolute top-[100px] right-[90px] h-[100px] w-4 justify-center">
-                    <div class="absolute top-0 bottom-[60%] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
-                    <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
-                  </div>
-                </div>
-
-                <div class="relative flex flex-col items-center">
-                  <div class="bg-gradient-to-br from-[#06305C] from-30% to-[#000203] p-2 sm:p-3 rounded-xl shadow-[0_8px_16px_-4px_rgba(0,0,0,0.5)] transition-all flex items-center justify-center w-28 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24">
-                    <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-[60px] md:h-[60px]">
-                      <img src="../assets/lock-who.png" alt="Data Protection" class="w-full h-full object-contain" />
-                    </div>
-                  </div>
-                  <div class="hidden lg:flex absolute top-[100px] left-1/2 -translate-x-1/2 ml-[-20px] h-[100px] w-4 justify-center">
-                    <div class="absolute top-0 bottom-[60%] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
-                    <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
-                  </div>
-                  <div class="hidden lg:flex absolute top-[100px] left-1/2 -translate-x-1/2 h-[200px] w-4 justify-center">
-                    <div class="absolute top-0 bottom-[40%] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
-                    <div class="absolute top-[60%] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
-                  </div>
-                  <div class="hidden lg:flex absolute top-[100px] left-1/2 -translate-x-1/2 ml-[20px] h-[100px] w-4 justify-center">
-                    <div class="absolute top-0 bottom-[60%] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
-                    <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
-                  </div>
-                </div>
-
-                <div class="relative flex flex-col items-center">
-                  <div class="bg-gradient-to-br from-[#06305C] from-30% to-[#000203] p-2 sm:p-3 rounded-xl shadow-[0_8px_16px_-4px_rgba(0,0,0,0.5)] transition-all flex items-center justify-center w-28 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24">
-                    <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-[60px] md:h-[60px]">
-                      <img src="../assets/fire-who.png" alt="Threat Prevention" class="w-full h-full object-contain" />
-                    </div>
-                  </div>
-                  <div class="hidden lg:flex absolute top-[100px] left-[90px] h-[100px] w-4 justify-center">
-                    <div class="absolute top-0 bottom-[60%] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
-                    <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
-                  </div>
-                  <div class="hidden lg:flex absolute top-[100px] left-1/2 -translate-x-1/2 h-[200px] w-4 justify-center">
-                    <div class="absolute top-0 bottom-[60%] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
-                    <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
-                  </div>
-                  <div class="hidden lg:flex absolute top-[100px] right-[90px] h-[100px] w-4 justify-center">
-                    <div class="absolute top-0 bottom-[60%] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
-                    <div class="absolute top-[40%] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-          </div>
+            </div>
         </div>
         <div class="py-12 md:py-20">
           <div class="container mx-auto max-w-7xl px-4 sm:px-6">
@@ -408,17 +339,7 @@ Built on a foundation of integrity, technical excellence, and sector experience,
               <h2 class="text-5xl sm:text-7xl md:text-8xl lg:text-[100px] xl:text-[120px] 2xl:text-[160px] leading-none text-[#00101f] relative z-10">
                 Contact <span class="text-blue-500">us.</span>
               </h2>
-              <!-- <div class="flex justify-start pl-4 sm:pl-10 mt-6">
-                <router-link to="/contact" class="bg-[#1D1D1D] hover:bg-blue-700 text-white py-2 px-5 pr-3 rounded-full text-sm font-medium transition inline-flex items-center gap-2">
-                  WORK WITH US
-                  <div class="w-7 h-7 bg-white rounded-full flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="BLACK">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
-                  </div>
-                </router-link>
-              </div> -->
-            </div>
+              </div>
           </div>
         </div>
         <div class="container mx-auto max-w-6xl px-4 sm:px-6">
