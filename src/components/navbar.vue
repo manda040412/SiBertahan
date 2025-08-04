@@ -82,23 +82,30 @@
             CONNECT WITH US
           </a>
           
-          <div v-if="$route.path === '/' || $route.path === '/home'" class="absolute left-1/2 top-full m transform -translate-x-1/2 hidden md:flex gap-14 z-[9999]">
+          <div v-if="$route.path === '/' || $route.path === '/home'" class="absolute left-1/2 top-full transform -translate-x-1/2 hidden md:flex gap-7 z-[9999]">
+            <!-- Kiri -->
             <div class="relative flex flex-col items-center h-[250px]">
               <div class="w-[6px] h-full bg-blue-500"></div>
-            
-              <div class="absolute bottom-0 w-[18px] h-[18px] bg-blue-500 rounded-full transform translate-y-1/2"></div>
+              <div class="absolute bottom-0 w-[18px] h-[18px] bg-blue-500 rounded-full translate-y-1/2"></div>
             </div>
-
+            <!-- Tengah (garis dari bawah ke dot saja, tidak sampai button) -->
+            <div class="relative flex flex-col items-center h-[1200px]">
+              <!-- Garis dari bawah ke dot -->
+              <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[6px] bg-blue-500" style="height: 1100px;"></div>
+              <!-- Dot di atas garis -->
+              <div class="absolute bottom-[1100px] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
+              <!-- Tidak ada garis dari dot ke button -->
+            </div>
+            <!-- Kanan -->
             <div class="relative flex flex-col items-center h-[250px]">
               <div class="w-[6px] h-full bg-blue-500"></div>
-              
-              <div class="absolute bottom-0 w-[18px] h-[18px] bg-blue-500 rounded-full transform translate-y-1/2"></div>
+              <div class="absolute bottom-0 w-[18px] h-[18px] bg-blue-500 rounded-full translate-y-1/2"></div>
             </div>
           </div>
-              <div v-if="$route.path === '/' || $route.path === '/home'" class="absolute right-[67px] w-4 hidden md:flex justify-center responsive-bottom" style="height: 1200px;">
+              <!-- <div v-if="$route.path === '/' || $route.path === '/home'" class="absolute right-[68px] w-4 hidden md:flex justify-center responsive-bottom" style="height: 1200px;">
                 <div class="absolute bottom-1 top-[100px] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
                 <div class="absolute top-[100px] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
-              </div>
+              </div> -->
         </div>
       </nav>
     </div>
