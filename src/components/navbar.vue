@@ -95,7 +95,7 @@
               <div class="absolute bottom-0 w-[18px] h-[18px] bg-blue-500 rounded-full transform translate-y-1/2"></div>
             </div>
           </div>
-              <div v-if="$route.path === '/' || $route.path === '/home'" class="absolute right-[62px] w-4 hidden md:flex justify-center responsive-bottom" style="height: 1200px;">
+              <div v-if="$route.path === '/' || $route.path === '/home'" class="absolute right-[67px] w-4 hidden md:flex justify-center responsive-bottom" style="height: 1200px;">
                 <div class="absolute bottom-1 top-[100px] left-1/2 -translate-x-1/2 w-[6px] bg-blue-500"></div>
                 <div class="absolute top-[100px] left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-blue-500 rounded-full"></div>
               </div>

@@ -7,7 +7,7 @@
             <h1 class="text-center font-bold py-12 md:py-20 lg:py-28 text-5xl md:text-7xl lg:text-8xl">SIBER<span class="text-red-500">SERANG</span></h1>
           </div>
           <div class="hidden lg:flex absolute top-[13.8%] -translate-y-1/2 flex-col
-                      lg:-left-[450px] xl:-left-[320px] 2xl:-left-[300px]"> <img src="../assets/line dot.png" alt="" class="w-[600px] h-auto">
+                      lg:-left-[450px] xl:-left-[320px] 2xl:-left-[240px]"> <img src="../assets/line dot2.png" alt="" class="w-[600px] h-auto">
           </div>
         </div>
         <div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12">

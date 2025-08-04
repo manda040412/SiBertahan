@@ -96,7 +96,7 @@
       </div>
 
       <div class="text-right text-xs text-gray-500 font-light">
-        Sibertahan copyright © 2025. All Rights Reserved.
+        Sibertahan Copyright © 2025. All Rights Reserved.
       </div>
     </div>
   </div>

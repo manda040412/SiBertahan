@@ -6,8 +6,8 @@
           <div>
             <h1 class="text-center font-bold py-12 md:py-20 lg:py-28 text-5xl md:text-7xl lg:text-8xl">SIBER<span class="text-blue-500">JAGA</span></h1>
           </div>
-          <div class="hidden lg:flex absolute -left-[300px] top-[13.8%] -translate-y-1/2 flex-col">
-            <img src="../assets/line dot.png" alt="" class="w-[600px] h-auto">
+          <div class="hidden lg:flex absolute top-[13.8%] -translate-y-1/2 flex-col
+                      lg:-left-[450px] xl:-left-[320px] 2xl:-left-[240px]"> <img src="../assets/line dot2.png" alt="" class="w-[600px] h-auto">
           </div>
         </div>
         <div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12">
@@ -45,8 +45,8 @@
     </div>
 
     <div class="container py-8 md:py-16 lg:py-24 px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col gap-8 md:gap-10 lg:gap-12 justify-center items-center mx-auto">
-      <div class="hidden md:block absolute lg:-bottom-[2100px] lg:-right-[0px]">
-        <img src="../assets/Asset 1.png" alt="" class="w-[110px] h-auto">
+      <div class="hidden md:block absolute lg:-bottom-[2100px] lg:-right-[20px]">
+        <img src="../assets/line-siku-panjang.png" alt="" class="w-[110px] h-auto">
       </div>
       <div class="hidden lg:block absolute lg:-bottom-[1500px] lg:-left-[300px] opacity-80">
         <img src="../assets/SIBERJAGA-03.png" alt="" class="w-[640px] h-auto">
