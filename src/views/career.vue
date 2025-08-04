@@ -143,7 +143,7 @@ api.posts
             </div>
           </div>
 
-          <div class="absolute right-[-450px] top-[160px] -translate-y-1/2 hidden lg:flex flex-col gap-[20px] z-50">
+          <div class="absolute right-[-550px] top-[160px] -translate-y-1/2 hidden lg:flex flex-col gap-[20px] z-50">
             <div class="relative flex items-center justify-end">
               <div class="absolute right-[930px] w-[18px] h-[18px] bg-blue-500 rounded-full transform -translate-x-1/2"></div>
               <div class="h-[6px] w-[950px] bg-blue-500"></div>
