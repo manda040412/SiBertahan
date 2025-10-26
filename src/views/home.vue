@@ -54,22 +54,10 @@
           <div class="flex justify-center">
             <a href="https://www.bssn.go.id/daftar-lembaga-konsultan-dan-lembaga-sertifikasi/" target="_blank" rel="noopener noreferrer" class="block w-full max-w-sm">
               <div class="badge p-3 sm:p-4 md:p-6 lg:p-8 rounded-3xl flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:scale-105 border border-white/20 bg-gradient-to-b from-[#002045] to-[#001328] h-full cursor-pointer">
-                <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 md:mb-4 lg:mb-6" style="font-family: Arial, sans-serif;">Terdaftar di</p>
+                <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 md:mb-4 lg:mb-6" style="font-family: Arial, sans-serif;">Registered in</p>
                 <img src="../assets/BSSN Logo.png" alt="BSSN" class="h-10 sm:h-12 md:h-16 lg:h-20 mb-2 sm:mb-3 md:mb-4" />
                 <p class="text-white text-xs sm:text-sm md:text-base lg:text-lg text-center font-medium" style="font-family: Arial, sans-serif;">
-                  Nomor Sertifikat: SMPI.LK.17/BSSN/D1/PS.02.01/10/2024
-                </p>
-              </div>
-            </a>
-          </div>
-
-          <div class="flex justify-center">
-            <a href="https://aspi-indonesia.or.id/standar-dan-layanan/daftar-penyedia-jasa-audit-ti/" target="_blank" rel="noopener noreferrer" class="block w-full max-w-sm">
-              <div class="badge p-3 sm:p-4 md:p-6 lg:p-8 rounded-3xl flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:scale-105 border border-white/20 bg-gradient-to-b from-[#002045] to-[#001328] h-full cursor-pointer">
-                <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 md:mb-4 lg:mb-6">Verified by</p>
-                <img src="../assets/aspi-logo.png" alt="ASPI" class="h-10 sm:h-12 md:h-16 lg:h-20 mb-2 sm:mb-3 md:mb-4" />
-                <p class="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium text-center">
-                  ASPI as Penyedia Jasa Audit
+                  Certificate No.: SMPI.LK.17/BSSN/D1/PS.02.01/10/2024
                 </p>
               </div>
             </a>
@@ -81,11 +69,26 @@
                 <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 md:mb-4 lg:mb-6">Verified by</p>
                 <img src="../assets/aspi-logo.png" alt="ASPI" class="h-10 sm:h-12 md:h-16 lg:h-20 mb-2 sm:mb-3 md:mb-4" />
                 <p class="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium text-center">
-                  ASPI as Penyedia Jasa Pengujian Keamanan
+                  Penyedia Jasa Audit TI (PJA)<br>
+                  Penyedia Jasa Pengujian Keamanan (PJPK)
                 </p>
               </div>
             </a>
           </div>
+
+          <div class="flex justify-center">
+            <a href="https://aspi-indonesia.or.id/standar-dan-layanan/penyedia-jasa-audit-keamanan/" target="_blank" rel="noopener noreferrer" class="block w-full max-w-sm">
+              <div class="badge p-3 sm:p-4 md:p-6 lg:p-8 rounded-3xl flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:scale-105 border border-white/20 bg-gradient-to-b from-[#002045] to-[#001328] h-full cursor-pointer">
+                <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 md:mb-4 lg:mb-6">Certified according to </p>
+                <img src="../assets/iso_27001.png" alt="TUV SUD" class="h-20 sm:h-24 md:h-24 lg:h-32 mb-2 sm:mb-3 md:mb-4" />
+                <p class="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium text-center">
+                  Certificate No.: 2025-4-0238<br>
+                  ISO/IEC 27001:2022
+                </p>
+              </div>
+            </a>
+          </div>
+
         </div>
       </div>
     </section>

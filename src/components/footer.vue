@@ -33,7 +33,6 @@
           <p class="text-sm mb-4 font-medium">Follow us:</p>
           
           <div class="flex space-x-4">
-            
             <a href="https://www.linkedin.com/company/sibertahan/" class="text-white hover:text-gray-300 transition-colors">
               <div class="w-6 h-6 flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -49,6 +48,11 @@
                 </svg>
               </div>
             </a>
+          </div>
+
+          <div class="flex items-center gap-3 mt-5">
+            <img src="../assets/iso_27001.png" alt="Certified ISO27001:2022" title="Certified ISO27001:2022" class="h-16 mb-2 sm:mb-3 md:mb-4" />
+            <img src="../assets/kan-logo.png" alt="KAN" title="Accredited by KAN" class="h-16 mb-2 sm:mb-3 md:mb-4" />
           </div>
         </div>
 
