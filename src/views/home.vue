@@ -79,7 +79,7 @@
           <div class="flex justify-center">
             <a href="https://aspi-indonesia.or.id/standar-dan-layanan/penyedia-jasa-audit-keamanan/" target="_blank" rel="noopener noreferrer" class="block w-full max-w-sm">
               <div class="badge p-3 sm:p-4 md:p-6 lg:p-8 rounded-3xl flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:scale-105 border border-white/20 bg-gradient-to-b from-[#002045] to-[#001328] h-full cursor-pointer">
-                <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 md:mb-4 lg:mb-6">Certified according to </p>
+                <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 md:mb-4 lg:mb-6">ISO 27001:2022 Certified</p>
                 <img src="../assets/iso_27001.png" alt="TUV SUD" class="h-20 sm:h-24 md:h-24 lg:h-32 mb-2 sm:mb-3 md:mb-4" />
                 <p class="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium text-center">
                   Certificate No.: 2025-4-0238<br>
